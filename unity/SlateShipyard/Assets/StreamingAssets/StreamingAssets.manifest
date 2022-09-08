@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 4169978242
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: shipspawner
+      Dependencies: {}
