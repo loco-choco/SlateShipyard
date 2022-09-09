@@ -1,4 +1,5 @@
 ﻿using SlateShipyard.ShipSpawner;
+using SlateShipyard.ShipSpawner.RampUI;
 using SlateShipyard.ShipSpawner.SelectionUI;
 
 using UnityEngine;
@@ -14,7 +15,7 @@ namespace SlateShipyard
 
             //SpawnPosition
             LaunchPadSpawn spawner = t.GetChild(0).gameObject.AddComponent<LaunchPadSpawn>();
-            //UI Stuff
+            ////UI Stuff-----
             Transform screen = t.GetChild(2).GetChild(0);
             //Buttons
             GameObject selectButton = screen.GetChild(0).gameObject;
@@ -46,7 +47,28 @@ namespace SlateShipyard
             selection.nextShipButton = next;
             selection.previousShipButton = previous;
             selection.spawnShipButton = select;
+            ////---------
 
+            //Ramp
+            Transform ramp = t.GetChild(4);
+            Transform rampUIScreen = t.GetChild(5).GetChild(0);
+
+            RampAngleUI rampAnlgleUI = ramp.gameObject.AddComponent<RampAngleUI>();
+
+            //Buttons
+            GameObject decreaseButton = rampUIScreen.GetChild(0).gameObject;
+            InteractReceiver decrease = decreaseButton.AddComponent<InteractReceiver>();
+            decrease.ChangePrompt("decrease");
+
+            Text angleValue = rampUIScreen.GetChild(1).gameObject.GetComponent<Text>();
+
+            GameObject increaseButton = rampUIScreen.GetChild(2).gameObject;
+            InteractReceiver increase = increaseButton.AddComponent<InteractReceiver>();
+            increase.ChangePrompt("increase");
+
+            rampAnlgleUI.increaseAngle = increase;
+            rampAnlgleUI.decreaseAngle = decrease;
+            rampAnlgleUI.angleDisplayText = angleValue;
 
             return t.gameObject;
         }

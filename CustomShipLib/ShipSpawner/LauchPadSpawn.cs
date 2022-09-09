@@ -6,10 +6,10 @@ namespace SlateShipyard.ShipSpawner
     //Giving the prefab, this will spawn on the best place a ship
     public class LaunchPadSpawn : MonoBehaviour
     {
-        Rigidbody rigidbody;
+        OWRigidbody rigidbody;
         public void Start() 
         {
-            rigidbody = gameObject.GetAttachedOWRigidbody()._rigidbody;
+            rigidbody = gameObject.GetAttachedOWRigidbody();
         }
         public bool SpawnShip(Func<GameObject> shipPrefab, bool spawnEvenIfNotAllowed) 
         {
@@ -23,12 +23,10 @@ namespace SlateShipyard.ShipSpawner
                 Destroy(g);
                 return false;
             }
-            g.transform.position = transform.position;
-            g.transform.rotation = transform.rotation;
-            //GameObject g = Instantiate(shipPrefab, transform.position, transform.rotation);
-            Rigidbody r = g.GetAttachedOWRigidbody()._rigidbody;
-            r.velocity = rigidbody.velocity;
-            r.angularVelocity = rigidbody.angularVelocity;
+            OWRigidbody r = g.GetAttachedOWRigidbody();
+            r.WarpToPositionRotation(transform.position, transform.rotation);
+            r.SetVelocity(rigidbody.GetPointVelocity(transform.position));
+            r.SetAngularVelocity(rigidbody.GetAngularVelocity());
             return true;
         }
 
