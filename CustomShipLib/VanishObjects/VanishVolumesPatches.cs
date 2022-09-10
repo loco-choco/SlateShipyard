@@ -107,7 +107,12 @@ namespace SlateShipyard.VanishObjects
         {
             bool condition = true;
             foreach (var d in OnConditionsForPlayerToWarp.GetInvocationList())
-                condition &= ((ConditionsForPlayerToWarp)d).Invoke();
+            {
+                if (d != null)
+                {
+                    condition &= ((ConditionsForPlayerToWarp)d).Invoke();
+                }
+            }
             return condition;
         }
         static bool ReceiveWarpedBodyPrefix(OWRigidbody warpedBody, RelativeLocationData entryData, WhiteHoleVolume __instance)
