@@ -33,7 +33,7 @@ namespace SlateShipyard
             Harmony harmonyInstance = new Harmony("com.locochoco.plugin.customshiplib");
 
             SceneManager.sceneLoaded += SceneLoading_OnSceneLoad;
-            VanishVolumesPatches.DoPatches(harmonyInstance);
+            harmonyInstance.PatchAll(typeof(VanishVolumesPatches));
         }
         private void SceneLoading_OnSceneLoad(Scene scene, LoadSceneMode mode)
         {

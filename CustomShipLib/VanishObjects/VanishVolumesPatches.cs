@@ -7,62 +7,8 @@ namespace SlateShipyard.VanishObjects
 {
     public static class VanishVolumesPatches
     {
-        public static void DoPatches(Harmony harmonyInstance)
-        {         
-            #region VanishVolume
-            MethodInfo VanishVolumeFixedUpdate = AccessTools.Method(typeof(VanishVolume), nameof(VanishVolume.FixedUpdate));
-            MethodInfo VanishVolumeOnTriggerEnter = AccessTools.Method(typeof(VanishVolume), nameof(VanishVolume.OnTriggerEnter));
-
-            HarmonyMethod fixedUpdatePrefix = new HarmonyMethod(typeof(VanishVolumesPatches), nameof(VanishVolumesPatches.FixedUpdatePrefix));
-            HarmonyMethod onTriggerEnterPrefix = new HarmonyMethod(typeof(VanishVolumesPatches), nameof(VanishVolumesPatches.OnTriggerEnterPrefix));
-
-            harmonyInstance.Patch(VanishVolumeFixedUpdate, prefix: fixedUpdatePrefix);
-            harmonyInstance.Patch(VanishVolumeOnTriggerEnter, prefix: onTriggerEnterPrefix);
-            #endregion
-
-            #region DestructionVolume
-            MethodInfo DestructionVolumeVanish = AccessTools.Method(typeof(DestructionVolume), nameof(DestructionVolume.Vanish));
-            HarmonyMethod destructionVanishPrefix = new HarmonyMethod(typeof(VanishVolumesPatches), nameof(VanishVolumesPatches.DestructionVanishPrefix));
-            harmonyInstance.Patch(DestructionVolumeVanish, prefix: destructionVanishPrefix);
-            #endregion
-
-            #region SupernovaDestructionVolume
-            MethodInfo SupernovaDestructionVolumeVanish = AccessTools.Method(typeof(SupernovaDestructionVolume), nameof(SupernovaDestructionVolume.Vanish));
-            HarmonyMethod supernovadestructionVanishPrefix = new HarmonyMethod(typeof(VanishVolumesPatches), nameof(VanishVolumesPatches.SupernovaDestructionVanishPrefix));
-            harmonyInstance.Patch(SupernovaDestructionVolumeVanish, prefix: supernovadestructionVanishPrefix);
-            #endregion
-
-            #region BlackHoleVolume
-            MethodInfo BlackHoleVolumeVanish = AccessTools.Method(typeof(BlackHoleVolume), nameof(BlackHoleVolume.Vanish));
-            MethodInfo BlackHoleVolumeVanishPlayer = AccessTools.Method(typeof(BlackHoleVolume), nameof(BlackHoleVolume.VanishPlayer));
-
-            HarmonyMethod blackHoleVanishPrefix = new HarmonyMethod(typeof(VanishVolumesPatches), nameof(VanishVolumesPatches.BlackHoleVanishPrefix));
-            HarmonyMethod vanishPlayerPrefix = new HarmonyMethod(typeof(VanishVolumesPatches), nameof(VanishVolumesPatches.VanishPlayerPrefix));
-
-            harmonyInstance.Patch(BlackHoleVolumeVanish, prefix: blackHoleVanishPrefix);
-            harmonyInstance.Patch(BlackHoleVolumeVanishPlayer, prefix: vanishPlayerPrefix);
-            #endregion
-
-            #region WhiteHoleVolume
-            MethodInfo WhiteHoleVolumeReceiveWarpedBody = AccessTools.Method(typeof(WhiteHoleVolume), nameof(WhiteHoleVolume.ReceiveWarpedBody));
-            MethodInfo WhiteHoleVolumeAddToGrowQueue = AccessTools.Method(typeof(WhiteHoleVolume), nameof(WhiteHoleVolume.AddToGrowQueue));
-
-            HarmonyMethod receiveWarpedBodyPrefix = new HarmonyMethod(typeof(VanishVolumesPatches), nameof(VanishVolumesPatches.ReceiveWarpedBodyPrefix));
-            HarmonyMethod addToGrowQueuePrefix = new HarmonyMethod(typeof(VanishVolumesPatches), nameof(VanishVolumesPatches.AddToGrowQueuePrefix));
-
-            harmonyInstance.Patch(WhiteHoleVolumeReceiveWarpedBody, prefix: receiveWarpedBodyPrefix);
-            harmonyInstance.Patch(WhiteHoleVolumeAddToGrowQueue, prefix: addToGrowQueuePrefix);
-            #endregion
-
-            #region TimeLoopBlackHoleVolume
-            MethodInfo TimeLoopBlackHoleVolumeVanish = AccessTools.Method(typeof(TimeLoopBlackHoleVolume), nameof(TimeLoopBlackHoleVolume.Vanish));
-
-            HarmonyMethod timeLoopVanishPrefix = new HarmonyMethod(typeof(VanishVolumesPatches), nameof(VanishVolumesPatches.TimeLoopBlackHoleVanishPrefix));
-
-            harmonyInstance.Patch(TimeLoopBlackHoleVolumeVanish, prefix: timeLoopVanishPrefix);
-            #endregion
-        }
-
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(DestructionVolume), nameof(DestructionVolume.Vanish))]
         static bool DestructionVanishPrefix(OWRigidbody bodyToVanish, RelativeLocationData entryLocation, DestructionVolume __instance)
         {
             var vanishableObjectComponent = bodyToVanish.GetComponentInChildren<ControlledVanishObject>();
@@ -73,6 +19,9 @@ namespace SlateShipyard.VanishObjects
 
             return true;
         }
+
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(SupernovaDestructionVolume), nameof(SupernovaDestructionVolume.Vanish))]
         static bool SupernovaDestructionVanishPrefix(OWRigidbody bodyToVanish, RelativeLocationData entryLocation, SupernovaDestructionVolume __instance)
         {
             var vanishableObjectComponent = bodyToVanish.GetComponentInChildren<ControlledVanishObject>();
@@ -83,6 +32,9 @@ namespace SlateShipyard.VanishObjects
 
             return true;
         }
+
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(BlackHoleVolume), nameof(BlackHoleVolume.Vanish))]
         static bool BlackHoleVanishPrefix(OWRigidbody bodyToVanish, RelativeLocationData entryLocation, BlackHoleVolume __instance)
         {
             var vanishableObjectComponent = bodyToVanish.GetComponent<ControlledVanishObject>();
@@ -96,6 +48,9 @@ namespace SlateShipyard.VanishObjects
 
             return true;
         }
+
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(TimeLoopBlackHoleVolume), nameof(TimeLoopBlackHoleVolume.Vanish))]
         static bool TimeLoopBlackHoleVanishPrefix(OWRigidbody bodyToVanish, RelativeLocationData entryLocation, TimeLoopBlackHoleVolume __instance)
         {
             var vanishableObjectComponent = bodyToVanish.GetComponent<ControlledVanishObject>();
@@ -113,6 +68,9 @@ namespace SlateShipyard.VanishObjects
         }
         public delegate bool ConditionsForPlayerToWarp();
         public static event ConditionsForPlayerToWarp OnConditionsForPlayerToWarp;
+
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(BlackHoleVolume), nameof(BlackHoleVolume.VanishPlayer))]
         static bool VanishPlayerPrefix()
         {
             bool condition = true;
@@ -125,6 +83,9 @@ namespace SlateShipyard.VanishObjects
             }
             return condition;
         }
+
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(WhiteHoleVolume), nameof(WhiteHoleVolume.ReceiveWarpedBody))]
         static bool ReceiveWarpedBodyPrefix(OWRigidbody warpedBody, RelativeLocationData entryData, WhiteHoleVolume __instance)
         {
             var vanishableObjectComponent = warpedBody.GetComponent<ControlledVanishObject>();
@@ -138,6 +99,9 @@ namespace SlateShipyard.VanishObjects
 
             return true;
         }
+
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(WhiteHoleVolume), nameof(WhiteHoleVolume.AddToGrowQueue))]
         static bool AddToGrowQueuePrefix(OWRigidbody bodyToGrow)
         {
             var vanishableObjectComponent = bodyToGrow.GetComponent<ControlledVanishObject>();
@@ -149,6 +113,21 @@ namespace SlateShipyard.VanishObjects
 
             return true;
         }
+
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(WhiteHoleVolume), nameof(WhiteHoleVolume.SpawnImmediately))]
+        static bool SpawnImmediatelyPrefix(OWRigidbody overrideBody, RelativeLocationData entryData)
+        {
+            var vanishableObjectComponent = overrideBody.GetComponent<ControlledVanishObject>();
+            if (vanishableObjectComponent == null)
+                vanishableObjectComponent = overrideBody.GetComponentInChildren<ControlledVanishObject>();
+
+            if (vanishableObjectComponent != null)
+                return vanishableObjectComponent.DestroyComponentsOnGrow;
+
+            return true;
+        }
+
         private static Dictionary<VanishVolume, List<ControlledVanishObjectData>> controlledVanishObjectVolumeList = new Dictionary<VanishVolume, List<ControlledVanishObjectData>>();
         private struct ControlledVanishObjectData 
         {
@@ -168,6 +147,9 @@ namespace SlateShipyard.VanishObjects
                 controlledVanishObjectVolumeList.Remove(vol);
             }
         }
+
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(VanishVolume), nameof(VanishVolume.OnTriggerEnter))]
         static bool OnTriggerEnterPrefix(Collider hitCollider, VanishVolume __instance)
         {
             if (hitCollider.attachedRigidbody != null)
@@ -197,6 +179,9 @@ namespace SlateShipyard.VanishObjects
             }
             return true;
         }
+
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(VanishVolume), nameof(VanishVolume.FixedUpdate))]
         static void FixedUpdatePrefix(VanishVolume __instance)
         {
             if (controlledVanishObjectVolumeList.TryGetValue(__instance, out var list))
