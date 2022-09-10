@@ -116,15 +116,25 @@ namespace SlateShipyard.VanishObjects
 
         [HarmonyPrefix]
         [HarmonyPatch(typeof(WhiteHoleVolume), nameof(WhiteHoleVolume.SpawnImmediately))]
-        static bool SpawnImmediatelyPrefix(OWRigidbody overrideBody, RelativeLocationData entryData)
+        static bool SpawnImmediatelyPrefix(OWRigidbody overrideBody, RelativeLocationData entryData, WhiteHoleVolume __instance)
         {
             var vanishableObjectComponent = overrideBody.GetComponent<ControlledVanishObject>();
             if (vanishableObjectComponent == null)
                 vanishableObjectComponent = overrideBody.GetComponentInChildren<ControlledVanishObject>();
 
             if (vanishableObjectComponent != null)
-                return vanishableObjectComponent.DestroyComponentsOnGrow;
-
+            {
+                vanishableObjectComponent.OnWhiteHoleSpawnImmediately(__instance, entryData, out bool playerPassedThroughWarp);
+                if (playerPassedThroughWarp)
+                {
+                    Locator.GetPlayerAudioController().PlayPlayerSingularityTransit();
+                    for (int i = 0; i < __instance._airlocksToOpen.Length; i++)
+                    {
+                        __instance._airlocksToOpen[i].ResetToOpenState();
+                    }
+                }
+                return false;
+            }
             return true;
         }
 
