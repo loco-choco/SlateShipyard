@@ -67,7 +67,9 @@ namespace SlateShipyard.VanishObjects
         {
             var vanishableObjectComponent = bodyToVanish.GetComponentInChildren<ControlledVanishObject>();
             if (vanishableObjectComponent != null)
+            {
                 return vanishableObjectComponent.OnDestructionVanish(__instance);
+            }
 
             return true;
         }
@@ -75,7 +77,9 @@ namespace SlateShipyard.VanishObjects
         {
             var vanishableObjectComponent = bodyToVanish.GetComponentInChildren<ControlledVanishObject>();
             if (vanishableObjectComponent != null)
+            {
                 return vanishableObjectComponent.OnSupernovaDestructionVanish(__instance);
+            }
 
             return true;
         }
@@ -86,7 +90,9 @@ namespace SlateShipyard.VanishObjects
                 vanishableObjectComponent = bodyToVanish.GetComponentInChildren<ControlledVanishObject>();
 
             if (vanishableObjectComponent != null)
+            {
                 return vanishableObjectComponent.OnBlackHoleVanish(__instance, entryLocation);
+            }
 
             return true;
         }
@@ -94,10 +100,14 @@ namespace SlateShipyard.VanishObjects
         {
             var vanishableObjectComponent = bodyToVanish.GetComponent<ControlledVanishObject>();
             if (vanishableObjectComponent == null)
+            {
                 vanishableObjectComponent = bodyToVanish.GetComponentInChildren<ControlledVanishObject>();
+            }
 
             if (vanishableObjectComponent != null)
+            {
                 return vanishableObjectComponent.OnTimeLoopBlackHoleVanish(__instance);
+            }
 
             return true;
         }
@@ -122,7 +132,9 @@ namespace SlateShipyard.VanishObjects
                 vanishableObjectComponent = warpedBody.GetComponentInChildren<ControlledVanishObject>();
 
             if (vanishableObjectComponent != null)
+            {
                 return vanishableObjectComponent.OnWhiteHoleReceiveWarped(__instance, entryData);
+            }
 
             return true;
         }
@@ -162,7 +174,9 @@ namespace SlateShipyard.VanishObjects
             {
                 var vanishableObjectComponent = hitCollider.attachedRigidbody.GetComponent<ControlledVanishObject>();
                 if (vanishableObjectComponent == null)
+                {
                     vanishableObjectComponent = hitCollider.attachedRigidbody.GetComponentInChildren<ControlledVanishObject>();
+                }
                 if (vanishableObjectComponent != null)
                 {
                     ControlledVanishObjectData data = new ControlledVanishObjectData()
