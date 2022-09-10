@@ -124,6 +124,8 @@ namespace SlateShipyard.VanishObjects
 
             if (vanishableObjectComponent != null)
             {
+                __instance.MoveBodyToOverrideExitLocation(overrideBody, entryData);
+
                 vanishableObjectComponent.OnWhiteHoleSpawnImmediately(__instance, entryData, out bool playerPassedThroughWarp);
                 if (playerPassedThroughWarp)
                 {
