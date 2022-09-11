@@ -17,6 +17,9 @@ namespace SlateShipyard
         private static bool spawnDefaultShipYard = true;
         private Vector3 defaultShipYardLocalPosition = new Vector3(-13.4418f, -75.4162f, 218.6133f);
         private Vector3 defaultShipYardLocalRotation = new Vector3(358.9226f, 86.607f, 106.1305f);
+
+        public override object GetApi() => new SlateShipyardAPI();
+
         public static void DontSpawnDefaultShipyard() 
         {
             spawnDefaultShipYard = false;
