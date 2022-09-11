@@ -74,11 +74,14 @@ namespace SlateShipyard.VanishObjects
         static bool VanishPlayerPrefix()
         {
             bool condition = true;
-            foreach (var d in OnConditionsForPlayerToWarp.GetInvocationList())
+            if (OnConditionsForPlayerToWarp != null)
             {
-                if (d != null)
+                foreach (ConditionsForPlayerToWarp d in OnConditionsForPlayerToWarp.GetInvocationList())
                 {
-                    condition &= ((ConditionsForPlayerToWarp)d).Invoke();
+                    if (d != null)
+                    {
+                        condition &= d.Invoke();
+                    }
                 }
             }
             return condition;
