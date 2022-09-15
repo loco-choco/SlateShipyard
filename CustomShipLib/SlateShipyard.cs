@@ -15,8 +15,41 @@ namespace SlateShipyard
         public static GameObject defaultShipSpawnerPrefab;
 
         private static bool spawnDefaultShipYard = true;
-        private Vector3 defaultShipYardLocalPosition = new Vector3(-13.4418f, -75.4162f, 218.6133f);
-        private Vector3 defaultShipYardLocalRotation = new Vector3(358.9226f, 86.607f, 106.1305f);
+
+        private struct DefaultShipyardSpawnPositions 
+        {
+            public Vector3 localPosition;
+            public Vector3 localRotation;
+            public AstroObject.Name astro;
+        }
+
+        private DefaultShipyardSpawnPositions[] defaultSpawnLocations =
+        {
+            new DefaultShipyardSpawnPositions()
+            {
+                localPosition = new Vector3(-13.4418f, -75.4162f, 218.6133f),
+                localRotation = new Vector3(358.9226f, 86.607f, 106.1305f),
+                astro = AstroObject.Name.TimberHearth
+            },
+            new DefaultShipyardSpawnPositions()
+            {
+                localPosition = new Vector3(0.9f, -121.4f, 224.5f),
+                localRotation = new Vector3(59.5181f, 202.7799f,197.9099f),
+                astro = AstroObject.Name.TimberHearth
+            },
+            new DefaultShipyardSpawnPositions()
+            {
+                localPosition = new Vector3(-47.1f, -309.7f, 30.7f),
+                localRotation = new Vector3(8.5875f, 163.4293f, 188.3791f),
+                astro = AstroObject.Name.BrittleHollow
+            },
+            new DefaultShipyardSpawnPositions()
+            {
+                localPosition = new Vector3(-5.0f, -151.0f, 68.6f),
+                localRotation = new Vector3(20.6541f, 206.9409f, 193.8155f),
+                astro = AstroObject.Name.CaveTwin
+            },
+        };
 
         public override object GetApi() => new SlateShipyardAPI();
 
@@ -49,28 +82,33 @@ namespace SlateShipyard
         {
             yield return new WaitForEndOfFrame();
             yield return new WaitForEndOfFrame();
-            AstroObject th = Locator.GetAstroObject(AstroObject.Name.TimberHearth);
-            if (th != null && spawnDefaultShipYard)
-            {
-                SpawnShipyard(th.transform, defaultShipYardLocalPosition, defaultShipYardLocalRotation);
+
+            if (spawnDefaultShipYard) {
+                for (int i = 0; i < defaultSpawnLocations.Length; i++){                    
+                    AstroObject astro = Locator.GetAstroObject(defaultSpawnLocations[i].astro);
+                    if (astro != null && spawnDefaultShipYard){
+                        SpawnShipyard(astro.transform, defaultSpawnLocations[i].localPosition, defaultSpawnLocations[i].localRotation);
+                    }
+                } 
             }
         }
 
-        public void Update()
-        {
-            if (Event.current != null)
-            {
-                if (Event.current.Equals(Event.KeyboardEvent("f8")))
-                {
-                    var t = Locator.GetPlayerCamera().transform;
-                    if (Physics.Raycast(t.position, t.forward, out var info, 100f))
-                    {
-                        ModHelper.Console.WriteLine($"Local Pos: {info.rigidbody.transform.InverseTransformPoint(info.point)}" +
-                            $" Local Rot: {info.rigidbody.transform.InverseTransformRotation(Quaternion.LookRotation(Locator.GetPlayerTransform().forward, info.normal))}");
-                    }
-                }
-            }
-        }
+        //For Finding places to spawn the shipyards
+        //public void Update()
+        //{
+        //    if (Event.current != null)
+        //    {
+        //        if (Event.current.Equals(Event.KeyboardEvent("f8")))
+        //        {
+        //            var t = Locator.GetPlayerCamera().transform;
+        //            if (Physics.Raycast(t.position, t.forward, out var info, 100f))
+        //            {
+        //                ModHelper.Console.WriteLine($"Local Pos: {info.rigidbody.transform.InverseTransformPoint(info.point)}" +
+        //                    $" Local Rot: {info.rigidbody.transform.InverseTransformRotation(Quaternion.LookRotation(Locator.GetPlayerTransform().forward, info.normal))}");
+        //            }
+        //        }
+        //    }
+        //}
         private void Start()
         {
             AssetBundle bundle = ModHelper.Assets.LoadBundle("AssetBundles/shipspawner");
