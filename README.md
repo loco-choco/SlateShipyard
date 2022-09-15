@@ -1,4 +1,7 @@
 # Slate's Shipyard
+
+# ![Slate's Shipyard](pictures/slatesShipyard.png)
+
 To use the API add this as a file in your project:
 ```Csharp
 using UnityEngine;
