@@ -27,8 +27,8 @@ namespace SlateShipyard
         {
             new DefaultShipyardSpawnPositions()
             {
-                localPosition = new Vector3(-13.4418f, -75.4162f, 218.6133f),
-                localRotation = new Vector3(358.9226f, 86.607f, 106.1305f),
+                localPosition = new Vector3(-16.9654f, -71.9921f, 219.14f),
+                localRotation = new Vector3(3.2138f, 88.3628f, 105.9461f),
                 astro = AstroObject.Name.TimberHearth
             },
             new DefaultShipyardSpawnPositions()
