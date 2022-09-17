@@ -4,6 +4,17 @@
 
 This is a mod which allows the player to spawn custom ships on "shipyards" scattered on the solar system (by default). It doesn't come with default ships, but allows for the making of them and an easier set up.
 
+## Sphiyards Location
+By default there are several shipyards in different planets of the solar system:
+
+ ![Village Shipyard](pictures/launchPadSpawner.png)
+ 
+ ![Outside Village Shipyard](pictures/outsideVillageSpawner.png)
+ 
+ ![Ember Twin Shipyard](pictures/htSpawner.png)
+ 
+ ![Brittle Hollow Shipyard](pictures/bhSpawner.png)
+
 ## API Usage
 To use the API add this as a file in your project:
 ```Csharp
