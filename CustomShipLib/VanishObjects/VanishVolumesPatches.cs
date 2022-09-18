@@ -9,7 +9,7 @@ namespace SlateShipyard.VanishObjects
         public ControlledVanishObject ControlledVanishObject;
         public RelativeLocationData RelativeLocationData;
     }
-    public class VanishVolumesExtraData : MonoBehaviour 
+    public class VanishVolumesExtraData : MonoBehaviour
     {
         public List<ControlledVanishObjectData> VanishObjectData = new List<ControlledVanishObjectData>();
     }

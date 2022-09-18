@@ -1,10 +1,33 @@
-﻿using HarmonyLib;
+﻿using System;
+using System.Reflection.Emit;
+using System.Collections.Generic;
+
+using HarmonyLib;
 using UnityEngine;
+
 
 namespace SlateShipyard.PlayerAttaching
 {
     public static class PlayerCameraControllerPatches
     {
+        //We are trying to replace this._shipController != null && this._shipController.AllowFreeLook() with AllowFreeLook(this)
+        //It is represented by the following OpCodes:
+
+        //ldarg.0
+        //ldfld     class ShipCockpitController PlayerCameraController::_shipController
+        //ldnull
+        //call      bool [UnityEngine.CoreModule]UnityEngine.Object::op_Inequality(class [UnityEngine.CoreModule]UnityEngine.Object, class [UnityEngine.CoreModule]UnityEngine.Object)
+        //brfalse [LABEL] (I love short-circuits :D)
+
+        //ldarg.0
+        //ldfld     class ShipCockpitController PlayerCameraController::_shipController
+        //callvirt  instance bool ShipCockpitController::AllowFreeLook()
+        //brfalse [LABEL]
+
+        //All we need to do is call our method, and have a brfalse pointing to the same label as the brfalse on the opcodes that we will remove
+        //Just in case this code becomes too hard to be maintained I will left the Prexifes here, but with their Annotations commented out,
+        //as all their changes will be made with a single transpiler
+
         private static bool AllowFreeLook(PlayerCameraController cameraController)
         {
             PlayerCharacterController characterController = cameraController._characterController;
@@ -23,8 +46,36 @@ namespace SlateShipyard.PlayerAttaching
             return false;
         }
 
-        [HarmonyPrefix]
+        [HarmonyTranspiler]
+        [HarmonyPatch(typeof(PlayerCameraController), nameof(PlayerCameraController.Update))]
         [HarmonyPatch(typeof(PlayerCameraController), nameof(PlayerCameraController.UpdateRotation))]
+        [HarmonyPatch(typeof(PlayerCameraController), nameof(PlayerCameraController.UpdateInput))]
+        static IEnumerable<CodeInstruction> AllowFreeLookTranspiler(IEnumerable<CodeInstruction> instructions)
+        {
+            return new CodeMatcher(instructions)
+            .MatchForward(false,
+                new CodeMatch(OpCodes.Ldarg_0), //this.
+                new CodeMatch(OpCodes.Ldfld),//_shipController
+                new CodeMatch(OpCodes.Ldnull),//null                          
+                new CodeMatch(OpCodes.Call),//!= 
+                new CodeMatch(OpCodes.Brfalse),// short circuit caused by &&, aka the label for the branch
+
+                new CodeMatch(OpCodes.Ldarg_0),//this.
+                new CodeMatch(OpCodes.Ldfld),//_shipController
+                new CodeMatch(OpCodes.Callvirt),//AllowFreeLook
+                new CodeMatch(OpCodes.Brfalse)// short circuit caused by &&, aka the label for the branch
+                // (we are going to remove the codes untill OpCodes.Brfalse, reason is because we want to preserve the label from this code)
+            ).Repeat(matcher =>
+                matcher.RemoveInstructions(8) //Remove all, with the execption of that branch code
+                .InsertAndAdvance(
+                        new CodeInstruction(OpCodes.Ldarg_0),//this.
+                        Transpilers.EmitDelegate<Func<PlayerCameraController, bool>>(instance => AllowFreeLook(instance)))
+            ).InstructionEnumeration(); // Finally, return the manipulated method instructions
+        }
+
+        #region Code_With_Prefixes
+        //[HarmonyPrefix]
+        //[HarmonyPatch(typeof(PlayerCameraController), nameof(PlayerCameraController.UpdateRotation))]
         static bool UpdateRotationPrefix(PlayerCameraController __instance)
         {
             __instance._degreesX %= 360f;
@@ -51,8 +102,8 @@ namespace SlateShipyard.PlayerAttaching
             return false;
         }
 
-        [HarmonyPrefix]
-        [HarmonyPatch(typeof(PlayerCameraController), nameof(PlayerCameraController.Update))]
+        //[HarmonyPrefix]
+        //[HarmonyPatch(typeof(PlayerCameraController), nameof(PlayerCameraController.Update))]
         static bool UpdatePrefix(PlayerCameraController __instance)
         {
             if (AllowFreeLook(__instance) && OWInput.IsNewlyReleased(InputLibrary.freeLook, InputMode.All))
@@ -65,8 +116,8 @@ namespace SlateShipyard.PlayerAttaching
             }
             return false;
         }
-        [HarmonyPrefix]
-        [HarmonyPatch(typeof(PlayerCameraController), nameof(PlayerCameraController.UpdateInput))]
+        //[HarmonyPrefix]
+        //[HarmonyPatch(typeof(PlayerCameraController), nameof(PlayerCameraController.UpdateInput))]
         static bool UpdateInputPrefix(float deltaTime, PlayerCameraController __instance)
         {
             bool flag = AllowFreeLook(__instance) && OWInput.IsPressed(InputLibrary.freeLook, 0f);
@@ -95,5 +146,6 @@ namespace SlateShipyard.PlayerAttaching
 
             return false;
         }
+        #endregion
     }
 }

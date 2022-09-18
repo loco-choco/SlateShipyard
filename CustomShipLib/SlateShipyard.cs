@@ -73,7 +73,6 @@ namespace SlateShipyard
             Harmony harmonyInstance = new Harmony("com.locochoco.plugin.customshiplib");
             harmonyInstance.PatchAll(typeof(VanishVolumesPatches));
             harmonyInstance.PatchAll(typeof(PlayerCameraControllerPatches));
-
             SceneManager.sceneLoaded += SceneLoading_OnSceneLoad;
         }
         private void SceneLoading_OnSceneLoad(Scene scene, LoadSceneMode mode)
