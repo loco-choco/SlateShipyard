@@ -1,10 +1,18 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using HarmonyLib;
-using System.Reflection;
 
 namespace SlateShipyard.VanishObjects
 {
+    public struct ControlledVanishObjectData
+    {
+        public ControlledVanishObject ControlledVanishObject;
+        public RelativeLocationData RelativeLocationData;
+    }
+    public class VanishVolumesExtraData : MonoBehaviour 
+    {
+        public List<ControlledVanishObjectData> VanishObjectData = new List<ControlledVanishObjectData>();
+    }
     public static class VanishVolumesPatches
     {
         [HarmonyPrefix]
@@ -143,26 +151,6 @@ namespace SlateShipyard.VanishObjects
             return true;
         }
 
-        private static Dictionary<VanishVolume, List<ControlledVanishObjectData>> controlledVanishObjectVolumeList = new Dictionary<VanishVolume, List<ControlledVanishObjectData>>();
-        private struct ControlledVanishObjectData 
-        {
-            public ControlledVanishObject ControlledVanishObject;
-            public RelativeLocationData RelativeLocationData;
-        }
-        public static void CheckControlledVanishObjectVolumeList()
-        {
-            var keys = controlledVanishObjectVolumeList.Keys;
-            List<VanishVolume> volumesToRemove = new List<VanishVolume>();
-            foreach (var key in keys){
-                if (key == null) {
-                    volumesToRemove.Add(key);
-                }
-            }
-            foreach(var vol in volumesToRemove){
-                controlledVanishObjectVolumeList.Remove(vol);
-            }
-        }
-
         [HarmonyPrefix]
         [HarmonyPatch(typeof(VanishVolume), nameof(VanishVolume.OnTriggerEnter))]
         static bool OnTriggerEnterPrefix(Collider hitCollider, VanishVolume __instance)
@@ -181,14 +169,10 @@ namespace SlateShipyard.VanishObjects
                         ControlledVanishObject = vanishableObjectComponent,
                         RelativeLocationData = new RelativeLocationData(hitCollider.GetAttachedOWRigidbody(), __instance.transform)
                     };
-                    if (controlledVanishObjectVolumeList.TryGetValue(__instance, out var list))
-                    {                        
-                        list.Add(data);
-                    }
-                    else
-                    {
-                        controlledVanishObjectVolumeList.Add(__instance, new List<ControlledVanishObjectData> { data });
-                    }
+
+                    VanishVolumesExtraData extraData = __instance.gameObject.GetAddComponent<VanishVolumesExtraData>();
+                    extraData.VanishObjectData.Add(data);
+
                     return false;
                 }
             }
@@ -199,13 +183,14 @@ namespace SlateShipyard.VanishObjects
         [HarmonyPatch(typeof(VanishVolume), nameof(VanishVolume.FixedUpdate))]
         static void FixedUpdatePrefix(VanishVolume __instance)
         {
-            if (controlledVanishObjectVolumeList.TryGetValue(__instance, out var list))
+            VanishVolumesExtraData extraData = __instance.GetComponent<VanishVolumesExtraData>();
+            if (extraData != null)
             {
-                foreach (var vanishObjectData in list)
+                foreach (var vanishObjectData in extraData.VanishObjectData)
                 {
                     __instance.Vanish(vanishObjectData.ControlledVanishObject.GetAttachedOWRigidbody(), vanishObjectData.RelativeLocationData);
                 }
-                list.Clear();
+                extraData.VanishObjectData.Clear();
             }
         }
     }

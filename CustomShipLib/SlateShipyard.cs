@@ -1,11 +1,15 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+
+using UnityEngine;
 using UnityEngine.SceneManagement;
+
 using OWML.ModHelper;
 using OWML.Common;
+
 using HarmonyLib;
+
 using SlateShipyard.VanishObjects;
-using System;
-using System.Collections;
+using SlateShipyard.GeneralGamePatches;
 
 namespace SlateShipyard
 {
@@ -70,11 +74,10 @@ namespace SlateShipyard
 
             SceneManager.sceneLoaded += SceneLoading_OnSceneLoad;
             harmonyInstance.PatchAll(typeof(VanishVolumesPatches));
+            harmonyInstance.PatchAll(typeof(PlayerCameraControllerPatches));
         }
         private void SceneLoading_OnSceneLoad(Scene scene, LoadSceneMode mode)
         {
-            VanishVolumesPatches.CheckControlledVanishObjectVolumeList();
-
             StartCoroutine("SpawnShipyardDelay");            
         }
 
