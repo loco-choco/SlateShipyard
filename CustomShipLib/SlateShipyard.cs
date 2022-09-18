@@ -9,7 +9,7 @@ using OWML.Common;
 using HarmonyLib;
 
 using SlateShipyard.VanishObjects;
-using SlateShipyard.GeneralGamePatches;
+using SlateShipyard.PlayerAttaching;
 
 namespace SlateShipyard
 {
@@ -71,10 +71,10 @@ namespace SlateShipyard
         private void Awake()
         {
             Harmony harmonyInstance = new Harmony("com.locochoco.plugin.customshiplib");
-
-            SceneManager.sceneLoaded += SceneLoading_OnSceneLoad;
             harmonyInstance.PatchAll(typeof(VanishVolumesPatches));
             harmonyInstance.PatchAll(typeof(PlayerCameraControllerPatches));
+
+            SceneManager.sceneLoaded += SceneLoading_OnSceneLoad;
         }
         private void SceneLoading_OnSceneLoad(Scene scene, LoadSceneMode mode)
         {
@@ -114,6 +114,7 @@ namespace SlateShipyard
         //}
         private void Start()
         {
+            modHelper = ModHelper;
             AssetBundle bundle = ModHelper.Assets.LoadBundle("AssetBundles/shipspawner");
             defaultShipSpawnerPrefab = bundle.LoadAsset<GameObject>("DefaultShipSpawner.prefab");
         }
