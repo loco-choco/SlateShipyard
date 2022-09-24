@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="class_slate_shipyard_1_1_ship_spawner_1_1_ship_spawner_manager" kind="class" language="C#" prot="public">
+    <compoundname>SlateShipyard::ShipSpawner::ShipSpawnerManager</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_ship_spawner_1_1_ship_spawner_manager_1a122fad38eccbbdc1d7ca791b4ddf08db" prot="private" static="yes" mutable="no">
+        <type>Dictionary&lt; string, <ref refid="struct_slate_shipyard_1_1_ship_spawner_1_1_ship_data" kindref="compound">ShipData</ref> &gt;</type>
+        <definition>Dictionary&lt;string, ShipData&gt; SlateShipyard.ShipSpawner.ShipSpawnerManager.ShipDictionary</definition>
+        <argsstring></argsstring>
+        <name>ShipDictionary</name>
+        <qualifiedname>SlateShipyard.ShipSpawner.ShipSpawnerManager.ShipDictionary</qualifiedname>
+        <initializer>= new Dictionary&lt;string, <ref refid="struct_slate_shipyard_1_1_ship_spawner_1_1_ship_data" kindref="compound">ShipData</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/ShipSpawnerManager.cs" line="11" column="35" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/ShipSpawnerManager.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_ship_spawner_1_1_ship_spawner_manager_1a205d82533df37a24613d80dd8ebb7f1b" prot="private" static="yes" mutable="no">
+        <type>List&lt; <ref refid="struct_slate_shipyard_1_1_ship_spawner_1_1_ship_data" kindref="compound">ShipData</ref> &gt;</type>
+        <definition>List&lt;ShipData&gt; SlateShipyard.ShipSpawner.ShipSpawnerManager.ShipList</definition>
+        <argsstring></argsstring>
+        <name>ShipList</name>
+        <qualifiedname>SlateShipyard.ShipSpawner.ShipSpawnerManager.ShipList</qualifiedname>
+        <initializer>= new List&lt;<ref refid="struct_slate_shipyard_1_1_ship_spawner_1_1_ship_data" kindref="compound">ShipData</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/ShipSpawnerManager.cs" line="12" column="29" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/ShipSpawnerManager.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_slate_shipyard_1_1_ship_spawner_1_1_ship_spawner_manager_1a832c75c3d688ea3662a5c2b1c8a56044" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SlateShipyard.ShipSpawner.ShipSpawnerManager.AddShip</definition>
+        <argsstring>(Func&lt; GameObject &gt; prefab, string name)</argsstring>
+        <name>AddShip</name>
+        <qualifiedname>SlateShipyard.ShipSpawner.ShipSpawnerManager.AddShip</qualifiedname>
+        <param>
+          <type>Func&lt; GameObject &gt;</type>
+          <declname>prefab</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Adds the addon ship to the table of accessable addon ships. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns false if there is already a ship with the same name, and true if it succeeded </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/ShipSpawnerManager.cs" line="16" column="28" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/ShipSpawnerManager.cs" bodystart="16" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_slate_shipyard_1_1_ship_spawner_1_1_ship_spawner_manager_1a5338a95c5e5822de864bd783241449d0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SlateShipyard.ShipSpawner.ShipSpawnerManager.RemoveShip</definition>
+        <argsstring>(string name)</argsstring>
+        <name>RemoveShip</name>
+        <qualifiedname>SlateShipyard.ShipSpawner.ShipSpawnerManager.RemoveShip</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Removes the addon ship from the table of accessable addon ships. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/ShipSpawnerManager.cs" line="27" column="28" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/ShipSpawnerManager.cs" bodystart="27" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_slate_shipyard_1_1_ship_spawner_1_1_ship_spawner_manager_1aad42b847485e67a0718049325eb8bb81" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int SlateShipyard.ShipSpawner.ShipSpawnerManager.ShipAmount</definition>
+        <argsstring>()</argsstring>
+        <name>ShipAmount</name>
+        <qualifiedname>SlateShipyard.ShipSpawner.ShipSpawnerManager.ShipAmount</qualifiedname>
+        <briefdescription>
+<para>The amount of ships in the table of accessable addon ships. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/ShipSpawnerManager.cs" line="38" column="27" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/ShipSpawnerManager.cs" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_slate_shipyard_1_1_ship_spawner_1_1_ship_spawner_manager_1ab8ca83a518bead45baa3f7c0e6c6d420" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_slate_shipyard_1_1_ship_spawner_1_1_ship_data" kindref="compound">ShipData</ref></type>
+        <definition>static ShipData SlateShipyard.ShipSpawner.ShipSpawnerManager.GetShipData</definition>
+        <argsstring>(int index)</argsstring>
+        <name>GetShipData</name>
+        <qualifiedname>SlateShipyard.ShipSpawner.ShipSpawnerManager.GetShipData</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Returns the ship in the table of accessable addon ships by passing its index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/ShipSpawnerManager.cs" line="43" column="32" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/ShipSpawnerManager.cs" bodystart="43" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_slate_shipyard_1_1_ship_spawner_1_1_ship_spawner_manager_1a6b8bed644176ac06ea590f6100e8d999" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_slate_shipyard_1_1_ship_spawner_1_1_ship_data" kindref="compound">ShipData</ref></type>
+        <definition>static ShipData SlateShipyard.ShipSpawner.ShipSpawnerManager.GetShipData</definition>
+        <argsstring>(string name)</argsstring>
+        <name>GetShipData</name>
+        <qualifiedname>SlateShipyard.ShipSpawner.ShipSpawnerManager.GetShipData</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Returns the ship in the table of accessable addon ships by passing its name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/ShipSpawnerManager.cs" line="51" column="32" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/ShipSpawnerManager.cs" bodystart="51" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Where all the ships from addons is stored. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This is the class you want to call if you want to access a ship or the ships added by addons. </para>
+    </detaileddescription>
+    <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/ShipSpawnerManager.cs" line="9" column="19" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/ShipSpawnerManager.cs" bodystart="10" bodyend="59"/>
+    <listofallmembers>
+      <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_ship_spawner_manager_1a832c75c3d688ea3662a5c2b1c8a56044" prot="public" virt="non-virtual"><scope>SlateShipyard::ShipSpawner::ShipSpawnerManager</scope><name>AddShip</name></member>
+      <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_ship_spawner_manager_1ab8ca83a518bead45baa3f7c0e6c6d420" prot="public" virt="non-virtual"><scope>SlateShipyard::ShipSpawner::ShipSpawnerManager</scope><name>GetShipData</name></member>
+      <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_ship_spawner_manager_1a6b8bed644176ac06ea590f6100e8d999" prot="public" virt="non-virtual"><scope>SlateShipyard::ShipSpawner::ShipSpawnerManager</scope><name>GetShipData</name></member>
+      <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_ship_spawner_manager_1a5338a95c5e5822de864bd783241449d0" prot="public" virt="non-virtual"><scope>SlateShipyard::ShipSpawner::ShipSpawnerManager</scope><name>RemoveShip</name></member>
+      <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_ship_spawner_manager_1aad42b847485e67a0718049325eb8bb81" prot="public" virt="non-virtual"><scope>SlateShipyard::ShipSpawner::ShipSpawnerManager</scope><name>ShipAmount</name></member>
+      <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_ship_spawner_manager_1a122fad38eccbbdc1d7ca791b4ddf08db" prot="private" virt="non-virtual"><scope>SlateShipyard::ShipSpawner::ShipSpawnerManager</scope><name>ShipDictionary</name></member>
+      <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_ship_spawner_manager_1a205d82533df37a24613d80dd8ebb7f1b" prot="private" virt="non-virtual"><scope>SlateShipyard::ShipSpawner::ShipSpawnerManager</scope><name>ShipList</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

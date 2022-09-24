@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_visualization_u_i" kind="class" language="C#" prot="public">
+    <compoundname>SlateShipyard::ShipSpawner::SelectionUI::ShipVisualizationUI</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_visualization_u_i_1af7ad013f4f0b05988de3ceb9a3e5d58c" prot="public" static="no" mutable="no">
+        <type>Text</type>
+        <definition>Text SlateShipyard.ShipSpawner.SelectionUI.ShipVisualizationUI.shipName</definition>
+        <argsstring></argsstring>
+        <name>shipName</name>
+        <qualifiedname>SlateShipyard.ShipSpawner.SelectionUI.ShipVisualizationUI.shipName</qualifiedname>
+        <briefdescription>
+<para>The text UI element which displays the name of the selected ship. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipVisualizationUI.cs" line="9" column="21" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipVisualizationUI.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_visualization_u_i_1a7ae1004ef04da874a44ca865ead48bfa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SlateShipyard.ShipSpawner.SelectionUI.ShipVisualizationUI.ChangeShip</definition>
+        <argsstring>(ShipData data)</argsstring>
+        <name>ChangeShip</name>
+        <qualifiedname>SlateShipyard.ShipSpawner.SelectionUI.ShipVisualizationUI.ChangeShip</qualifiedname>
+        <param>
+          <type><ref refid="struct_slate_shipyard_1_1_ship_spawner_1_1_ship_data" kindref="compound">ShipData</ref></type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Changes the selected ship data being displayed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipVisualizationUI.cs" line="12" column="21" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipVisualizationUI.cs" bodystart="12" bodyend="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>UI element to display the current selected ship. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>SlateShipyard.ShipSpawner.SelectionUI.ShipVisualizationUI</label>
+        <link refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_visualization_u_i"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>SlateShipyard.ShipSpawner.SelectionUI.ShipVisualizationUI</label>
+        <link refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_visualization_u_i"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipVisualizationUI.cs" line="7" column="11" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipVisualizationUI.cs" bodystart="8" bodyend="16"/>
+    <listofallmembers>
+      <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_visualization_u_i_1a7ae1004ef04da874a44ca865ead48bfa" prot="public" virt="non-virtual"><scope>SlateShipyard::ShipSpawner::SelectionUI::ShipVisualizationUI</scope><name>ChangeShip</name></member>
+      <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_visualization_u_i_1af7ad013f4f0b05988de3ceb9a3e5d58c" prot="public" virt="non-virtual"><scope>SlateShipyard::ShipSpawner::SelectionUI::ShipVisualizationUI</scope><name>shipName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

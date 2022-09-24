@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="class_slate_shipyard_1_1_vanish_objects_1_1_controlled_vanish_object" kind="class" language="C#" prot="public">
+    <compoundname>SlateShipyard::VanishObjects::ControlledVanishObject</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_slate_shipyard_1_1_vanish_objects_1_1_controlled_vanish_object_1a188ca36da99255d7f2feae92b4cef32a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type>bool</type>
+        <definition>bool SlateShipyard.VanishObjects.ControlledVanishObject.DestroyComponentsOnGrow</definition>
+        <argsstring></argsstring>
+        <name>DestroyComponentsOnGrow</name>
+        <qualifiedname>SlateShipyard.VanishObjects.ControlledVanishObject.DestroyComponentsOnGrow</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>Handles if the object components should be destroyed after passing on Vanish. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Set it to true if you want for it to get destroyed, and false if you don&apos;t want to. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/ControlledVanishObject.cs" line="32" column="21" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/ControlledVanishObject.cs" bodystart="32" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_slate_shipyard_1_1_vanish_objects_1_1_controlled_vanish_object_1a23c7d0bbdfb892b396bc8348ad8e28a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SlateShipyard.VanishObjects.ControlledVanishObject.OnDestructionVanish</definition>
+        <argsstring>(DestructionVolume destructionVolume)</argsstring>
+        <name>OnDestructionVanish</name>
+        <qualifiedname>SlateShipyard.VanishObjects.ControlledVanishObject.OnDestructionVanish</qualifiedname>
+        <param>
+          <type>DestructionVolume</type>
+          <declname>destructionVolume</declname>
+        </param>
+        <briefdescription>
+<para>Handles when the object is supposed to Vanish in a DestructionVolume. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Return false if you want the original code to run, and true if you don&apos;t want to </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/ControlledVanishObject.cs" line="14" column="29" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/ControlledVanishObject.cs" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_slate_shipyard_1_1_vanish_objects_1_1_controlled_vanish_object_1ae863ab301b4f940684a50291ee924058" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SlateShipyard.VanishObjects.ControlledVanishObject.OnSupernovaDestructionVanish</definition>
+        <argsstring>(SupernovaDestructionVolume supernovaDestructionVolume)</argsstring>
+        <name>OnSupernovaDestructionVanish</name>
+        <qualifiedname>SlateShipyard.VanishObjects.ControlledVanishObject.OnSupernovaDestructionVanish</qualifiedname>
+        <param>
+          <type>SupernovaDestructionVolume</type>
+          <declname>supernovaDestructionVolume</declname>
+        </param>
+        <briefdescription>
+<para>Handles when the object is supposed to Vanish in a SupernovaDestructionVolume. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Return false if you want the original code to run, and true if you don&apos;t want to </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/ControlledVanishObject.cs" line="17" column="29" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/ControlledVanishObject.cs" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_slate_shipyard_1_1_vanish_objects_1_1_controlled_vanish_object_1a81ecd452d68a09f2508aa3280d901393" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SlateShipyard.VanishObjects.ControlledVanishObject.OnBlackHoleVanish</definition>
+        <argsstring>(BlackHoleVolume blackHoleVolume, RelativeLocationData entryLocation)</argsstring>
+        <name>OnBlackHoleVanish</name>
+        <qualifiedname>SlateShipyard.VanishObjects.ControlledVanishObject.OnBlackHoleVanish</qualifiedname>
+        <param>
+          <type>BlackHoleVolume</type>
+          <declname>blackHoleVolume</declname>
+        </param>
+        <param>
+          <type>RelativeLocationData</type>
+          <declname>entryLocation</declname>
+        </param>
+        <briefdescription>
+<para>Handles when the object is supposed to Vanish in a BlackHoleVolume. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Return false if you want the original code to run, and true if you don&apos;t want to </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/ControlledVanishObject.cs" line="20" column="29" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/ControlledVanishObject.cs" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_slate_shipyard_1_1_vanish_objects_1_1_controlled_vanish_object_1a395e5b530bf872181779017a756901dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SlateShipyard.VanishObjects.ControlledVanishObject.OnWhiteHoleReceiveWarped</definition>
+        <argsstring>(WhiteHoleVolume whiteHoleVolume, RelativeLocationData entryData)</argsstring>
+        <name>OnWhiteHoleReceiveWarped</name>
+        <qualifiedname>SlateShipyard.VanishObjects.ControlledVanishObject.OnWhiteHoleReceiveWarped</qualifiedname>
+        <param>
+          <type>WhiteHoleVolume</type>
+          <declname>whiteHoleVolume</declname>
+        </param>
+        <param>
+          <type>RelativeLocationData</type>
+          <declname>entryData</declname>
+        </param>
+        <briefdescription>
+<para>Handles when the object is supposed to get Warped in a WhiteHoleVolume. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Return false if you want the original code to run, and true if you don&apos;t want to </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/ControlledVanishObject.cs" line="23" column="29" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/ControlledVanishObject.cs" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_slate_shipyard_1_1_vanish_objects_1_1_controlled_vanish_object_1a341f7c532e19b5a409989df2073efa2c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SlateShipyard.VanishObjects.ControlledVanishObject.OnWhiteHoleSpawnImmediately</definition>
+        <argsstring>(WhiteHoleVolume whiteHoleVolume, RelativeLocationData entryData, out bool playerPassedThroughWarp)</argsstring>
+        <name>OnWhiteHoleSpawnImmediately</name>
+        <qualifiedname>SlateShipyard.VanishObjects.ControlledVanishObject.OnWhiteHoleSpawnImmediately</qualifiedname>
+        <param>
+          <type>WhiteHoleVolume</type>
+          <declname>whiteHoleVolume</declname>
+        </param>
+        <param>
+          <type>RelativeLocationData</type>
+          <declname>entryData</declname>
+        </param>
+        <param>
+          <type>out bool</type>
+          <declname>playerPassedThroughWarp</declname>
+        </param>
+        <briefdescription>
+<para>Handles when the object is supposed to SpawnImmediately in a WhiteHoleVolume. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Return false if you want the original code to run, and true if you don&apos;t want to </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/ControlledVanishObject.cs" line="26" column="29" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/ControlledVanishObject.cs" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_slate_shipyard_1_1_vanish_objects_1_1_controlled_vanish_object_1a50162507a130637df296e33f46b39500" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SlateShipyard.VanishObjects.ControlledVanishObject.OnTimeLoopBlackHoleVanish</definition>
+        <argsstring>(TimeLoopBlackHoleVolume timeloopBlackHoleVolume)</argsstring>
+        <name>OnTimeLoopBlackHoleVanish</name>
+        <qualifiedname>SlateShipyard.VanishObjects.ControlledVanishObject.OnTimeLoopBlackHoleVanish</qualifiedname>
+        <param>
+          <type>TimeLoopBlackHoleVolume</type>
+          <declname>timeloopBlackHoleVolume</declname>
+        </param>
+        <briefdescription>
+<para>Handles when the object is supposed to Vanish in a TimeLoopBlackHoleVolume. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Set playerPassedThroughWarp to true if the player is passing through the blackhole attached to the object, and false if it isn&apos;t </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/ControlledVanishObject.cs" line="29" column="29" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/ControlledVanishObject.cs" bodystart="29" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to handle when a object interacts with VanishVolumes. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Because of how VanishVolumes are coded, you can only add custom interactions with the different VanishVolumes by changing the object tag or by editing the game code. So to make handling this situation easier, when an object enters the VanishVolumes trigger volume and has the <ref refid="class_slate_shipyard_1_1_vanish_objects_1_1_controlled_vanish_object" kindref="compound">ControlledVanishObject</ref> script, instead of calling the default function it will call the following specialized methods. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>SlateShipyard.VanishObjects.ControlledVanishObject</label>
+        <link refid="class_slate_shipyard_1_1_vanish_objects_1_1_controlled_vanish_object"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>SlateShipyard.VanishObjects.ControlledVanishObject</label>
+        <link refid="class_slate_shipyard_1_1_vanish_objects_1_1_controlled_vanish_object"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/ControlledVanishObject.cs" line="10" column="20" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/ControlledVanishObject.cs" bodystart="11" bodyend="33"/>
+    <listofallmembers>
+      <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_controlled_vanish_object_1a188ca36da99255d7f2feae92b4cef32a" prot="public" virt="non-virtual"><scope>SlateShipyard::VanishObjects::ControlledVanishObject</scope><name>DestroyComponentsOnGrow</name></member>
+      <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_controlled_vanish_object_1a81ecd452d68a09f2508aa3280d901393" prot="public" virt="virtual"><scope>SlateShipyard::VanishObjects::ControlledVanishObject</scope><name>OnBlackHoleVanish</name></member>
+      <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_controlled_vanish_object_1a23c7d0bbdfb892b396bc8348ad8e28a9" prot="public" virt="virtual"><scope>SlateShipyard::VanishObjects::ControlledVanishObject</scope><name>OnDestructionVanish</name></member>
+      <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_controlled_vanish_object_1ae863ab301b4f940684a50291ee924058" prot="public" virt="virtual"><scope>SlateShipyard::VanishObjects::ControlledVanishObject</scope><name>OnSupernovaDestructionVanish</name></member>
+      <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_controlled_vanish_object_1a50162507a130637df296e33f46b39500" prot="public" virt="virtual"><scope>SlateShipyard::VanishObjects::ControlledVanishObject</scope><name>OnTimeLoopBlackHoleVanish</name></member>
+      <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_controlled_vanish_object_1a395e5b530bf872181779017a756901dd" prot="public" virt="virtual"><scope>SlateShipyard::VanishObjects::ControlledVanishObject</scope><name>OnWhiteHoleReceiveWarped</name></member>
+      <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_controlled_vanish_object_1a341f7c532e19b5a409989df2073efa2c" prot="public" virt="virtual"><scope>SlateShipyard::VanishObjects::ControlledVanishObject</scope><name>OnWhiteHoleSpawnImmediately</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

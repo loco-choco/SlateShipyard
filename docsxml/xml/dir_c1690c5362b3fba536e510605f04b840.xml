@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_c1690c5362b3fba536e510605f04b840" kind="dir">
+    <compoundname>C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner</compoundname>
+    <innerdir refid="dir_d32ed00dc5fc73c9bdfee8e9161b5b3c">C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/RampUI</innerdir>
+    <innerdir refid="dir_ce0c1331bb792e9604d36cb8c05f8474">C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI</innerdir>
+    <innerfile refid="_lauch_pad_spawn_8cs">LauchPadSpawn.cs</innerfile>
+    <innerfile refid="_ship_spawner_manager_8cs">ShipSpawnerManager.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/"/>
+  </compounddef>
+</doxygen>

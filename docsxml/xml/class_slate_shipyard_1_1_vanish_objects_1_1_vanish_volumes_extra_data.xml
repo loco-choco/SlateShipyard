@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_extra_data" kind="class" language="C#" prot="public">
+    <compoundname>SlateShipyard::VanishObjects::VanishVolumesExtraData</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_extra_data_1ad48c8ada41007b4d25a79bae24353fe6" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="struct_slate_shipyard_1_1_vanish_objects_1_1_controlled_vanish_object_data" kindref="compound">ControlledVanishObjectData</ref> &gt;</type>
+        <definition>List&lt;ControlledVanishObjectData&gt; SlateShipyard.VanishObjects.VanishVolumesExtraData.VanishObjectData</definition>
+        <argsstring></argsstring>
+        <name>VanishObjectData</name>
+        <qualifiedname>SlateShipyard.VanishObjects.VanishVolumesExtraData.VanishObjectData</qualifiedname>
+        <initializer>= new List&lt;<ref refid="struct_slate_shipyard_1_1_vanish_objects_1_1_controlled_vanish_object_data" kindref="compound">ControlledVanishObjectData</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/VanishVolumesPatches.cs" line="16" column="21" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/VanishVolumesPatches.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Aditional data held by the VanishVolumes for VanishVolumesPatches. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>SlateShipyard.VanishObjects.VanishVolumesExtraData</label>
+        <link refid="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_extra_data"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>SlateShipyard.VanishObjects.VanishVolumesExtraData</label>
+        <link refid="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_extra_data"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/VanishVolumesPatches.cs" line="14" column="11" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/VanishVolumesPatches.cs" bodystart="15" bodyend="17"/>
+    <listofallmembers>
+      <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_extra_data_1ad48c8ada41007b4d25a79bae24353fe6" prot="public" virt="non-virtual"><scope>SlateShipyard::VanishObjects::VanishVolumesExtraData</scope><name>VanishObjectData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

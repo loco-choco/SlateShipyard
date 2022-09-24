@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespace_slate_shipyard_1_1_ship_spawner_1_1_ramp_u_i" kind="namespace" language="C#">
+    <compoundname>SlateShipyard::ShipSpawner::RampUI</compoundname>
+    <innerclass refid="class_slate_shipyard_1_1_ship_spawner_1_1_ramp_u_i_1_1_ramp_angle_u_i" prot="public">SlateShipyard::ShipSpawner::RampUI::RampAngleUI</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/RampUI/RampAngleUI.cs" line="4" column="1"/>
+  </compounddef>
+</doxygen>

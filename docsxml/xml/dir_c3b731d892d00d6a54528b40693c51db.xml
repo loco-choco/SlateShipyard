@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_c3b731d892d00d6a54528b40693c51db" kind="dir">
+    <compoundname>C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib</compoundname>
+    <innerdir refid="dir_d12bad4464670fa3cf8f9ecd76abc492">C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules</innerdir>
+    <innerdir refid="dir_c16ac300abf6bc3fd698f9b1056afed5">C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/obj</innerdir>
+    <innerdir refid="dir_3cfb04eedbb16d258b850adda057e09b">C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/PlayerAttaching</innerdir>
+    <innerdir refid="dir_98edf86c8a14f0d8c4318a9e4f815457">C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Properties</innerdir>
+    <innerdir refid="dir_c1690c5362b3fba536e510605f04b840">C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner</innerdir>
+    <innerdir refid="dir_8294a8e15c794da7a68bfe77422114f0">C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects</innerdir>
+    <innerfile refid="_auto_reference_frame_volume_8cs">AutoReferenceFrameVolume.cs</innerfile>
+    <innerfile refid="_shipyard_spawner_8cs">ShipyardSpawner.cs</innerfile>
+    <innerfile refid="_slate_shipyard_8cs">SlateShipyard.cs</innerfile>
+    <innerfile refid="_slate_shipyard_a_p_i_8cs">SlateShipyardAPI.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,237 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller" kind="class" language="C#" prot="public">
+    <compoundname>SlateShipyard::Modules::Wheels::BasicWheelController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1afa77d437c0ba4c282202b494e300d47a" prot="public" static="no" mutable="no">
+        <type><ref refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel" kindref="compound">OWSimpleRaycastWheel</ref></type>
+        <definition>OWSimpleRaycastWheel SlateShipyard.Modules.Wheels.BasicWheelController.frontRWheel</definition>
+        <argsstring></argsstring>
+        <name>frontRWheel</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.BasicWheelController.frontRWheel</qualifiedname>
+        <briefdescription>
+<para>The front right wheel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/BasicWheelController.cs" line="11" column="37" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/BasicWheelController.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1ab0922371b952ed458bd8a2c9be73336f" prot="public" static="no" mutable="no">
+        <type><ref refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel" kindref="compound">OWSimpleRaycastWheel</ref></type>
+        <definition>OWSimpleRaycastWheel SlateShipyard.Modules.Wheels.BasicWheelController.frontLWheel</definition>
+        <argsstring></argsstring>
+        <name>frontLWheel</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.BasicWheelController.frontLWheel</qualifiedname>
+        <briefdescription>
+<para>The front left wheel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/BasicWheelController.cs" line="12" column="37" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/BasicWheelController.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1a2d85dc33d1d06598c5ca4fe4daa43bb0" prot="public" static="no" mutable="no">
+        <type>OWRigidbody</type>
+        <definition>OWRigidbody SlateShipyard.Modules.Wheels.BasicWheelController.body</definition>
+        <argsstring></argsstring>
+        <name>body</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.BasicWheelController.body</qualifiedname>
+        <briefdescription>
+<para>The vehicle body. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/BasicWheelController.cs" line="13" column="28" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/BasicWheelController.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1ab4f38fcb2a88ba60175655612f0bb858" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SlateShipyard.Modules.Wheels.BasicWheelController.maxSteerAngle</definition>
+        <argsstring></argsstring>
+        <name>maxSteerAngle</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.BasicWheelController.maxSteerAngle</qualifiedname>
+        <initializer>= 30f</initializer>
+        <briefdescription>
+<para>The max angle the wheels can go. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/BasicWheelController.cs" line="15" column="22" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/BasicWheelController.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1ac88a7ab7db73475acc24fa068a154df5" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SlateShipyard.Modules.Wheels.BasicWheelController.maxAccelerationForce</definition>
+        <argsstring></argsstring>
+        <name>maxAccelerationForce</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.BasicWheelController.maxAccelerationForce</qualifiedname>
+        <briefdescription>
+<para>The max force the &quot;motor&quot; can reach. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/BasicWheelController.cs" line="17" column="22" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/BasicWheelController.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1a705e599d4a5279aa867dbaf3bb047811" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SlateShipyard.Modules.Wheels.BasicWheelController.normalRFrictionCoeficient</definition>
+        <argsstring></argsstring>
+        <name>normalRFrictionCoeficient</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.BasicWheelController.normalRFrictionCoeficient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/BasicWheelController.cs" line="19" column="23" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/BasicWheelController.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1ab6926e66fc296c9f0cdb05f5000465fe" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SlateShipyard.Modules.Wheels.BasicWheelController.normalLFrictionCoeficient</definition>
+        <argsstring></argsstring>
+        <name>normalLFrictionCoeficient</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.BasicWheelController.normalLFrictionCoeficient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/BasicWheelController.cs" line="20" column="23" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/BasicWheelController.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1ac72ef4e2400bb3f693601dda449e00d8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SlateShipyard.Modules.Wheels.BasicWheelController.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.BasicWheelController.Start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/BasicWheelController.cs" line="22" column="22" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/BasicWheelController.cs" bodystart="22" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1af0d9350ac5ecd5cd684c38b0f5ced0df" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SlateShipyard.Modules.Wheels.BasicWheelController.WheelMotorInput</definition>
+        <argsstring>(OWSimpleRaycastWheel obj, float frictionCoeficient)</argsstring>
+        <name>WheelMotorInput</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.BasicWheelController.WheelMotorInput</qualifiedname>
+        <param>
+          <type><ref refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel" kindref="compound">OWSimpleRaycastWheel</ref></type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>frictionCoeficient</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/BasicWheelController.cs" line="27" column="22" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/BasicWheelController.cs" bodystart="27" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1a8782ff1a84c679ccdc7365a556530b65" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SlateShipyard.Modules.Wheels.BasicWheelController.FixedUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>FixedUpdate</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.BasicWheelController.FixedUpdate</qualifiedname>
+        <briefdescription>
+<para>When the motor force it got from the inputs is added. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/BasicWheelController.cs" line="40" column="29" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/BasicWheelController.cs" bodystart="40" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1a50b08eb8a2916b80d4129a41976f8009" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SlateShipyard.Modules.Wheels.BasicWheelController.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.BasicWheelController.Update</qualifiedname>
+        <briefdescription>
+<para>When the wheels steer angle it got from the inputs is changed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/BasicWheelController.cs" line="47" column="29" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/BasicWheelController.cs" bodystart="47" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A basic controller to control vehicles with wheels. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This basic controller is to be used by vehicles with the two front wheels being the ones generating the force. It was made to be able to exapanded on with the virtual methods. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>SlateShipyard.Modules.Wheels.BasicWheelController</label>
+        <link refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>SlateShipyard.Modules.Wheels.BasicWheelController</label>
+        <link refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>frontLWheel</edgelabel>
+          <edgelabel>frontRWheel</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel</label>
+        <link refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/BasicWheelController.cs" line="8" column="11" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/BasicWheelController.cs" bodystart="9" bodyend="55"/>
+    <listofallmembers>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1a2d85dc33d1d06598c5ca4fe4daa43bb0" prot="public" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::BasicWheelController</scope><name>body</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1a8782ff1a84c679ccdc7365a556530b65" prot="public" virt="virtual"><scope>SlateShipyard::Modules::Wheels::BasicWheelController</scope><name>FixedUpdate</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1ab0922371b952ed458bd8a2c9be73336f" prot="public" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::BasicWheelController</scope><name>frontLWheel</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1afa77d437c0ba4c282202b494e300d47a" prot="public" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::BasicWheelController</scope><name>frontRWheel</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1ac88a7ab7db73475acc24fa068a154df5" prot="public" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::BasicWheelController</scope><name>maxAccelerationForce</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1ab4f38fcb2a88ba60175655612f0bb858" prot="public" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::BasicWheelController</scope><name>maxSteerAngle</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1ab6926e66fc296c9f0cdb05f5000465fe" prot="private" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::BasicWheelController</scope><name>normalLFrictionCoeficient</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1a705e599d4a5279aa867dbaf3bb047811" prot="private" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::BasicWheelController</scope><name>normalRFrictionCoeficient</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1ac72ef4e2400bb3f693601dda449e00d8" prot="private" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::BasicWheelController</scope><name>Start</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1a50b08eb8a2916b80d4129a41976f8009" prot="public" virt="virtual"><scope>SlateShipyard::Modules::Wheels::BasicWheelController</scope><name>Update</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1af0d9350ac5ecd5cd684c38b0f5ced0df" prot="private" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::BasicWheelController</scope><name>WheelMotorInput</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

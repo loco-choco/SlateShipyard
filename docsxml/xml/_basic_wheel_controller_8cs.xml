@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="_basic_wheel_controller_8cs" kind="file" language="C#">
+    <compoundname>BasicWheelController.cs</compoundname>
+    <innerclass refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller" prot="public">SlateShipyard::Modules::Wheels::BasicWheelController</innerclass>
+    <innernamespace refid="namespace_slate_shipyard">SlateShipyard</innernamespace>
+    <innernamespace refid="namespace_slate_shipyard_1_1_modules">SlateShipyard::Modules</innernamespace>
+    <innernamespace refid="namespace_slate_shipyard_1_1_modules_1_1_wheels">SlateShipyard::Modules::Wheels</innernamespace>
+    <innernamespace refid="namespace_unity_engine">UnityEngine</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">UnityEngine;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="namespace_slate_shipyard_1_1_modules" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_slate_shipyard_1_1_modules_1_1_wheels" kindref="compound">SlateShipyard.Modules.Wheels</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller" kindref="compound">BasicWheelController</ref><sp/>:<sp/>MonoBehaviour</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel" kindref="compound">OWSimpleRaycastWheel</ref><sp/><ref refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1afa77d437c0ba4c282202b494e300d47a" kindref="member">frontRWheel</ref>;<sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel" kindref="compound">OWSimpleRaycastWheel</ref><sp/><ref refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1ab0922371b952ed458bd8a2c9be73336f" kindref="member">frontLWheel</ref>;<sp/></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>OWRigidbody<sp/><ref refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1a2d85dc33d1d06598c5ca4fe4daa43bb0" kindref="member">body</ref>;<sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1ab4f38fcb2a88ba60175655612f0bb858" kindref="member">maxSteerAngle</ref><sp/>=<sp/>30f;<sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1ac88a7ab7db73475acc24fa068a154df5" kindref="member">maxAccelerationForce</ref>;<sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>normalRFrictionCoeficient;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>normalLFrictionCoeficient;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Start()</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>normalRFrictionCoeficient<sp/>=<sp/><ref refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1afa77d437c0ba4c282202b494e300d47a" kindref="member">frontRWheel</ref>.<ref refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a9f4423ebbab88ea21eda8ef13ebaf56f" kindref="member">frictionCoeficient</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>normalLFrictionCoeficient<sp/>=<sp/><ref refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1ab0922371b952ed458bd8a2c9be73336f" kindref="member">frontLWheel</ref>.<ref refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a9f4423ebbab88ea21eda8ef13ebaf56f" kindref="member">frictionCoeficient</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WheelMotorInput(<ref refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel" kindref="compound">OWSimpleRaycastWheel</ref><sp/>obj,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>frictionCoeficient)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!obj.<ref refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a87d8e557c157c78531bab2e0b9da5f8b" kindref="member">IsOnGround</ref>())</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>input<sp/>=<sp/>OWInput.GetValue(InputLibrary.thrustZ,<sp/>InputMode.All);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>force<sp/>=<sp/><ref refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1ac88a7ab7db73475acc24fa068a154df5" kindref="member">maxAccelerationForce</ref><sp/>*<sp/>input;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1a2d85dc33d1d06598c5ca4fe4daa43bb0" kindref="member">body</ref>.AddForce(obj.transform.forward<sp/>*<sp/>force,<sp/>obj.transform.position);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1a8782ff1a84c679ccdc7365a556530b65" kindref="member">FixedUpdate</ref>()</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WheelMotorInput(<ref refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1afa77d437c0ba4c282202b494e300d47a" kindref="member">frontRWheel</ref>,<sp/>normalRFrictionCoeficient);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WheelMotorInput(<ref refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1ab0922371b952ed458bd8a2c9be73336f" kindref="member">frontLWheel</ref>,<sp/>normalLFrictionCoeficient);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1a50b08eb8a2916b80d4129a41976f8009" kindref="member">Update</ref>()</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>steerInput<sp/>=<sp/>OWInput.GetValue(InputLibrary.thrustX,<sp/>InputMode.All);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>targetAngle<sp/>=<sp/><ref refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1ab4f38fcb2a88ba60175655612f0bb858" kindref="member">maxSteerAngle</ref><sp/>*<sp/>steerInput;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frontRWheel.steerAngle<sp/>=<sp/>targetAngle;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frontLWheel.steerAngle<sp/>=<sp/>targetAngle;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/BasicWheelController.cs"/>
+  </compounddef>
+</doxygen>

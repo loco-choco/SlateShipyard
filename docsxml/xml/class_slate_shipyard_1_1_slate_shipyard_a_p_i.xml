@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="class_slate_shipyard_1_1_slate_shipyard_a_p_i" kind="class" language="C#" prot="public">
+    <compoundname>SlateShipyard::SlateShipyardAPI</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_slate_shipyard_1_1_slate_shipyard_a_p_i_1a121ebe2c6e1253982d79dc34fd111ce2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GameObject</type>
+        <definition>GameObject SlateShipyard.SlateShipyardAPI.SpawnShipyard</definition>
+        <argsstring>(Transform t, Vector3 localPosition, Vector3 localRotation)</argsstring>
+        <name>SpawnShipyard</name>
+        <qualifiedname>SlateShipyard.SlateShipyardAPI.SpawnShipyard</qualifiedname>
+        <param>
+          <type>Transform</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>localPosition</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>localRotation</declname>
+        </param>
+        <briefdescription>
+<para>Spawns a default shipyard giving the local position, rotation and parent transform. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/SlateShipyardAPI.cs" line="9" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_slate_shipyard_1_1_slate_shipyard_a_p_i_1a2f739d0a0a0ece695a45aaa160b19506" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SlateShipyard.SlateShipyardAPI.DontSpawnDefaultShipyard</definition>
+        <argsstring>()</argsstring>
+        <name>DontSpawnDefaultShipyard</name>
+        <qualifiedname>SlateShipyard.SlateShipyardAPI.DontSpawnDefaultShipyard</qualifiedname>
+        <briefdescription>
+<para>Dissables the spawn of the default shipyards. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/SlateShipyardAPI.cs" line="11" column="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The mod API you can call with OWML. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/SlateShipyardAPI.cs" line="6" column="11" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/SlateShipyardAPI.cs" bodystart="7" bodyend="12"/>
+    <listofallmembers>
+      <member refid="class_slate_shipyard_1_1_slate_shipyard_a_p_i_1a2f739d0a0a0ece695a45aaa160b19506" prot="public" virt="non-virtual"><scope>SlateShipyard::SlateShipyardAPI</scope><name>DontSpawnDefaultShipyard</name></member>
+      <member refid="class_slate_shipyard_1_1_slate_shipyard_a_p_i_1a121ebe2c6e1253982d79dc34fd111ce2" prot="public" virt="non-virtual"><scope>SlateShipyard::SlateShipyardAPI</scope><name>SpawnShipyard</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

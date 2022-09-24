@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespace_slate_shipyard" kind="namespace" language="C#">
+    <compoundname>SlateShipyard</compoundname>
+    <innerclass refid="class_slate_shipyard_1_1_auto_reference_frame_volume" prot="public">SlateShipyard::AutoReferenceFrameVolume</innerclass>
+    <innerclass refid="class_slate_shipyard_1_1_shipyard_spawner" prot="public">SlateShipyard::ShipyardSpawner</innerclass>
+    <innerclass refid="class_slate_shipyard_1_1_slate_shipyard" prot="public">SlateShipyard::SlateShipyard</innerclass>
+    <innerclass refid="class_slate_shipyard_1_1_slate_shipyard_a_p_i" prot="public">SlateShipyard::SlateShipyardAPI</innerclass>
+    <innernamespace refid="namespace_slate_shipyard_1_1_modules">SlateShipyard::Modules</innernamespace>
+    <innernamespace refid="namespace_slate_shipyard_1_1_player_attaching">SlateShipyard::PlayerAttaching</innernamespace>
+    <innernamespace refid="namespace_slate_shipyard_1_1_ship_spawner">SlateShipyard::ShipSpawner</innernamespace>
+    <innernamespace refid="namespace_slate_shipyard_1_1_vanish_objects">SlateShipyard::VanishObjects</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/AutoReferenceFrameVolume.cs" line="1" column="1"/>
+  </compounddef>
+</doxygen>

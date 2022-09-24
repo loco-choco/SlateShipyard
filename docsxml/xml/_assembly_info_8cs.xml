@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="_assembly_info_8cs" kind="file" language="C#">
+    <compoundname>AssemblyInfo.cs</compoundname>
+    <innernamespace refid="namespace_system_1_1_runtime_1_1_compiler_services">System::Runtime::CompilerServices</innernamespace>
+    <innernamespace refid="namespace_system_1_1_runtime_1_1_interop_services">System::Runtime::InteropServices</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Reflection;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Runtime.CompilerServices;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Runtime.InteropServices;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Setting<sp/>ComVisible<sp/>to<sp/>false<sp/>makes<sp/>the<sp/>types<sp/>in<sp/>this<sp/>assembly<sp/>not<sp/>visible</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>to<sp/>COM<sp/>components.<sp/><sp/>If<sp/>you<sp/>need<sp/>to<sp/>access<sp/>a<sp/>type<sp/>in<sp/>this<sp/>assembly<sp/>from</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>COM,<sp/>set<sp/>the<sp/>ComVisible<sp/>attribute<sp/>to<sp/>true<sp/>on<sp/>that<sp/>type.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">[assembly:<sp/>ComVisible(</highlight><highlight class="keyword">false</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>following<sp/>GUID<sp/>is<sp/>for<sp/>the<sp/>ID<sp/>of<sp/>the<sp/>typelib<sp/>if<sp/>this<sp/>project<sp/>is<sp/>exposed<sp/>to<sp/>COM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">[assembly:<sp/>Guid(</highlight><highlight class="stringliteral">&quot;8a39f9e7-1a89-430c-9c3e-bdfb3b7e17df&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Properties/AssemblyInfo.cs"/>
+  </compounddef>
+</doxygen>

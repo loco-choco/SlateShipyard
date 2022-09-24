@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespace_slate_shipyard_1_1_modules_1_1_wheels" kind="namespace" language="C#">
+    <compoundname>SlateShipyard::Modules::Wheels</compoundname>
+    <innerclass refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller" prot="public">SlateShipyard::Modules::Wheels::BasicWheelController</innerclass>
+    <innerclass refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel" prot="public">SlateShipyard::Modules::Wheels::OWSimpleRaycastWheel</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/BasicWheelController.cs" line="3" column="1"/>
+  </compounddef>
+</doxygen>

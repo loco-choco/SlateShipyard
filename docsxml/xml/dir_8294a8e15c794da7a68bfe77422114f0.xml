@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_8294a8e15c794da7a68bfe77422114f0" kind="dir">
+    <compoundname>C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects</compoundname>
+    <innerfile refid="_controlled_vanish_object_8cs">ControlledVanishObject.cs</innerfile>
+    <innerfile refid="_vanish_volumes_patches_8cs">VanishVolumesPatches.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/"/>
+  </compounddef>
+</doxygen>

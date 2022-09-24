@@ -8,8 +8,14 @@
 {{~end~}}
 {{if detaileddescription != ""}}{{detaileddescription | string.rstrip}}{{end}}
 {{properties = get_members kind: "variable" prot: "public" is_static: "no"}}
+{{staticProperties = get_members kind: "variable" prot: "public" is_static: "yes"}}
+{{if properties.size > 0 || staticProperties.size > 0}}
+### Properties
+
+---
+
 {{if properties.size > 0}}
-### Public Properties
+#### Public Properties
 <div class="accordion" id="properties">
 {{~ for $member in properties ~}}
 	<div class="accordion-item">
@@ -31,9 +37,8 @@
 {{~ end ~}}
 </div>
 {{~ end ~}}
-{{staticProperties = get_members kind: "variable" prot: "public" is_static: "yes"}}
 {{if staticProperties.size > 0}}
-### Public Static Properties
+#### Public Static Properties
 <div class="accordion" id="propertiesStatic">
 {{~ for $member in staticProperties ~}}
 	<div class="accordion-item">
@@ -55,20 +60,28 @@
 {{~ end ~}}
 </div>
 {{~ end ~}}
+{{~ end ~}}
 {{methods = get_members kind: "function" prot: "public" is_static: "no"}}
+{{methodsStatic = get_members kind: "function" prot: "public" is_static: "yes"}}
+{{if methods.size > 0 || methodsStatic.size > 0}}
+### Methods
+
+---
+
 {{if methods.size > 0}}
-### Public Methods
+#### Public Methods
 <div class="accordion" id="methods">
 {{~ for $member in methods~}}
+{{~ $memberId = $member.name+$member.argsstring| regex.replace "([<>() ,.])" "" | string.rstrip~}}
 	<div class="accordion-item">
 		<h2 class="accordion-header">
-           <button id="{{$member.name}}{{$member.argsstring}}-heading" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{$member.name}}{{$member.argsstring}}" aria-expanded="false" aria-controls="{{$member.name}}{{$member.argsstring}}">
+           <button id="{{$memberId}}-heading" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{$memberId}}" aria-expanded="false" aria-controls="{{$memberId}}">
             {{$member.name}}{{$member.argsstring}}
 			</button>
 		</h2>
-		<div id="{{$member.name}}{{$member.argsstring}}" class="accordion-collapse collapse" aria-labelledby="{{$member.name}}{{$member.argsstring}}-heading" data-bs-parent="#methods">
+		<div id="{{$memberId}}" class="accordion-collapse collapse" aria-labelledby="{{$memberId}}-heading" data-bs-parent="#methods">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>{{$member.prot | string.downcase | string.capitalize}}</b> {{$member.type}} {{$member.name}}{{$member.argsstring}}</p
+				<p class="my-0 ms-2"><b>{{$member.prot | string.downcase | string.capitalize}}</b> {{$member.type}} {{$member.name}}{{$member.argsstring}}</p>
 				{{~if $member.briefdescription != ""~}}<p class="my-0 ms-2"><i>{{$member.briefdescription | string.rstrip}}</i></p>
 				
 				{{~end~}}
@@ -79,18 +92,18 @@
 {{~ end ~}}
 </div>
 {{~ end ~}}
-{{methodsStatic = get_members kind: "function" prot: "public" is_static: "yes"}}
 {{if methodsStatic.size > 0}}
-### Public Static Methods
+#### Public Static Methods
 <div class="accordion" id="methodsStatic">
 {{~ for $member in methodsStatic~}}
+{{~ $memberId = $member.name+$member.argsstring| regex.replace "([<>() ,.])" "" | string.rstrip~}}
 	<div class="accordion-item">
 		<h2 class="accordion-header">
-           <button id="{{$member.name}}{{$member.argsstring}}-heading" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{$member.name}}{{$member.argsstring}}" aria-expanded="false" aria-controls="{{$member.name}}{{$member.argsstring}}">
+           <button id="{{$memberId}}-heading" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{$memberId}}" aria-expanded="false" aria-controls="{{$memberId}}">
             {{$member.name}}{{$member.argsstring}}
 			</button>
 		</h2>
-		<div id="{{$member.name}}" class="accordion-collapse collapse" aria-labelledby="{{$member.name}}-heading" data-bs-parent="#methodsStatic">
+		<div id="{{$memberId}}" class="accordion-collapse collapse" aria-labelledby="{{$memberId}}-heading" data-bs-parent="#methodsStatic">
 			<div class="accordion-body">
 				<p class="my-0 ms-2"><b>Static {{$member.prot | string.downcase | string.capitalize}}</b> {{$member.type}} {{$member.name}}{{$member.argsstring}}</p>
 				{{~if $member.briefdescription != ""~}}<p class="my-0 ms-2"><i>{{$member.briefdescription | string.rstrip}}</i></p>
@@ -102,4 +115,61 @@
 	</div>
 {{~ end ~}}
 </div>
+{{~ end ~}}
+{{~ end ~}}
+{{events = get_members kind: "event" prot: "public" is_static: "no"}}
+{{eventsStatic = get_members kind: "event" prot: "public" is_static: "yes"}}
+{{if events.size > 0 || eventsStatic.size > 0}}
+### Events
+
+---
+
+{{if events.size > 0}}
+#### Public Events
+<div class="accordion" id="events">
+{{~ for $member in events~}}
+{{~ $memberId = $member.name+$member.argsstring| regex.replace "([<>() ,.])" "" | string.rstrip~}}
+	<div class="accordion-item">
+		<h2 class="accordion-header">
+           <button id="{{$memberId}}-heading" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{$memberId}}" aria-expanded="false" aria-controls="{{$member.name}}">
+            {{$member.name}}
+			</button>
+		</h2>
+		<div id="{{$memberId}}" class="accordion-collapse collapse" aria-labelledby="{{$memberId}}heading" data-bs-parent="#events">
+			<div class="accordion-body">
+				<p class="my-0 ms-2"><b>Static {{$member.prot | string.downcase | string.capitalize}}</b> {{$member.type}} {{$member.name}}</p>
+				{{~if $member.briefdescription != ""~}}<p class="my-0 ms-2"><i>{{$member.briefdescription | string.rstrip}}</i></p>
+				
+				{{~end~}}
+				{{if $member.detaileddescription != ""}}<p class="my-0 ms-2">{{$member.detaileddescription | string.rstrip}}</p>{{end}}
+			</div>
+		</div>
+	</div>
+{{~ end ~}}
+</div>
+{{~ end ~}}
+{{if eventsStatic.size > 0}}
+#### Public Static Events
+<div class="accordion" id="eventsStatic">
+{{~ for $member in eventsStatic~}}
+{{~ $memberId = $member.name+$member.argsstring| regex.replace "([<>() ,.])" "" | string.rstrip~}}
+	<div class="accordion-item">
+		<h2 class="accordion-header">
+           <button id="{{$memberId}}-heading" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{$memberId}}" aria-expanded="false" aria-controls="{{$memberId}}">
+            {{$member.name}}{{$member.argsstring}}
+			</button>
+		</h2>
+		<div id="{{$memberId}}" class="accordion-collapse collapse" aria-labelledby="{{$memberId}}-heading" data-bs-parent="#eventsStatic">
+			<div class="accordion-body">
+				<p class="my-0 ms-2"><b>Static {{$member.prot | string.downcase | string.capitalize}}</b> {{$member.type}} {{$member.name}}{{$member.argsstring}}</p>
+				{{~if $member.briefdescription != ""~}}<p class="my-0 ms-2"><i>{{$member.briefdescription | string.rstrip}}</i></p>
+				
+				{{~end~}}
+				{{if $member.detaileddescription != ""}}<p class="my-0 ms-2">{{$member.detaileddescription | string.rstrip}}</p>{{end}}
+			</div>
+		</div>
+	</div>
+{{~ end ~}}
+</div>
+{{~ end ~}}
 {{~ end ~}}

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_7a338b2b288996b9ab89fdfc0cf13e58" kind="dir">
+    <compoundname>C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels</compoundname>
+    <innerfile refid="_basic_wheel_controller_8cs">BasicWheelController.cs</innerfile>
+    <innerfile refid="_o_w_simple_raycast_wheel_8cs">OWSimpleRaycastWheel.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/"/>
+  </compounddef>
+</doxygen>

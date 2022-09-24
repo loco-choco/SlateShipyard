@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespace_slate_shipyard_1_1_ship_spawner" kind="namespace" language="C#">
+    <compoundname>SlateShipyard::ShipSpawner</compoundname>
+    <innerclass refid="class_slate_shipyard_1_1_ship_spawner_1_1_launch_pad_spawn" prot="public">SlateShipyard::ShipSpawner::LaunchPadSpawn</innerclass>
+    <innerclass refid="struct_slate_shipyard_1_1_ship_spawner_1_1_ship_data" prot="public">SlateShipyard::ShipSpawner::ShipData</innerclass>
+    <innerclass refid="class_slate_shipyard_1_1_ship_spawner_1_1_ship_spawner_manager" prot="public">SlateShipyard::ShipSpawner::ShipSpawnerManager</innerclass>
+    <innernamespace refid="namespace_slate_shipyard_1_1_ship_spawner_1_1_ramp_u_i">SlateShipyard::ShipSpawner::RampUI</innernamespace>
+    <innernamespace refid="namespace_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i">SlateShipyard::ShipSpawner::SelectionUI</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/LauchPadSpawn.cs" line="4" column="1"/>
+  </compounddef>
+</doxygen>

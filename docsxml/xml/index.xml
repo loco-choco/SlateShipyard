@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.5" xml:lang="en-US">
+  <compound refid="class_slate_shipyard_1_1_auto_reference_frame_volume" kind="class"><name>SlateShipyard::AutoReferenceFrameVolume</name>
+    <member refid="class_slate_shipyard_1_1_auto_reference_frame_volume_1aeca0263cd228ad9b734367251ae95443" kind="function"><name>Awake</name></member>
+  </compound>
+  <compound refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller" kind="class"><name>SlateShipyard::Modules::Wheels::BasicWheelController</name>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1afa77d437c0ba4c282202b494e300d47a" kind="variable"><name>frontRWheel</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1ab0922371b952ed458bd8a2c9be73336f" kind="variable"><name>frontLWheel</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1a2d85dc33d1d06598c5ca4fe4daa43bb0" kind="variable"><name>body</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1ab4f38fcb2a88ba60175655612f0bb858" kind="variable"><name>maxSteerAngle</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1ac88a7ab7db73475acc24fa068a154df5" kind="variable"><name>maxAccelerationForce</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1a705e599d4a5279aa867dbaf3bb047811" kind="variable"><name>normalRFrictionCoeficient</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1ab6926e66fc296c9f0cdb05f5000465fe" kind="variable"><name>normalLFrictionCoeficient</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1ac72ef4e2400bb3f693601dda449e00d8" kind="function"><name>Start</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1af0d9350ac5ecd5cd684c38b0f5ced0df" kind="function"><name>WheelMotorInput</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1a8782ff1a84c679ccdc7365a556530b65" kind="function"><name>FixedUpdate</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_basic_wheel_controller_1a50b08eb8a2916b80d4129a41976f8009" kind="function"><name>Update</name></member>
+  </compound>
+  <compound refid="class_slate_shipyard_1_1_vanish_objects_1_1_controlled_vanish_object" kind="class"><name>SlateShipyard::VanishObjects::ControlledVanishObject</name>
+    <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_controlled_vanish_object_1a188ca36da99255d7f2feae92b4cef32a" kind="property"><name>DestroyComponentsOnGrow</name></member>
+    <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_controlled_vanish_object_1a23c7d0bbdfb892b396bc8348ad8e28a9" kind="function"><name>OnDestructionVanish</name></member>
+    <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_controlled_vanish_object_1ae863ab301b4f940684a50291ee924058" kind="function"><name>OnSupernovaDestructionVanish</name></member>
+    <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_controlled_vanish_object_1a81ecd452d68a09f2508aa3280d901393" kind="function"><name>OnBlackHoleVanish</name></member>
+    <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_controlled_vanish_object_1a395e5b530bf872181779017a756901dd" kind="function"><name>OnWhiteHoleReceiveWarped</name></member>
+    <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_controlled_vanish_object_1a341f7c532e19b5a409989df2073efa2c" kind="function"><name>OnWhiteHoleSpawnImmediately</name></member>
+    <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_controlled_vanish_object_1a50162507a130637df296e33f46b39500" kind="function"><name>OnTimeLoopBlackHoleVanish</name></member>
+  </compound>
+  <compound refid="struct_slate_shipyard_1_1_vanish_objects_1_1_controlled_vanish_object_data" kind="struct"><name>SlateShipyard::VanishObjects::ControlledVanishObjectData</name>
+    <member refid="struct_slate_shipyard_1_1_vanish_objects_1_1_controlled_vanish_object_data_1ab72419443b977e0ec56031c6f11b07e7" kind="variable"><name>ControlledVanishObject</name></member>
+    <member refid="struct_slate_shipyard_1_1_vanish_objects_1_1_controlled_vanish_object_data_1acd6175c1a7a0412f0202369c2729b3dc" kind="variable"><name>RelativeLocationData</name></member>
+  </compound>
+  <compound refid="struct_slate_shipyard_1_1_slate_shipyard_1_1_default_shipyard_spawn_positions" kind="struct"><name>SlateShipyard::SlateShipyard::DefaultShipyardSpawnPositions</name>
+    <member refid="struct_slate_shipyard_1_1_slate_shipyard_1_1_default_shipyard_spawn_positions_1a1211563d2c114c6c7b64fd19094322e8" kind="variable"><name>localPosition</name></member>
+    <member refid="struct_slate_shipyard_1_1_slate_shipyard_1_1_default_shipyard_spawn_positions_1abbff405af11da533f8077d15da317881" kind="variable"><name>localRotation</name></member>
+    <member refid="struct_slate_shipyard_1_1_slate_shipyard_1_1_default_shipyard_spawn_positions_1a895c6ac301e79513f218b40318203448" kind="variable"><name>astro</name></member>
+  </compound>
+  <compound refid="class_slate_shipyard_1_1_player_attaching_1_1_free_lookable_player_attach_point" kind="class"><name>SlateShipyard::PlayerAttaching::FreeLookablePlayerAttachPoint</name>
+    <member refid="class_slate_shipyard_1_1_player_attaching_1_1_free_lookable_player_attach_point_1a00c3c26b7ca765ac67017643985698e0" kind="variable"><name>AllowFreeLook</name></member>
+  </compound>
+  <compound refid="class_slate_shipyard_1_1_ship_spawner_1_1_launch_pad_spawn" kind="class"><name>SlateShipyard::ShipSpawner::LaunchPadSpawn</name>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_launch_pad_spawn_1af7d6b107ef9f5e100d7bdfac1f194b5d" kind="variable"><name>rigidbody</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_launch_pad_spawn_1ad923ad5b68663c68f9c149e7565239b7" kind="function"><name>Start</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_launch_pad_spawn_1a5a14382d456c0a959db2c699e508467d" kind="function"><name>SpawnShip</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_launch_pad_spawn_1a2ef34caff4ee1eac22cb217a65bb24f2" kind="function"><name>GetCombinedBoundingBoxOfChildren</name></member>
+  </compound>
+  <compound refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel" kind="class"><name>SlateShipyard::Modules::Wheels::OWSimpleRaycastWheel</name>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a76709f6ffed342fa414d59ecd44e6af0" kind="variable"><name>wheelRadius</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a65a2267af702b6e94424e4272785409c" kind="variable"><name>restLenght</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a8acec3ed5b38bc393312dfe1ca236cfe" kind="variable"><name>springTravel</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1ab3105accd3fc3d72ff08956768760678" kind="variable"><name>springStiffness</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a156b11f0617dd33d3d47598a81d139f0" kind="variable"><name>damperStiffness</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a9f4423ebbab88ea21eda8ef13ebaf56f" kind="variable"><name>frictionCoeficient</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a4410f1b616b195a751d23812c5ffdbe0" kind="variable"><name>steeringFrictionCoeficient</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1af3e4403242577fd146b04e43789d4bba" kind="variable"><name>steerAngle</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1ae05a03e4f04e74c12c57f4af11f9f44c" kind="variable"><name>steerTime</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a5001b94156838882817d825b7d47a0ff" kind="variable"><name>rb</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1ae55ee7b67eb6c089921a770d9bd2a748" kind="variable"><name>collisionMask</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a357569036436f6ea12386f1e03925308" kind="variable"><name>maxLenght</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a53e756dffbf913e0698c7192df6fb0aa" kind="variable"><name>minLenght</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a300aa46016172833966cc2ca2c59d263" kind="variable"><name>lastLenght</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1ab025e11a279cdd6d167b79ee4a1ac8cd" kind="variable"><name>springLenght</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a6a46538f0d3f2eb98feca9534432d3fb" kind="variable"><name>springForce</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1ae8314efa22fae0a3a8e89db0e6849185" kind="variable"><name>springVelocity</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1ab923222b8378005c03dd621e0ce5aa27" kind="variable"><name>damperForce</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a70186cf58c350cc9575dd5deb27aa027" kind="variable"><name>wheelAngle</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a573bbad67c7a06f541cc924c1f18fcd6" kind="variable"><name>suspensionForce</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1aa59bd88a4f654c4c1e1a51afb176d9f8" kind="variable"><name>wheelVelocityLocal</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a4c356452a34522288879276fd27414c6" kind="variable"><name>frictionForce</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1adf7f9bd08e9491ec7bc67ea88178a22f" kind="variable"><name>steeringForce</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1ae14ac5fcefabb54a27aa19f7eb9b2da9" kind="variable"><name>isOnGround</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a1a1892db4f8a12e92119f8e009666d0b" kind="function"><name>Start</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a4e509ba50714b5eb1c4c2b0c342539d8" kind="function"><name>FixedUpdate</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1ae3d620fabc5427d223463b7e4fd13f99" kind="function"><name>Update</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1ad4cf12686c6319e9b7c5357217fb45e6" kind="function"><name>GetGround</name></member>
+    <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a87d8e557c157c78531bab2e0b9da5f8b" kind="function"><name>IsOnGround</name></member>
+  </compound>
+  <compound refid="class_slate_shipyard_1_1_player_attaching_1_1_player_camera_controller_patches" kind="class"><name>SlateShipyard::PlayerAttaching::PlayerCameraControllerPatches</name>
+    <member refid="class_slate_shipyard_1_1_player_attaching_1_1_player_camera_controller_patches_1ab47d6c319930ef8f800ca3f37981d616" kind="function"><name>AllowFreeLook</name></member>
+    <member refid="class_slate_shipyard_1_1_player_attaching_1_1_player_camera_controller_patches_1a792f549aca81121716635ca89f6da549" kind="function"><name>AllowFreeLookTranspiler</name></member>
+    <member refid="class_slate_shipyard_1_1_player_attaching_1_1_player_camera_controller_patches_1a04e30b93e8bae7b16a75149f5feac1e1" kind="function"><name>UpdateRotationPrefix</name></member>
+    <member refid="class_slate_shipyard_1_1_player_attaching_1_1_player_camera_controller_patches_1a2ab3978abb8a725d0ef7800d77a5570f" kind="function"><name>UpdatePrefix</name></member>
+    <member refid="class_slate_shipyard_1_1_player_attaching_1_1_player_camera_controller_patches_1aa8f3767840a45f70a3531b8295b82144" kind="function"><name>UpdateInputPrefix</name></member>
+  </compound>
+  <compound refid="class_slate_shipyard_1_1_ship_spawner_1_1_ramp_u_i_1_1_ramp_angle_u_i" kind="class"><name>SlateShipyard::ShipSpawner::RampUI::RampAngleUI</name>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_ramp_u_i_1_1_ramp_angle_u_i_1af9860f73881ea69fe52eeb06d29901ed" kind="variable"><name>maxAngle</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_ramp_u_i_1_1_ramp_angle_u_i_1a4c979424aad2310081938078aca60a7f" kind="variable"><name>minAngle</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_ramp_u_i_1_1_ramp_angle_u_i_1a07213e59f43157e4e1e3809b2543a986" kind="variable"><name>targetAngle</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_ramp_u_i_1_1_ramp_angle_u_i_1a6d7aeef5e3c651076086493c086cb5a8" kind="variable"><name>angleStep</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_ramp_u_i_1_1_ramp_angle_u_i_1ae375f04dcf7a0826b689981ab0368154" kind="variable"><name>angleChangeSpeed</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_ramp_u_i_1_1_ramp_angle_u_i_1a62c4b40110443e6468bc686fe07f2ef2" kind="variable"><name>angleDisplayText</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_ramp_u_i_1_1_ramp_angle_u_i_1a5545e9429eae8c9e0f2132d5cd7d2adf" kind="variable"><name>increaseAngle</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_ramp_u_i_1_1_ramp_angle_u_i_1a4a0af9a09a35064bf87fec7b5e315d25" kind="variable"><name>decreaseAngle</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_ramp_u_i_1_1_ramp_angle_u_i_1a99e3f1afff8c9b7fae5b6c9bc58436ee" kind="function"><name>Start</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_ramp_u_i_1_1_ramp_angle_u_i_1af4ff7f6f4d2aec2010d92ee753aaacf7" kind="function"><name>OnDestroy</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_ramp_u_i_1_1_ramp_angle_u_i_1aee508f50703b5ed031c7171ec7fcaa83" kind="function"><name>OnAngleIncrease</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_ramp_u_i_1_1_ramp_angle_u_i_1a3a6e4d0ae11b41f7b90ee3b203e803c7" kind="function"><name>OnAngleDecrease</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_ramp_u_i_1_1_ramp_angle_u_i_1aff89d70c4603275723fa7a97d5e83637" kind="function"><name>Update</name></member>
+  </compound>
+  <compound refid="struct_slate_shipyard_1_1_ship_spawner_1_1_ship_data" kind="struct"><name>SlateShipyard::ShipSpawner::ShipData</name>
+    <member refid="struct_slate_shipyard_1_1_ship_spawner_1_1_ship_data_1a58838642d2f517231a2670d55dd44236" kind="variable"><name>prefab</name></member>
+    <member refid="struct_slate_shipyard_1_1_ship_spawner_1_1_ship_data_1ad7dddb872a0e6622ff8e024071efa436" kind="variable"><name>name</name></member>
+  </compound>
+  <compound refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i" kind="class"><name>SlateShipyard::ShipSpawner::SelectionUI::ShipSelectionUI</name>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1afd7099167b584f616fd5d307fcfa419f" kind="variable"><name>currentSelectedShip</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1aa303a34c7f955133397997b10f8829cd" kind="variable"><name>spawnEvenIfNotPossible</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1a2f51657c50d36b5427724c4d2ea06fa1" kind="variable"><name>spawner</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1a0e699a2493a66d69fceb3839a1fbb455" kind="variable"><name>shipVisualization</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1a722a8a5d17920189a9bd25450d5560bd" kind="variable"><name>middleDisplayText</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1aad3a10e745fb17b05901a0d0ca8490b6" kind="variable"><name>nextShipButton</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1ad379afdd9de0ee1fad43a4104b8f9085" kind="variable"><name>previousShipButton</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1ad51e42921bcdd1e44c4d62e8c2e6095a" kind="variable"><name>spawnShipButton</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1a45e542d6d1eb0f7af53ee1a44b9ac928" kind="function"><name>Start</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1a1735059a2ff7ebc2a137b7481c3362e0" kind="function"><name>OnDestroy</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1a9e38ac3d0251cb1a7504cacb0b88a7ca" kind="function"><name>OnNextPageInteract</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1a39fdb245b56116fc0ad40f5ba8e1bd22" kind="function"><name>OnPreviousPageInteract</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1a3bd33fb43421d278252c69313fec3794" kind="function"><name>OnSelectInteract</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1ab08ea2b0ff3960140cdb6feac5e20b24" kind="function"><name>WriteTextOnDisplay</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1a347496678c8d8f2156abb0d49b275641" kind="function"><name>WaitToRemoveText</name></member>
+  </compound>
+  <compound refid="class_slate_shipyard_1_1_ship_spawner_1_1_ship_spawner_manager" kind="class"><name>SlateShipyard::ShipSpawner::ShipSpawnerManager</name>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_ship_spawner_manager_1a122fad38eccbbdc1d7ca791b4ddf08db" kind="variable"><name>ShipDictionary</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_ship_spawner_manager_1a205d82533df37a24613d80dd8ebb7f1b" kind="variable"><name>ShipList</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_ship_spawner_manager_1a832c75c3d688ea3662a5c2b1c8a56044" kind="function"><name>AddShip</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_ship_spawner_manager_1a5338a95c5e5822de864bd783241449d0" kind="function"><name>RemoveShip</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_ship_spawner_manager_1aad42b847485e67a0718049325eb8bb81" kind="function"><name>ShipAmount</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_ship_spawner_manager_1ab8ca83a518bead45baa3f7c0e6c6d420" kind="function"><name>GetShipData</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_ship_spawner_manager_1a6b8bed644176ac06ea590f6100e8d999" kind="function"><name>GetShipData</name></member>
+  </compound>
+  <compound refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_visualization_u_i" kind="class"><name>SlateShipyard::ShipSpawner::SelectionUI::ShipVisualizationUI</name>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_visualization_u_i_1af7ad013f4f0b05988de3ceb9a3e5d58c" kind="variable"><name>shipName</name></member>
+    <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_visualization_u_i_1a7ae1004ef04da874a44ca865ead48bfa" kind="function"><name>ChangeShip</name></member>
+  </compound>
+  <compound refid="class_slate_shipyard_1_1_shipyard_spawner" kind="class"><name>SlateShipyard::ShipyardSpawner</name>
+    <member refid="class_slate_shipyard_1_1_shipyard_spawner_1a3873763975f20f0d007ef1f14cd0009e" kind="function"><name>SpawnShipyard</name></member>
+  </compound>
+  <compound refid="class_slate_shipyard_1_1_slate_shipyard" kind="class"><name>SlateShipyard::SlateShipyard</name>
+    <member refid="class_slate_shipyard_1_1_slate_shipyard_1a8bbdedb75e28dcab9bc8f6ebba0bedb8" kind="variable"><name>modHelper</name></member>
+    <member refid="class_slate_shipyard_1_1_slate_shipyard_1a9b9d0dcd5e6b6c7d6cc9c6fd4a30defa" kind="variable"><name>defaultShipSpawnerPrefab</name></member>
+    <member refid="class_slate_shipyard_1_1_slate_shipyard_1a326407608021712f6db103ce0cb3ddc9" kind="variable"><name>spawnDefaultShipYard</name></member>
+    <member refid="class_slate_shipyard_1_1_slate_shipyard_1a25f0d0eb58aaef9cb87942eba0255457" kind="variable"><name>defaultSpawnLocations</name></member>
+    <member refid="class_slate_shipyard_1_1_slate_shipyard_1a7147679bc01c64b0b1b1f25f2d7713f4" kind="function"><name>GetApi</name></member>
+    <member refid="class_slate_shipyard_1_1_slate_shipyard_1a28b90de2c062204b5873ebcb4526baf2" kind="function"><name>DontSpawnDefaultShipyard</name></member>
+    <member refid="class_slate_shipyard_1_1_slate_shipyard_1a0f344066a27cc73174230bae6f668cbc" kind="function"><name>SpawnShipyard</name></member>
+    <member refid="class_slate_shipyard_1_1_slate_shipyard_1a047b1f6d17555d5a316eb2a015fa938d" kind="function"><name>Awake</name></member>
+    <member refid="class_slate_shipyard_1_1_slate_shipyard_1a214be275f5f25204b3d6048a32b9b1a5" kind="function"><name>SceneLoading_OnSceneLoad</name></member>
+    <member refid="class_slate_shipyard_1_1_slate_shipyard_1af6b59737e25ac8b8d0ef567b13eb92c4" kind="function"><name>SpawnShipyardDelay</name></member>
+    <member refid="class_slate_shipyard_1_1_slate_shipyard_1ac666f71390bbc68fdc54485d87bbe1f7" kind="function"><name>Start</name></member>
+  </compound>
+  <compound refid="class_slate_shipyard_1_1_slate_shipyard_a_p_i" kind="class"><name>SlateShipyard::SlateShipyardAPI</name>
+    <member refid="class_slate_shipyard_1_1_slate_shipyard_a_p_i_1a121ebe2c6e1253982d79dc34fd111ce2" kind="function"><name>SpawnShipyard</name></member>
+    <member refid="class_slate_shipyard_1_1_slate_shipyard_a_p_i_1a2f739d0a0a0ece695a45aaa160b19506" kind="function"><name>DontSpawnDefaultShipyard</name></member>
+  </compound>
+  <compound refid="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_extra_data" kind="class"><name>SlateShipyard::VanishObjects::VanishVolumesExtraData</name>
+    <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_extra_data_1ad48c8ada41007b4d25a79bae24353fe6" kind="variable"><name>VanishObjectData</name></member>
+  </compound>
+  <compound refid="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches" kind="class"><name>SlateShipyard::VanishObjects::VanishVolumesPatches</name>
+    <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1aa226019fbd47a08474c67282f56063a5" kind="event"><name>OnConditionsForPlayerToWarp</name></member>
+    <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1a1f3c06bb5b4b95b7460dc29fbfd2e134" kind="function"><name>ConditionsForPlayerToWarp</name></member>
+    <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1ae902479b2b5a6fbc2fa7800b35ed4ece" kind="function"><name>DestructionVanishPrefix</name></member>
+    <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1ae70a33e5acdc32f0305a44e6771887bf" kind="function"><name>SupernovaDestructionVanishPrefix</name></member>
+    <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1ad22893d33b1874540009db7502a47890" kind="function"><name>BlackHoleVanishPrefix</name></member>
+    <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1a3e95f31737b0a3aa46ae745f28beb50b" kind="function"><name>TimeLoopBlackHoleVanishPrefix</name></member>
+    <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1a5945e58509552e38f08e9356a7e334ab" kind="function"><name>VanishPlayerPrefix</name></member>
+    <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1a6a4fd91e500e2b831d45c5d42c4cd4e5" kind="function"><name>ReceiveWarpedBodyPrefix</name></member>
+    <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1a3d51129ce618ebdc562830075ebde960" kind="function"><name>AddToGrowQueuePrefix</name></member>
+    <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1a44d8fa91a056968bf577af1f52964a22" kind="function"><name>SpawnImmediatelyPrefix</name></member>
+    <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1ab681933eb6225398c933f770314b573c" kind="function"><name>OnTriggerEnterPrefix</name></member>
+    <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1a04d97b722073b7e8b2ea65c923b4a961" kind="function"><name>FixedUpdatePrefix</name></member>
+  </compound>
+  <compound refid="namespace_harmony_lib" kind="namespace"><name>HarmonyLib</name>
+  </compound>
+  <compound refid="namespace_o_w_m_l_1_1_common" kind="namespace"><name>OWML::Common</name>
+  </compound>
+  <compound refid="namespace_o_w_m_l_1_1_mod_helper" kind="namespace"><name>OWML::ModHelper</name>
+  </compound>
+  <compound refid="namespace_slate_shipyard" kind="namespace"><name>SlateShipyard</name>
+  </compound>
+  <compound refid="namespace_slate_shipyard_1_1_modules" kind="namespace"><name>SlateShipyard::Modules</name>
+  </compound>
+  <compound refid="namespace_slate_shipyard_1_1_modules_1_1_wheels" kind="namespace"><name>SlateShipyard::Modules::Wheels</name>
+  </compound>
+  <compound refid="namespace_slate_shipyard_1_1_player_attaching" kind="namespace"><name>SlateShipyard::PlayerAttaching</name>
+  </compound>
+  <compound refid="namespace_slate_shipyard_1_1_ship_spawner" kind="namespace"><name>SlateShipyard::ShipSpawner</name>
+  </compound>
+  <compound refid="namespace_slate_shipyard_1_1_ship_spawner_1_1_ramp_u_i" kind="namespace"><name>SlateShipyard::ShipSpawner::RampUI</name>
+  </compound>
+  <compound refid="namespace_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i" kind="namespace"><name>SlateShipyard::ShipSpawner::SelectionUI</name>
+  </compound>
+  <compound refid="namespace_slate_shipyard_1_1_vanish_objects" kind="namespace"><name>SlateShipyard::VanishObjects</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections" kind="namespace"><name>System::Collections</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
+  </compound>
+  <compound refid="namespace_system_1_1_reflection_1_1_emit" kind="namespace"><name>System::Reflection::Emit</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_compiler_services" kind="namespace"><name>System::Runtime::CompilerServices</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_interop_services" kind="namespace"><name>System::Runtime::InteropServices</name>
+  </compound>
+  <compound refid="namespace_unity_engine" kind="namespace"><name>UnityEngine</name>
+  </compound>
+  <compound refid="namespace_unity_engine_1_1_scene_management" kind="namespace"><name>UnityEngine::SceneManagement</name>
+  </compound>
+  <compound refid="namespace_unity_engine_1_1_u_i" kind="namespace"><name>UnityEngine::UI</name>
+  </compound>
+  <compound refid="_auto_reference_frame_volume_8cs" kind="file"><name>AutoReferenceFrameVolume.cs</name>
+  </compound>
+  <compound refid="_basic_wheel_controller_8cs" kind="file"><name>BasicWheelController.cs</name>
+  </compound>
+  <compound refid="_o_w_simple_raycast_wheel_8cs" kind="file"><name>OWSimpleRaycastWheel.cs</name>
+  </compound>
+  <compound refid="_debug_2net48_2_8_n_e_t_framework_00_version_0av4_88_8_assembly_attributes_8cs" kind="file"><name>.NETFramework,Version=v4.8.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_release_2net48_2_8_n_e_t_framework_00_version_0av4_88_8_assembly_attributes_8cs" kind="file"><name>.NETFramework,Version=v4.8.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_custom_ship_lib_8_assembly_info_8cs" kind="file"><name>CustomShipLib.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_debug_2net48_2_slate_shipyard_8_assembly_info_8cs" kind="file"><name>SlateShipyard.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_release_2net48_2_slate_shipyard_8_assembly_info_8cs" kind="file"><name>SlateShipyard.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_free_lookable_player_attach_point_8cs" kind="file"><name>FreeLookablePlayerAttachPoint.cs</name>
+  </compound>
+  <compound refid="_player_camera_controller_patches_8cs" kind="file"><name>PlayerCameraControllerPatches.cs</name>
+  </compound>
+  <compound refid="_assembly_info_8cs" kind="file"><name>AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_lauch_pad_spawn_8cs" kind="file"><name>LauchPadSpawn.cs</name>
+  </compound>
+  <compound refid="_ramp_angle_u_i_8cs" kind="file"><name>RampAngleUI.cs</name>
+  </compound>
+  <compound refid="_ship_selection_u_i_8cs" kind="file"><name>ShipSelectionUI.cs</name>
+  </compound>
+  <compound refid="_ship_visualization_u_i_8cs" kind="file"><name>ShipVisualizationUI.cs</name>
+  </compound>
+  <compound refid="_ship_spawner_manager_8cs" kind="file"><name>ShipSpawnerManager.cs</name>
+  </compound>
+  <compound refid="_shipyard_spawner_8cs" kind="file"><name>ShipyardSpawner.cs</name>
+  </compound>
+  <compound refid="_slate_shipyard_8cs" kind="file"><name>SlateShipyard.cs</name>
+  </compound>
+  <compound refid="_slate_shipyard_a_p_i_8cs" kind="file"><name>SlateShipyardAPI.cs</name>
+  </compound>
+  <compound refid="_controlled_vanish_object_8cs" kind="file"><name>ControlledVanishObject.cs</name>
+  </compound>
+  <compound refid="_vanish_volumes_patches_8cs" kind="file"><name>VanishVolumesPatches.cs</name>
+  </compound>
+  <compound refid="dir_c3b731d892d00d6a54528b40693c51db" kind="dir"><name>C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib</name>
+  </compound>
+  <compound refid="dir_5735b0cc20825757951dead0c3f45ed2" kind="dir"><name>C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/obj/Debug</name>
+  </compound>
+  <compound refid="dir_d12bad4464670fa3cf8f9ecd76abc492" kind="dir"><name>C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules</name>
+  </compound>
+  <compound refid="dir_53ef52ee1e777c3eeddd50b7dbbf55c1" kind="dir"><name>C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/obj/Debug/net48</name>
+  </compound>
+  <compound refid="dir_cb5fcac1136f920faf7a29f60158f2be" kind="dir"><name>C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/obj/Release/net48</name>
+  </compound>
+  <compound refid="dir_c16ac300abf6bc3fd698f9b1056afed5" kind="dir"><name>C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/obj</name>
+  </compound>
+  <compound refid="dir_3cfb04eedbb16d258b850adda057e09b" kind="dir"><name>C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/PlayerAttaching</name>
+  </compound>
+  <compound refid="dir_98edf86c8a14f0d8c4318a9e4f815457" kind="dir"><name>C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Properties</name>
+  </compound>
+  <compound refid="dir_d32ed00dc5fc73c9bdfee8e9161b5b3c" kind="dir"><name>C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/RampUI</name>
+  </compound>
+  <compound refid="dir_98c2a801eaed67b835021244704d5bae" kind="dir"><name>C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/obj/Release</name>
+  </compound>
+  <compound refid="dir_ce0c1331bb792e9604d36cb8c05f8474" kind="dir"><name>C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI</name>
+  </compound>
+  <compound refid="dir_c1690c5362b3fba536e510605f04b840" kind="dir"><name>C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner</name>
+  </compound>
+  <compound refid="dir_8294a8e15c794da7a68bfe77422114f0" kind="dir"><name>C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects</name>
+  </compound>
+  <compound refid="dir_7a338b2b288996b9ab89fdfc0cf13e58" kind="dir"><name>C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels</name>
+  </compound>
+</doxygenindex>

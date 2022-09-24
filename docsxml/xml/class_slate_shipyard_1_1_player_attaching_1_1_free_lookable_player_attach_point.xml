@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="class_slate_shipyard_1_1_player_attaching_1_1_free_lookable_player_attach_point" kind="class" language="C#" prot="public">
+    <compoundname>SlateShipyard::PlayerAttaching::FreeLookablePlayerAttachPoint</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PlayerAttachPoint</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_player_attaching_1_1_free_lookable_player_attach_point_1a00c3c26b7ca765ac67017643985698e0" prot="public" static="no" mutable="no">
+        <type>Func&lt; bool &gt;</type>
+        <definition>Func&lt;bool&gt; SlateShipyard.PlayerAttaching.FreeLookablePlayerAttachPoint.AllowFreeLook</definition>
+        <argsstring></argsstring>
+        <name>AllowFreeLook</name>
+        <qualifiedname>SlateShipyard.PlayerAttaching.FreeLookablePlayerAttachPoint.AllowFreeLook</qualifiedname>
+        <initializer>= () =&gt; false</initializer>
+        <briefdescription>
+<para>The function called to know if the player attached to it should be able to free look. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/PlayerAttaching/FreeLookablePlayerAttachPoint.cs" line="13" column="21" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/PlayerAttaching/FreeLookablePlayerAttachPoint.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A PlayerAttachPoint you can use to enable free look. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Because of how the free look code was made, it is only active when sitted on the ship. To be able to use it on custom ships/custom PlayerAttachPoints you can use <ref refid="class_slate_shipyard_1_1_player_attaching_1_1_free_lookable_player_attach_point" kindref="compound">FreeLookablePlayerAttachPoint</ref>. When the game detects that the player is attached to a <ref refid="class_slate_shipyard_1_1_player_attaching_1_1_free_lookable_player_attach_point" kindref="compound">FreeLookablePlayerAttachPoint</ref> it will call AllowFreeLook to know if the player should be able to use free look. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PlayerAttachPoint</label>
+      </node>
+      <node id="1">
+        <label>SlateShipyard.PlayerAttaching.FreeLookablePlayerAttachPoint</label>
+        <link refid="class_slate_shipyard_1_1_player_attaching_1_1_free_lookable_player_attach_point"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PlayerAttachPoint</label>
+      </node>
+      <node id="1">
+        <label>SlateShipyard.PlayerAttaching.FreeLookablePlayerAttachPoint</label>
+        <link refid="class_slate_shipyard_1_1_player_attaching_1_1_free_lookable_player_attach_point"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/PlayerAttaching/FreeLookablePlayerAttachPoint.cs" line="11" column="11" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/PlayerAttaching/FreeLookablePlayerAttachPoint.cs" bodystart="12" bodyend="15"/>
+    <listofallmembers>
+      <member refid="class_slate_shipyard_1_1_player_attaching_1_1_free_lookable_player_attach_point_1a00c3c26b7ca765ac67017643985698e0" prot="public" virt="non-virtual"><scope>SlateShipyard::PlayerAttaching::FreeLookablePlayerAttachPoint</scope><name>AllowFreeLook</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

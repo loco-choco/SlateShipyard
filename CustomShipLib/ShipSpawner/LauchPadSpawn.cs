@@ -37,7 +37,7 @@ namespace SlateShipyard.ShipSpawner
         }
 
         //! Gets the Bounds of a object combined collider.
-        /*! This code comes from this [unity thread](https://forum.unity.com/threads/how-do-i-get-the-bounds-of-a-rigidbodys-compound-collider.166691/)*/
+        //From this thread https://forum.unity.com/threads/how-do-i-get-the-bounds-of-a-rigidbodys-compound-collider.166691
         public static Bounds GetCombinedBoundingBoxOfChildren(Transform root)
         {
             if (root == null)

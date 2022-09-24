@@ -1,0 +1,501 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel" kind="class" language="C#" prot="public">
+    <compoundname>SlateShipyard::Modules::Wheels::OWSimpleRaycastWheel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a76709f6ffed342fa414d59ecd44e6af0" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.wheelRadius</definition>
+        <argsstring></argsstring>
+        <name>wheelRadius</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.wheelRadius</qualifiedname>
+        <briefdescription>
+<para>The radius of the wheel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" line="10" column="14" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a65a2267af702b6e94424e4272785409c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.restLenght</definition>
+        <argsstring></argsstring>
+        <name>restLenght</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.restLenght</qualifiedname>
+        <briefdescription>
+<para>The lenght which the suspension considers to be at rest. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" line="11" column="14" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a8acec3ed5b38bc393312dfe1ca236cfe" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.springTravel</definition>
+        <argsstring></argsstring>
+        <name>springTravel</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.springTravel</qualifiedname>
+        <briefdescription>
+<para>The distance which the suspension can travel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The max and min lenght it can have are calculated from this equation: minLenght = restLenght - springTravel; maxLenght = restLenght + springTravel. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" line="12" column="14" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1ab3105accd3fc3d72ff08956768760678" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.springStiffness</definition>
+        <argsstring></argsstring>
+        <name>springStiffness</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.springStiffness</qualifiedname>
+        <briefdescription>
+<para>The spring constant of the suspension. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" line="14" column="14" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a156b11f0617dd33d3d47598a81d139f0" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.damperStiffness</definition>
+        <argsstring></argsstring>
+        <name>damperStiffness</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.damperStiffness</qualifiedname>
+        <briefdescription>
+<para>The damping constant of the suspension. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Usually make it smaller then the springStiffness to have better results. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" line="15" column="14" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a9f4423ebbab88ea21eda8ef13ebaf56f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.frictionCoeficient</definition>
+        <argsstring></argsstring>
+        <name>frictionCoeficient</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.frictionCoeficient</qualifiedname>
+        <initializer>= 0.3f</initializer>
+        <briefdescription>
+<para>The coeficient for the friction the wheel will experience for its foward direction velocity when touching a ground. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Usually make it a value between 1.0 and 0.0, 0.0 being like driving in ice and 1.0 like in glue. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" line="18" column="14" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a4410f1b616b195a751d23812c5ffdbe0" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.steeringFrictionCoeficient</definition>
+        <argsstring></argsstring>
+        <name>steeringFrictionCoeficient</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.steeringFrictionCoeficient</qualifiedname>
+        <initializer>= 2f</initializer>
+        <briefdescription>
+<para>The coeficient for the friction the wheel will experience for velocities that aren&apos;t on the wheel direction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This means that if the wheel is sliding, this friction force will try to reduce this motion. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" line="20" column="14" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1af3e4403242577fd146b04e43789d4bba" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.steerAngle</definition>
+        <argsstring></argsstring>
+        <name>steerAngle</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.steerAngle</qualifiedname>
+        <briefdescription>
+<para>The target angle (in degrees) which you want the wheel to be at. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" line="32" column="14" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1ae05a03e4f04e74c12c57f4af11f9f44c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.steerTime</definition>
+        <argsstring></argsstring>
+        <name>steerTime</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.steerTime</qualifiedname>
+        <initializer>= 2f</initializer>
+        <briefdescription>
+<para>The &apos;time&apos; that the wheel will take to reach the target angle in steerAngle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Bigger values make it reach the end value faster. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" line="33" column="14" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a5001b94156838882817d825b7d47a0ff" prot="public" static="no" mutable="no">
+        <type>Rigidbody</type>
+        <definition>Rigidbody SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.rb</definition>
+        <argsstring></argsstring>
+        <name>rb</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.rb</qualifiedname>
+        <briefdescription>
+<para>The Rigidbody the wheel will use to apply the forces it calculates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" line="41" column="18" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1ae55ee7b67eb6c089921a770d9bd2a748" prot="public" static="no" mutable="no">
+        <type>LayerMask</type>
+        <definition>LayerMask SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.collisionMask</definition>
+        <argsstring></argsstring>
+        <name>collisionMask</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.collisionMask</qualifiedname>
+        <briefdescription>
+<para>The LayerMask it will use on the raycast to be considered as valid ground. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" line="42" column="18" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a357569036436f6ea12386f1e03925308" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.maxLenght</definition>
+        <argsstring></argsstring>
+        <name>maxLenght</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.maxLenght</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" line="23" column="15" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a53e756dffbf913e0698c7192df6fb0aa" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.minLenght</definition>
+        <argsstring></argsstring>
+        <name>minLenght</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.minLenght</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" line="24" column="15" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a300aa46016172833966cc2ca2c59d263" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.lastLenght</definition>
+        <argsstring></argsstring>
+        <name>lastLenght</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.lastLenght</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" line="25" column="15" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1ab025e11a279cdd6d167b79ee4a1ac8cd" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.springLenght</definition>
+        <argsstring></argsstring>
+        <name>springLenght</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.springLenght</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" line="26" column="15" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a6a46538f0d3f2eb98feca9534432d3fb" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.springForce</definition>
+        <argsstring></argsstring>
+        <name>springForce</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.springForce</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" line="27" column="15" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1ae8314efa22fae0a3a8e89db0e6849185" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.springVelocity</definition>
+        <argsstring></argsstring>
+        <name>springVelocity</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.springVelocity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" line="28" column="15" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1ab923222b8378005c03dd621e0ce5aa27" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.damperForce</definition>
+        <argsstring></argsstring>
+        <name>damperForce</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.damperForce</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" line="29" column="15" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a70186cf58c350cc9575dd5deb27aa027" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.wheelAngle</definition>
+        <argsstring></argsstring>
+        <name>wheelAngle</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.wheelAngle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" line="31" column="15" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a573bbad67c7a06f541cc924c1f18fcd6" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.suspensionForce</definition>
+        <argsstring></argsstring>
+        <name>suspensionForce</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.suspensionForce</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" line="36" column="17" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1aa59bd88a4f654c4c1e1a51afb176d9f8" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.wheelVelocityLocal</definition>
+        <argsstring></argsstring>
+        <name>wheelVelocityLocal</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.wheelVelocityLocal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" line="37" column="17" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a4c356452a34522288879276fd27414c6" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.frictionForce</definition>
+        <argsstring></argsstring>
+        <name>frictionForce</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.frictionForce</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" line="38" column="15" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1adf7f9bd08e9491ec7bc67ea88178a22f" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.steeringForce</definition>
+        <argsstring></argsstring>
+        <name>steeringForce</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.steeringForce</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" line="39" column="15" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1ae14ac5fcefabb54a27aa19f7eb9b2da9" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.isOnGround</definition>
+        <argsstring></argsstring>
+        <name>isOnGround</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.isOnGround</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" line="63" column="14" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a1a1892db4f8a12e92119f8e009666d0b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.Start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" line="44" column="6" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" bodystart="44" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a4e509ba50714b5eb1c4c2b0c342539d8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.FixedUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>FixedUpdate</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.FixedUpdate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" line="50" column="6" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" bodystart="50" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1ae3d620fabc5427d223463b7e4fd13f99" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.Update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" line="55" column="6" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" bodystart="55" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1ad4cf12686c6319e9b7c5357217fb45e6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.GetGround</definition>
+        <argsstring>()</argsstring>
+        <name>GetGround</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.GetGround</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" line="64" column="6" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" bodystart="64" bodyend="91"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a87d8e557c157c78531bab2e0b9da5f8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.IsOnGround</definition>
+        <argsstring>()</argsstring>
+        <name>IsOnGround</name>
+        <qualifiedname>SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel.IsOnGround</qualifiedname>
+        <briefdescription>
+<para>Returns true if the wheel is hitting a valid ground. False if not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" line="62" column="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This is a script which allows you to have simple wheel simulations with suspension, friction and other stuff. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This simulation uses a single raycast to represent the wheel and its suspension, if you want to have a more in depth look on how it works [watch these series of videos](<ulink url="https://www.youtube.com/watch?v=x0LUiE0dxP0">https://www.youtube.com/watch?v=x0LUiE0dxP0</ulink>). </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel</label>
+        <link refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>SlateShipyard.Modules.Wheels.OWSimpleRaycastWheel</label>
+        <link refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" line="8" column="7" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/Modules/Wheels/OWSimpleRaycastWheel.cs" bodystart="9" bodyend="92"/>
+    <listofallmembers>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1ae55ee7b67eb6c089921a770d9bd2a748" prot="public" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::OWSimpleRaycastWheel</scope><name>collisionMask</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1ab923222b8378005c03dd621e0ce5aa27" prot="private" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::OWSimpleRaycastWheel</scope><name>damperForce</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a156b11f0617dd33d3d47598a81d139f0" prot="public" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::OWSimpleRaycastWheel</scope><name>damperStiffness</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a4e509ba50714b5eb1c4c2b0c342539d8" prot="private" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::OWSimpleRaycastWheel</scope><name>FixedUpdate</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a9f4423ebbab88ea21eda8ef13ebaf56f" prot="public" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::OWSimpleRaycastWheel</scope><name>frictionCoeficient</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a4c356452a34522288879276fd27414c6" prot="private" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::OWSimpleRaycastWheel</scope><name>frictionForce</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1ad4cf12686c6319e9b7c5357217fb45e6" prot="private" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::OWSimpleRaycastWheel</scope><name>GetGround</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1ae14ac5fcefabb54a27aa19f7eb9b2da9" prot="private" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::OWSimpleRaycastWheel</scope><name>isOnGround</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a87d8e557c157c78531bab2e0b9da5f8b" prot="public" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::OWSimpleRaycastWheel</scope><name>IsOnGround</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a300aa46016172833966cc2ca2c59d263" prot="private" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::OWSimpleRaycastWheel</scope><name>lastLenght</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a357569036436f6ea12386f1e03925308" prot="private" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::OWSimpleRaycastWheel</scope><name>maxLenght</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a53e756dffbf913e0698c7192df6fb0aa" prot="private" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::OWSimpleRaycastWheel</scope><name>minLenght</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a5001b94156838882817d825b7d47a0ff" prot="public" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::OWSimpleRaycastWheel</scope><name>rb</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a65a2267af702b6e94424e4272785409c" prot="public" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::OWSimpleRaycastWheel</scope><name>restLenght</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a6a46538f0d3f2eb98feca9534432d3fb" prot="private" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::OWSimpleRaycastWheel</scope><name>springForce</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1ab025e11a279cdd6d167b79ee4a1ac8cd" prot="private" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::OWSimpleRaycastWheel</scope><name>springLenght</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1ab3105accd3fc3d72ff08956768760678" prot="public" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::OWSimpleRaycastWheel</scope><name>springStiffness</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a8acec3ed5b38bc393312dfe1ca236cfe" prot="public" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::OWSimpleRaycastWheel</scope><name>springTravel</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1ae8314efa22fae0a3a8e89db0e6849185" prot="private" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::OWSimpleRaycastWheel</scope><name>springVelocity</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a1a1892db4f8a12e92119f8e009666d0b" prot="private" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::OWSimpleRaycastWheel</scope><name>Start</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1af3e4403242577fd146b04e43789d4bba" prot="public" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::OWSimpleRaycastWheel</scope><name>steerAngle</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1adf7f9bd08e9491ec7bc67ea88178a22f" prot="private" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::OWSimpleRaycastWheel</scope><name>steeringForce</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a4410f1b616b195a751d23812c5ffdbe0" prot="public" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::OWSimpleRaycastWheel</scope><name>steeringFrictionCoeficient</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1ae05a03e4f04e74c12c57f4af11f9f44c" prot="public" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::OWSimpleRaycastWheel</scope><name>steerTime</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a573bbad67c7a06f541cc924c1f18fcd6" prot="private" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::OWSimpleRaycastWheel</scope><name>suspensionForce</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1ae3d620fabc5427d223463b7e4fd13f99" prot="private" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::OWSimpleRaycastWheel</scope><name>Update</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a70186cf58c350cc9575dd5deb27aa027" prot="private" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::OWSimpleRaycastWheel</scope><name>wheelAngle</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1a76709f6ffed342fa414d59ecd44e6af0" prot="public" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::OWSimpleRaycastWheel</scope><name>wheelRadius</name></member>
+      <member refid="class_slate_shipyard_1_1_modules_1_1_wheels_1_1_o_w_simple_raycast_wheel_1aa59bd88a4f654c4c1e1a51afb176d9f8" prot="private" virt="non-virtual"><scope>SlateShipyard::Modules::Wheels::OWSimpleRaycastWheel</scope><name>wheelVelocityLocal</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

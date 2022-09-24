@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="struct_slate_shipyard_1_1_slate_shipyard_1_1_default_shipyard_spawn_positions" kind="struct" language="C#" prot="private">
+    <compoundname>SlateShipyard::SlateShipyard::DefaultShipyardSpawnPositions</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_slate_shipyard_1_1_slate_shipyard_1_1_default_shipyard_spawn_positions_1a1211563d2c114c6c7b64fd19094322e8" prot="public" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 SlateShipyard.SlateShipyard.DefaultShipyardSpawnPositions.localPosition</definition>
+        <argsstring></argsstring>
+        <name>localPosition</name>
+        <qualifiedname>SlateShipyard.SlateShipyard.DefaultShipyardSpawnPositions.localPosition</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/SlateShipyard.cs" line="28" column="28" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/SlateShipyard.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_slate_shipyard_1_1_slate_shipyard_1_1_default_shipyard_spawn_positions_1abbff405af11da533f8077d15da317881" prot="public" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 SlateShipyard.SlateShipyard.DefaultShipyardSpawnPositions.localRotation</definition>
+        <argsstring></argsstring>
+        <name>localRotation</name>
+        <qualifiedname>SlateShipyard.SlateShipyard.DefaultShipyardSpawnPositions.localRotation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/SlateShipyard.cs" line="29" column="28" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/SlateShipyard.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_slate_shipyard_1_1_slate_shipyard_1_1_default_shipyard_spawn_positions_1a895c6ac301e79513f218b40318203448" prot="public" static="no" mutable="no">
+        <type>AstroObject.Name</type>
+        <definition>AstroObject.Name SlateShipyard.SlateShipyard.DefaultShipyardSpawnPositions.astro</definition>
+        <argsstring></argsstring>
+        <name>astro</name>
+        <qualifiedname>SlateShipyard.SlateShipyard.DefaultShipyardSpawnPositions.astro</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/SlateShipyard.cs" line="30" column="36" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/SlateShipyard.cs" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/SlateShipyard.cs" line="26" column="16" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/SlateShipyard.cs" bodystart="27" bodyend="31"/>
+    <listofallmembers>
+      <member refid="struct_slate_shipyard_1_1_slate_shipyard_1_1_default_shipyard_spawn_positions_1a895c6ac301e79513f218b40318203448" prot="public" virt="non-virtual"><scope>SlateShipyard::SlateShipyard::DefaultShipyardSpawnPositions</scope><name>astro</name></member>
+      <member refid="struct_slate_shipyard_1_1_slate_shipyard_1_1_default_shipyard_spawn_positions_1a1211563d2c114c6c7b64fd19094322e8" prot="public" virt="non-virtual"><scope>SlateShipyard::SlateShipyard::DefaultShipyardSpawnPositions</scope><name>localPosition</name></member>
+      <member refid="struct_slate_shipyard_1_1_slate_shipyard_1_1_default_shipyard_spawn_positions_1abbff405af11da533f8077d15da317881" prot="public" virt="non-virtual"><scope>SlateShipyard::SlateShipyard::DefaultShipyardSpawnPositions</scope><name>localRotation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

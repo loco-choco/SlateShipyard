@@ -1,0 +1,291 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches" kind="class" language="C#" prot="public">
+    <compoundname>SlateShipyard::VanishObjects::VanishVolumesPatches</compoundname>
+      <sectiondef kind="event">
+      <memberdef kind="event" id="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1aa226019fbd47a08474c67282f56063a5" prot="public" static="yes" add="no" remove="no" raise="no">
+        <type>ConditionsForPlayerToWarp</type>
+        <definition>ConditionsForPlayerToWarp SlateShipyard.VanishObjects.VanishVolumesPatches.OnConditionsForPlayerToWarp</definition>
+        <argsstring></argsstring>
+        <name>OnConditionsForPlayerToWarp</name>
+        <qualifiedname>SlateShipyard.VanishObjects.VanishVolumesPatches.OnConditionsForPlayerToWarp</qualifiedname>
+        <briefdescription>
+<para>Event for when the player warps. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Add to this event if you want to controll when the player can warp. For example, if the player is attached to your ship you probably don&apos;t want for the player to warp separately. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/VanishVolumesPatches.cs" line="24" column="55" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/VanishVolumesPatches.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1a1f3c06bb5b4b95b7460dc29fbfd2e134" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate bool</type>
+        <definition>delegate bool SlateShipyard.VanishObjects.VanishVolumesPatches.ConditionsForPlayerToWarp</definition>
+        <argsstring>()</argsstring>
+        <name>ConditionsForPlayerToWarp</name>
+        <qualifiedname>SlateShipyard.VanishObjects.VanishVolumesPatches.ConditionsForPlayerToWarp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>delegate for the OnConditionsForPlayerToWarp event. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/VanishVolumesPatches.cs" line="21" column="30"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1ae902479b2b5a6fbc2fa7800b35ed4ece" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SlateShipyard.VanishObjects.VanishVolumesPatches.DestructionVanishPrefix</definition>
+        <argsstring>(OWRigidbody bodyToVanish, RelativeLocationData entryLocation, DestructionVolume __instance)</argsstring>
+        <name>DestructionVanishPrefix</name>
+        <qualifiedname>SlateShipyard.VanishObjects.VanishVolumesPatches.DestructionVanishPrefix</qualifiedname>
+        <param>
+          <type>OWRigidbody</type>
+          <declname>bodyToVanish</declname>
+        </param>
+        <param>
+          <type>RelativeLocationData</type>
+          <declname>entryLocation</declname>
+        </param>
+        <param>
+          <type>DestructionVolume</type>
+          <declname>__instance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/VanishVolumesPatches.cs" line="28" column="21" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/VanishVolumesPatches.cs" bodystart="28" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1ae70a33e5acdc32f0305a44e6771887bf" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SlateShipyard.VanishObjects.VanishVolumesPatches.SupernovaDestructionVanishPrefix</definition>
+        <argsstring>(OWRigidbody bodyToVanish, RelativeLocationData entryLocation, SupernovaDestructionVolume __instance)</argsstring>
+        <name>SupernovaDestructionVanishPrefix</name>
+        <qualifiedname>SlateShipyard.VanishObjects.VanishVolumesPatches.SupernovaDestructionVanishPrefix</qualifiedname>
+        <param>
+          <type>OWRigidbody</type>
+          <declname>bodyToVanish</declname>
+        </param>
+        <param>
+          <type>RelativeLocationData</type>
+          <declname>entryLocation</declname>
+        </param>
+        <param>
+          <type>SupernovaDestructionVolume</type>
+          <declname>__instance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/VanishVolumesPatches.cs" line="41" column="21" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/VanishVolumesPatches.cs" bodystart="41" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1ad22893d33b1874540009db7502a47890" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SlateShipyard.VanishObjects.VanishVolumesPatches.BlackHoleVanishPrefix</definition>
+        <argsstring>(OWRigidbody bodyToVanish, RelativeLocationData entryLocation, BlackHoleVolume __instance)</argsstring>
+        <name>BlackHoleVanishPrefix</name>
+        <qualifiedname>SlateShipyard.VanishObjects.VanishVolumesPatches.BlackHoleVanishPrefix</qualifiedname>
+        <param>
+          <type>OWRigidbody</type>
+          <declname>bodyToVanish</declname>
+        </param>
+        <param>
+          <type>RelativeLocationData</type>
+          <declname>entryLocation</declname>
+        </param>
+        <param>
+          <type>BlackHoleVolume</type>
+          <declname>__instance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/VanishVolumesPatches.cs" line="54" column="21" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/VanishVolumesPatches.cs" bodystart="54" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1a3e95f31737b0a3aa46ae745f28beb50b" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SlateShipyard.VanishObjects.VanishVolumesPatches.TimeLoopBlackHoleVanishPrefix</definition>
+        <argsstring>(OWRigidbody bodyToVanish, RelativeLocationData entryLocation, TimeLoopBlackHoleVolume __instance)</argsstring>
+        <name>TimeLoopBlackHoleVanishPrefix</name>
+        <qualifiedname>SlateShipyard.VanishObjects.VanishVolumesPatches.TimeLoopBlackHoleVanishPrefix</qualifiedname>
+        <param>
+          <type>OWRigidbody</type>
+          <declname>bodyToVanish</declname>
+        </param>
+        <param>
+          <type>RelativeLocationData</type>
+          <declname>entryLocation</declname>
+        </param>
+        <param>
+          <type>TimeLoopBlackHoleVolume</type>
+          <declname>__instance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/VanishVolumesPatches.cs" line="70" column="21" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/VanishVolumesPatches.cs" bodystart="70" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1a5945e58509552e38f08e9356a7e334ab" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SlateShipyard.VanishObjects.VanishVolumesPatches.VanishPlayerPrefix</definition>
+        <argsstring>()</argsstring>
+        <name>VanishPlayerPrefix</name>
+        <qualifiedname>SlateShipyard.VanishObjects.VanishVolumesPatches.VanishPlayerPrefix</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/VanishVolumesPatches.cs" line="88" column="21" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/VanishVolumesPatches.cs" bodystart="88" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1a6a4fd91e500e2b831d45c5d42c4cd4e5" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SlateShipyard.VanishObjects.VanishVolumesPatches.ReceiveWarpedBodyPrefix</definition>
+        <argsstring>(OWRigidbody warpedBody, RelativeLocationData entryData, WhiteHoleVolume __instance)</argsstring>
+        <name>ReceiveWarpedBodyPrefix</name>
+        <qualifiedname>SlateShipyard.VanishObjects.VanishVolumesPatches.ReceiveWarpedBodyPrefix</qualifiedname>
+        <param>
+          <type>OWRigidbody</type>
+          <declname>warpedBody</declname>
+        </param>
+        <param>
+          <type>RelativeLocationData</type>
+          <declname>entryData</declname>
+        </param>
+        <param>
+          <type>WhiteHoleVolume</type>
+          <declname>__instance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/VanishVolumesPatches.cs" line="106" column="21" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/VanishVolumesPatches.cs" bodystart="106" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1a3d51129ce618ebdc562830075ebde960" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SlateShipyard.VanishObjects.VanishVolumesPatches.AddToGrowQueuePrefix</definition>
+        <argsstring>(OWRigidbody bodyToGrow)</argsstring>
+        <name>AddToGrowQueuePrefix</name>
+        <qualifiedname>SlateShipyard.VanishObjects.VanishVolumesPatches.AddToGrowQueuePrefix</qualifiedname>
+        <param>
+          <type>OWRigidbody</type>
+          <declname>bodyToGrow</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/VanishVolumesPatches.cs" line="122" column="21" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/VanishVolumesPatches.cs" bodystart="122" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1a44d8fa91a056968bf577af1f52964a22" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SlateShipyard.VanishObjects.VanishVolumesPatches.SpawnImmediatelyPrefix</definition>
+        <argsstring>(OWRigidbody overrideBody, RelativeLocationData entryData, WhiteHoleVolume __instance)</argsstring>
+        <name>SpawnImmediatelyPrefix</name>
+        <qualifiedname>SlateShipyard.VanishObjects.VanishVolumesPatches.SpawnImmediatelyPrefix</qualifiedname>
+        <param>
+          <type>OWRigidbody</type>
+          <declname>overrideBody</declname>
+        </param>
+        <param>
+          <type>RelativeLocationData</type>
+          <declname>entryData</declname>
+        </param>
+        <param>
+          <type>WhiteHoleVolume</type>
+          <declname>__instance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/VanishVolumesPatches.cs" line="136" column="21" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/VanishVolumesPatches.cs" bodystart="136" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1ab681933eb6225398c933f770314b573c" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SlateShipyard.VanishObjects.VanishVolumesPatches.OnTriggerEnterPrefix</definition>
+        <argsstring>(Collider hitCollider, VanishVolume __instance)</argsstring>
+        <name>OnTriggerEnterPrefix</name>
+        <qualifiedname>SlateShipyard.VanishObjects.VanishVolumesPatches.OnTriggerEnterPrefix</qualifiedname>
+        <param>
+          <type>Collider</type>
+          <declname>hitCollider</declname>
+        </param>
+        <param>
+          <type>VanishVolume</type>
+          <declname>__instance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/VanishVolumesPatches.cs" line="162" column="21" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/VanishVolumesPatches.cs" bodystart="162" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1a04d97b722073b7e8b2ea65c923b4a961" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SlateShipyard.VanishObjects.VanishVolumesPatches.FixedUpdatePrefix</definition>
+        <argsstring>(VanishVolume __instance)</argsstring>
+        <name>FixedUpdatePrefix</name>
+        <qualifiedname>SlateShipyard.VanishObjects.VanishVolumesPatches.FixedUpdatePrefix</qualifiedname>
+        <param>
+          <type>VanishVolume</type>
+          <declname>__instance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/VanishVolumesPatches.cs" line="190" column="21" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/VanishVolumesPatches.cs" bodystart="190" bodyend="201"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Prefixes patches to make the functionality of <ref refid="class_slate_shipyard_1_1_vanish_objects_1_1_controlled_vanish_object" kindref="compound">ControlledVanishObject</ref> possible. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/VanishVolumesPatches.cs" line="19" column="19" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/VanishObjects/VanishVolumesPatches.cs" bodystart="20" bodyend="202"/>
+    <listofallmembers>
+      <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1a3d51129ce618ebdc562830075ebde960" prot="private" virt="non-virtual"><scope>SlateShipyard::VanishObjects::VanishVolumesPatches</scope><name>AddToGrowQueuePrefix</name></member>
+      <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1ad22893d33b1874540009db7502a47890" prot="private" virt="non-virtual"><scope>SlateShipyard::VanishObjects::VanishVolumesPatches</scope><name>BlackHoleVanishPrefix</name></member>
+      <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1a1f3c06bb5b4b95b7460dc29fbfd2e134" prot="public" virt="non-virtual"><scope>SlateShipyard::VanishObjects::VanishVolumesPatches</scope><name>ConditionsForPlayerToWarp</name></member>
+      <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1ae902479b2b5a6fbc2fa7800b35ed4ece" prot="private" virt="non-virtual"><scope>SlateShipyard::VanishObjects::VanishVolumesPatches</scope><name>DestructionVanishPrefix</name></member>
+      <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1a04d97b722073b7e8b2ea65c923b4a961" prot="private" virt="non-virtual"><scope>SlateShipyard::VanishObjects::VanishVolumesPatches</scope><name>FixedUpdatePrefix</name></member>
+      <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1aa226019fbd47a08474c67282f56063a5" prot="public" virt="non-virtual"><scope>SlateShipyard::VanishObjects::VanishVolumesPatches</scope><name>OnConditionsForPlayerToWarp</name></member>
+      <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1ab681933eb6225398c933f770314b573c" prot="private" virt="non-virtual"><scope>SlateShipyard::VanishObjects::VanishVolumesPatches</scope><name>OnTriggerEnterPrefix</name></member>
+      <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1a6a4fd91e500e2b831d45c5d42c4cd4e5" prot="private" virt="non-virtual"><scope>SlateShipyard::VanishObjects::VanishVolumesPatches</scope><name>ReceiveWarpedBodyPrefix</name></member>
+      <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1a44d8fa91a056968bf577af1f52964a22" prot="private" virt="non-virtual"><scope>SlateShipyard::VanishObjects::VanishVolumesPatches</scope><name>SpawnImmediatelyPrefix</name></member>
+      <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1ae70a33e5acdc32f0305a44e6771887bf" prot="private" virt="non-virtual"><scope>SlateShipyard::VanishObjects::VanishVolumesPatches</scope><name>SupernovaDestructionVanishPrefix</name></member>
+      <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1a3e95f31737b0a3aa46ae745f28beb50b" prot="private" virt="non-virtual"><scope>SlateShipyard::VanishObjects::VanishVolumesPatches</scope><name>TimeLoopBlackHoleVanishPrefix</name></member>
+      <member refid="class_slate_shipyard_1_1_vanish_objects_1_1_vanish_volumes_patches_1a5945e58509552e38f08e9356a7e334ab" prot="private" virt="non-virtual"><scope>SlateShipyard::VanishObjects::VanishVolumesPatches</scope><name>VanishPlayerPrefix</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

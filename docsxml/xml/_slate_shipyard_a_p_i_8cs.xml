@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="_slate_shipyard_a_p_i_8cs" kind="file" language="C#">
+    <compoundname>SlateShipyardAPI.cs</compoundname>
+    <innerclass refid="class_slate_shipyard_1_1_slate_shipyard_a_p_i" prot="public">SlateShipyard::SlateShipyardAPI</innerclass>
+    <innernamespace refid="namespace_slate_shipyard">SlateShipyard</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">UnityEngine;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_slate_shipyard" kindref="compound">SlateShipyard</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6" refid="class_slate_shipyard_1_1_slate_shipyard_a_p_i" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_slate_shipyard_1_1_slate_shipyard_a_p_i" kindref="compound">SlateShipyardAPI</ref><sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>GameObject<sp/><ref refid="class_slate_shipyard_1_1_slate_shipyard_a_p_i_1a121ebe2c6e1253982d79dc34fd111ce2" kindref="member">SpawnShipyard</ref>(Transform<sp/>t,<sp/>Vector3<sp/>localPosition,<sp/>Vector3<sp/>localRotation)<sp/>=&gt;<sp/><ref refid="namespace_slate_shipyard" kindref="compound">SlateShipyard</ref>.SpawnShipyard(t,<sp/>localPosition,<sp/>localRotation);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_slate_shipyard_1_1_slate_shipyard_a_p_i_1a2f739d0a0a0ece695a45aaa160b19506" kindref="member">DontSpawnDefaultShipyard</ref>()<sp/>=&gt;<sp/><ref refid="namespace_slate_shipyard" kindref="compound">SlateShipyard</ref>.DontSpawnDefaultShipyard();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/SlateShipyardAPI.cs"/>
+  </compounddef>
+</doxygen>

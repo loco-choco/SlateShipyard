@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="class_slate_shipyard_1_1_shipyard_spawner" kind="class" language="C#" prot="public">
+    <compoundname>SlateShipyard::ShipyardSpawner</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_slate_shipyard_1_1_shipyard_spawner_1a3873763975f20f0d007ef1f14cd0009e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GameObject</type>
+        <definition>static GameObject SlateShipyard.ShipyardSpawner.SpawnShipyard</definition>
+        <argsstring>(Transform transform, Vector3 position, Quaternion rotation)</argsstring>
+        <name>SpawnShipyard</name>
+        <qualifiedname>SlateShipyard.ShipyardSpawner.SpawnShipyard</qualifiedname>
+        <param>
+          <type>Transform</type>
+          <declname>transform</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>Quaternion</type>
+          <declname>rotation</declname>
+        </param>
+        <briefdescription>
+<para>Spawns a default shipyard. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipyardSpawner.cs" line="14" column="34" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipyardSpawner.cs" bodystart="14" bodyend="76"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class that holds SpawnShipyard. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipyardSpawner.cs" line="11" column="19" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipyardSpawner.cs" bodystart="12" bodyend="78"/>
+    <listofallmembers>
+      <member refid="class_slate_shipyard_1_1_shipyard_spawner_1a3873763975f20f0d007ef1f14cd0009e" prot="public" virt="non-virtual"><scope>SlateShipyard::ShipyardSpawner</scope><name>SpawnShipyard</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="_free_lookable_player_attach_point_8cs" kind="file" language="C#">
+    <compoundname>FreeLookablePlayerAttachPoint.cs</compoundname>
+    <innerclass refid="class_slate_shipyard_1_1_player_attaching_1_1_free_lookable_player_attach_point" prot="public">SlateShipyard::PlayerAttaching::FreeLookablePlayerAttachPoint</innerclass>
+    <innernamespace refid="namespace_slate_shipyard">SlateShipyard</innernamespace>
+    <innernamespace refid="namespace_slate_shipyard_1_1_player_attaching">SlateShipyard::PlayerAttaching</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">System;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="namespace_slate_shipyard_1_1_player_attaching" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_slate_shipyard_1_1_player_attaching" kindref="compound">SlateShipyard.PlayerAttaching</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="class_slate_shipyard_1_1_player_attaching_1_1_free_lookable_player_attach_point" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_slate_shipyard_1_1_player_attaching_1_1_free_lookable_player_attach_point" kindref="compound">FreeLookablePlayerAttachPoint</ref><sp/>:<sp/>PlayerAttachPoint</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Func&lt;bool&gt;<sp/><ref refid="class_slate_shipyard_1_1_player_attaching_1_1_free_lookable_player_attach_point_1a00c3c26b7ca765ac67017643985698e0" kindref="member">AllowFreeLook</ref><sp/>=<sp/>()<sp/>=&gt;<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*&lt;<sp/>Return<sp/>true<sp/>if<sp/>you<sp/>want<sp/>the<sp/>player<sp/>to<sp/>be<sp/>able<sp/>to<sp/>free<sp/>look,<sp/>and<sp/>false<sp/>if<sp/>you<sp/>don&apos;t<sp/>want.*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/PlayerAttaching/FreeLookablePlayerAttachPoint.cs"/>
+  </compounddef>
+</doxygen>

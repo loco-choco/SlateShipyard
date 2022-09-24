@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_3cfb04eedbb16d258b850adda057e09b" kind="dir">
+    <compoundname>C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/PlayerAttaching</compoundname>
+    <innerfile refid="_free_lookable_player_attach_point_8cs">FreeLookablePlayerAttachPoint.cs</innerfile>
+    <innerfile refid="_player_camera_controller_patches_8cs">PlayerCameraControllerPatches.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/PlayerAttaching/"/>
+  </compounddef>
+</doxygen>

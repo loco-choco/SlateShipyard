@@ -62,7 +62,10 @@ public class Sample
 
             foreach( var member in classesAndStructsData) 
             {
-                CreateMDFromCompoundData(member, mdFileTemplate, apiTemplateFilePath);
+                if (member.protection == DoxygenXMLProt.PUBLIC)
+                {
+                    CreateMDFromCompoundData(member, mdFileTemplate, apiTemplateFilePath);
+                }
             }
             Console.Write("Done!");
         }

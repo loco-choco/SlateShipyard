@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="struct_slate_shipyard_1_1_ship_spawner_1_1_ship_data" kind="struct" language="C#" prot="public">
+    <compoundname>SlateShipyard::ShipSpawner::ShipData</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_slate_shipyard_1_1_ship_spawner_1_1_ship_data_1a58838642d2f517231a2670d55dd44236" prot="public" static="no" mutable="no">
+        <type>Func&lt; GameObject &gt;</type>
+        <definition>Func&lt;GameObject&gt; SlateShipyard.ShipSpawner.ShipData.prefab</definition>
+        <argsstring></argsstring>
+        <name>prefab</name>
+        <qualifiedname>SlateShipyard.ShipSpawner.ShipData.prefab</qualifiedname>
+        <briefdescription>
+<para>A function returning the ship addon. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/ShipSpawnerManager.cs" line="63" column="21" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/ShipSpawnerManager.cs" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_slate_shipyard_1_1_ship_spawner_1_1_ship_data_1ad7dddb872a0e6622ff8e024071efa436" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SlateShipyard.ShipSpawner.ShipData.name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>SlateShipyard.ShipSpawner.ShipData.name</qualifiedname>
+        <briefdescription>
+<para>The name shown on the ship selector UI (must be unique!). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/ShipSpawnerManager.cs" line="64" column="23" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/ShipSpawnerManager.cs" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The data stored about the ship addons in ShipSpawnerManager. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/ShipSpawnerManager.cs" line="61" column="11" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/ShipSpawnerManager.cs" bodystart="62" bodyend="65"/>
+    <listofallmembers>
+      <member refid="struct_slate_shipyard_1_1_ship_spawner_1_1_ship_data_1ad7dddb872a0e6622ff8e024071efa436" prot="public" virt="non-virtual"><scope>SlateShipyard::ShipSpawner::ShipData</scope><name>name</name></member>
+      <member refid="struct_slate_shipyard_1_1_ship_spawner_1_1_ship_data_1a58838642d2f517231a2670d55dd44236" prot="public" virt="non-virtual"><scope>SlateShipyard::ShipSpawner::ShipData</scope><name>prefab</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

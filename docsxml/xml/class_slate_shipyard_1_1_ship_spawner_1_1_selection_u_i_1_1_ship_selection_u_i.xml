@@ -1,0 +1,310 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i" kind="class" language="C#" prot="public">
+    <compoundname>SlateShipyard::ShipSpawner::SelectionUI::ShipSelectionUI</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1afd7099167b584f616fd5d307fcfa419f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SlateShipyard.ShipSpawner.SelectionUI.ShipSelectionUI.currentSelectedShip</definition>
+        <argsstring></argsstring>
+        <name>currentSelectedShip</name>
+        <qualifiedname>SlateShipyard.ShipSpawner.SelectionUI.ShipSelectionUI.currentSelectedShip</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipSelectionUI.cs" line="10" column="13" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipSelectionUI.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1aa303a34c7f955133397997b10f8829cd" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SlateShipyard.ShipSpawner.SelectionUI.ShipSelectionUI.spawnEvenIfNotPossible</definition>
+        <argsstring></argsstring>
+        <name>spawnEvenIfNotPossible</name>
+        <qualifiedname>SlateShipyard.ShipSpawner.SelectionUI.ShipSelectionUI.spawnEvenIfNotPossible</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipSelectionUI.cs" line="11" column="14" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipSelectionUI.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1a2f51657c50d36b5427724c4d2ea06fa1" prot="public" static="no" mutable="no">
+        <type><ref refid="class_slate_shipyard_1_1_ship_spawner_1_1_launch_pad_spawn" kindref="compound">LaunchPadSpawn</ref></type>
+        <definition>LaunchPadSpawn SlateShipyard.ShipSpawner.SelectionUI.ShipSelectionUI.spawner</definition>
+        <argsstring></argsstring>
+        <name>spawner</name>
+        <qualifiedname>SlateShipyard.ShipSpawner.SelectionUI.ShipSelectionUI.spawner</qualifiedname>
+        <briefdescription>
+<para>The <ref refid="class_slate_shipyard_1_1_ship_spawner_1_1_launch_pad_spawn" kindref="compound">LaunchPadSpawn</ref> being used. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipSelectionUI.cs" line="12" column="31" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipSelectionUI.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1a0e699a2493a66d69fceb3839a1fbb455" prot="public" static="no" mutable="no">
+        <type><ref refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_visualization_u_i" kindref="compound">ShipVisualizationUI</ref></type>
+        <definition>ShipVisualizationUI SlateShipyard.ShipSpawner.SelectionUI.ShipSelectionUI.shipVisualization</definition>
+        <argsstring></argsstring>
+        <name>shipVisualization</name>
+        <qualifiedname>SlateShipyard.ShipSpawner.SelectionUI.ShipSelectionUI.shipVisualization</qualifiedname>
+        <briefdescription>
+<para>The <ref refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_visualization_u_i" kindref="compound">ShipVisualizationUI</ref> to display the selected ship data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipSelectionUI.cs" line="13" column="36" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipSelectionUI.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1a722a8a5d17920189a9bd25450d5560bd" prot="public" static="no" mutable="no">
+        <type>Text</type>
+        <definition>Text SlateShipyard.ShipSpawner.SelectionUI.ShipSelectionUI.middleDisplayText</definition>
+        <argsstring></argsstring>
+        <name>middleDisplayText</name>
+        <qualifiedname>SlateShipyard.ShipSpawner.SelectionUI.ShipSelectionUI.middleDisplayText</qualifiedname>
+        <briefdescription>
+<para>Text UI element to display messages and warnings. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipSelectionUI.cs" line="15" column="21" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipSelectionUI.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1aad3a10e745fb17b05901a0d0ca8490b6" prot="public" static="no" mutable="no">
+        <type>InteractReceiver</type>
+        <definition>InteractReceiver SlateShipyard.ShipSpawner.SelectionUI.ShipSelectionUI.nextShipButton</definition>
+        <argsstring></argsstring>
+        <name>nextShipButton</name>
+        <qualifiedname>SlateShipyard.ShipSpawner.SelectionUI.ShipSelectionUI.nextShipButton</qualifiedname>
+        <briefdescription>
+<para>The button to select the next ship on the list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipSelectionUI.cs" line="16" column="33" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipSelectionUI.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1ad379afdd9de0ee1fad43a4104b8f9085" prot="public" static="no" mutable="no">
+        <type>InteractReceiver</type>
+        <definition>InteractReceiver SlateShipyard.ShipSpawner.SelectionUI.ShipSelectionUI.previousShipButton</definition>
+        <argsstring></argsstring>
+        <name>previousShipButton</name>
+        <qualifiedname>SlateShipyard.ShipSpawner.SelectionUI.ShipSelectionUI.previousShipButton</qualifiedname>
+        <briefdescription>
+<para>The button to select the previous ship on the list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipSelectionUI.cs" line="17" column="33" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipSelectionUI.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1ad51e42921bcdd1e44c4d62e8c2e6095a" prot="public" static="no" mutable="no">
+        <type>InteractReceiver</type>
+        <definition>InteractReceiver SlateShipyard.ShipSpawner.SelectionUI.ShipSelectionUI.spawnShipButton</definition>
+        <argsstring></argsstring>
+        <name>spawnShipButton</name>
+        <qualifiedname>SlateShipyard.ShipSpawner.SelectionUI.ShipSelectionUI.spawnShipButton</qualifiedname>
+        <briefdescription>
+<para>The button to spawn the current selected ship. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipSelectionUI.cs" line="18" column="33" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipSelectionUI.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1a45e542d6d1eb0f7af53ee1a44b9ac928" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SlateShipyard.ShipSpawner.SelectionUI.ShipSelectionUI.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>SlateShipyard.ShipSpawner.SelectionUI.ShipSelectionUI.Start</qualifiedname>
+        <briefdescription>
+<para>The Start method. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipSelectionUI.cs" line="21" column="21" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipSelectionUI.cs" bodystart="21" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1a1735059a2ff7ebc2a137b7481c3362e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SlateShipyard.ShipSpawner.SelectionUI.ShipSelectionUI.OnDestroy</definition>
+        <argsstring>()</argsstring>
+        <name>OnDestroy</name>
+        <qualifiedname>SlateShipyard.ShipSpawner.SelectionUI.ShipSelectionUI.OnDestroy</qualifiedname>
+        <briefdescription>
+<para>The OnDestroy method. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipSelectionUI.cs" line="34" column="21" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipSelectionUI.cs" bodystart="34" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1a9e38ac3d0251cb1a7504cacb0b88a7ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SlateShipyard.ShipSpawner.SelectionUI.ShipSelectionUI.OnNextPageInteract</definition>
+        <argsstring>()</argsstring>
+        <name>OnNextPageInteract</name>
+        <qualifiedname>SlateShipyard.ShipSpawner.SelectionUI.ShipSelectionUI.OnNextPageInteract</qualifiedname>
+        <briefdescription>
+<para>The method called to select the next ship on the list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipSelectionUI.cs" line="42" column="21" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipSelectionUI.cs" bodystart="42" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1a39fdb245b56116fc0ad40f5ba8e1bd22" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SlateShipyard.ShipSpawner.SelectionUI.ShipSelectionUI.OnPreviousPageInteract</definition>
+        <argsstring>()</argsstring>
+        <name>OnPreviousPageInteract</name>
+        <qualifiedname>SlateShipyard.ShipSpawner.SelectionUI.ShipSelectionUI.OnPreviousPageInteract</qualifiedname>
+        <briefdescription>
+<para>The method called to select the previous ship on the list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipSelectionUI.cs" line="56" column="21" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipSelectionUI.cs" bodystart="56" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1a3bd33fb43421d278252c69313fec3794" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SlateShipyard.ShipSpawner.SelectionUI.ShipSelectionUI.OnSelectInteract</definition>
+        <argsstring>()</argsstring>
+        <name>OnSelectInteract</name>
+        <qualifiedname>SlateShipyard.ShipSpawner.SelectionUI.ShipSelectionUI.OnSelectInteract</qualifiedname>
+        <briefdescription>
+<para>The method called to spawn the currently selected ship. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipSelectionUI.cs" line="74" column="21" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipSelectionUI.cs" bodystart="74" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1ab08ea2b0ff3960140cdb6feac5e20b24" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SlateShipyard.ShipSpawner.SelectionUI.ShipSelectionUI.WriteTextOnDisplay</definition>
+        <argsstring>(string text)</argsstring>
+        <name>WriteTextOnDisplay</name>
+        <qualifiedname>SlateShipyard.ShipSpawner.SelectionUI.ShipSelectionUI.WriteTextOnDisplay</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+<para>Writes text on the middle text ui and removes it after 2 seconds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipSelectionUI.cs" line="90" column="21" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipSelectionUI.cs" bodystart="90" bodyend="94"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1a347496678c8d8f2156abb0d49b275641" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator SlateShipyard.ShipSpawner.SelectionUI.ShipSelectionUI.WaitToRemoveText</definition>
+        <argsstring>(float waitTime)</argsstring>
+        <name>WaitToRemoveText</name>
+        <qualifiedname>SlateShipyard.ShipSpawner.SelectionUI.ShipSelectionUI.WaitToRemoveText</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>waitTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipSelectionUI.cs" line="95" column="21" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipSelectionUI.cs" bodystart="95" bodyend="99"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>UI element to select and spawn ships from ShipSpawnerManager. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>SlateShipyard.ShipSpawner.SelectionUI.ShipSelectionUI</label>
+        <link refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>SlateShipyard.ShipSpawner.SelectionUI.ShipSelectionUI</label>
+        <link refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>spawner</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>shipVisualization</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SlateShipyard.ShipSpawner.LaunchPadSpawn</label>
+        <link refid="class_slate_shipyard_1_1_ship_spawner_1_1_launch_pad_spawn"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>SlateShipyard.ShipSpawner.SelectionUI.ShipVisualizationUI</label>
+        <link refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_visualization_u_i"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipSelectionUI.cs" line="8" column="11" bodyfile="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipSelectionUI.cs" bodystart="9" bodyend="100"/>
+    <listofallmembers>
+      <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1afd7099167b584f616fd5d307fcfa419f" prot="private" virt="non-virtual"><scope>SlateShipyard::ShipSpawner::SelectionUI::ShipSelectionUI</scope><name>currentSelectedShip</name></member>
+      <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1a722a8a5d17920189a9bd25450d5560bd" prot="public" virt="non-virtual"><scope>SlateShipyard::ShipSpawner::SelectionUI::ShipSelectionUI</scope><name>middleDisplayText</name></member>
+      <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1aad3a10e745fb17b05901a0d0ca8490b6" prot="public" virt="non-virtual"><scope>SlateShipyard::ShipSpawner::SelectionUI::ShipSelectionUI</scope><name>nextShipButton</name></member>
+      <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1a1735059a2ff7ebc2a137b7481c3362e0" prot="public" virt="non-virtual"><scope>SlateShipyard::ShipSpawner::SelectionUI::ShipSelectionUI</scope><name>OnDestroy</name></member>
+      <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1a9e38ac3d0251cb1a7504cacb0b88a7ca" prot="public" virt="non-virtual"><scope>SlateShipyard::ShipSpawner::SelectionUI::ShipSelectionUI</scope><name>OnNextPageInteract</name></member>
+      <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1a39fdb245b56116fc0ad40f5ba8e1bd22" prot="public" virt="non-virtual"><scope>SlateShipyard::ShipSpawner::SelectionUI::ShipSelectionUI</scope><name>OnPreviousPageInteract</name></member>
+      <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1a3bd33fb43421d278252c69313fec3794" prot="public" virt="non-virtual"><scope>SlateShipyard::ShipSpawner::SelectionUI::ShipSelectionUI</scope><name>OnSelectInteract</name></member>
+      <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1ad379afdd9de0ee1fad43a4104b8f9085" prot="public" virt="non-virtual"><scope>SlateShipyard::ShipSpawner::SelectionUI::ShipSelectionUI</scope><name>previousShipButton</name></member>
+      <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1a0e699a2493a66d69fceb3839a1fbb455" prot="public" virt="non-virtual"><scope>SlateShipyard::ShipSpawner::SelectionUI::ShipSelectionUI</scope><name>shipVisualization</name></member>
+      <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1a2f51657c50d36b5427724c4d2ea06fa1" prot="public" virt="non-virtual"><scope>SlateShipyard::ShipSpawner::SelectionUI::ShipSelectionUI</scope><name>spawner</name></member>
+      <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1aa303a34c7f955133397997b10f8829cd" prot="private" virt="non-virtual"><scope>SlateShipyard::ShipSpawner::SelectionUI::ShipSelectionUI</scope><name>spawnEvenIfNotPossible</name></member>
+      <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1ad51e42921bcdd1e44c4d62e8c2e6095a" prot="public" virt="non-virtual"><scope>SlateShipyard::ShipSpawner::SelectionUI::ShipSelectionUI</scope><name>spawnShipButton</name></member>
+      <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1a45e542d6d1eb0f7af53ee1a44b9ac928" prot="public" virt="non-virtual"><scope>SlateShipyard::ShipSpawner::SelectionUI::ShipSelectionUI</scope><name>Start</name></member>
+      <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1a347496678c8d8f2156abb0d49b275641" prot="private" virt="non-virtual"><scope>SlateShipyard::ShipSpawner::SelectionUI::ShipSelectionUI</scope><name>WaitToRemoveText</name></member>
+      <member refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i_1ab08ea2b0ff3960140cdb6feac5e20b24" prot="public" virt="non-virtual"><scope>SlateShipyard::ShipSpawner::SelectionUI::ShipSelectionUI</scope><name>WriteTextOnDisplay</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

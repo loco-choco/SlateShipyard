@@ -18,9 +18,9 @@ namespace SlateShipyard.VanishObjects
     //! Prefixes patches to make the functionality of ControlledVanishObject possible.
     public static class VanishVolumesPatches
     {
-        public delegate bool ConditionsForPlayerToWarp();
+        public delegate bool ConditionsForPlayerToWarp();//!< delegate for the OnConditionsForPlayerToWarp event.
         //! Event for when the player warps.
-        /*! Add to this event if you want to controll when the player can warp. For example, if the player is attached to your shp you probably don't want for the player to warp separately.*/
+        /*! Add to this event if you want to controll when the player can warp. For example, if the player is attached to your ship you probably don't want for the player to warp separately.*/
         public static event ConditionsForPlayerToWarp OnConditionsForPlayerToWarp;
 
         [HarmonyPrefix]

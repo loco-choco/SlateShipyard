@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespace_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i" kind="namespace" language="C#">
+    <compoundname>SlateShipyard::ShipSpawner::SelectionUI</compoundname>
+    <innerclass refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_selection_u_i" prot="public">SlateShipyard::ShipSpawner::SelectionUI::ShipSelectionUI</innerclass>
+    <innerclass refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_visualization_u_i" prot="public">SlateShipyard::ShipSpawner::SelectionUI::ShipVisualizationUI</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipSelectionUI.cs" line="5" column="1"/>
+  </compounddef>
+</doxygen>

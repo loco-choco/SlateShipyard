@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_53ef52ee1e777c3eeddd50b7dbbf55c1" kind="dir">
+    <compoundname>C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/obj/Debug/net48</compoundname>
+    <innerfile refid="_debug_2net48_2_8_n_e_t_framework_00_version_0av4_88_8_assembly_attributes_8cs">.NETFramework,Version=v4.8.AssemblyAttributes.cs</innerfile>
+    <innerfile refid="_custom_ship_lib_8_assembly_info_8cs">CustomShipLib.AssemblyInfo.cs</innerfile>
+    <innerfile refid="_debug_2net48_2_slate_shipyard_8_assembly_info_8cs">SlateShipyard.AssemblyInfo.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/obj/Debug/net48/"/>
+  </compounddef>
+</doxygen>

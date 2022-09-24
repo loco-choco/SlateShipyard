@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="_ship_visualization_u_i_8cs" kind="file" language="C#">
+    <compoundname>ShipVisualizationUI.cs</compoundname>
+    <innerclass refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_visualization_u_i" prot="public">SlateShipyard::ShipSpawner::SelectionUI::ShipVisualizationUI</innerclass>
+    <innernamespace refid="namespace_slate_shipyard">SlateShipyard</innernamespace>
+    <innernamespace refid="namespace_slate_shipyard_1_1_ship_spawner">SlateShipyard::ShipSpawner</innernamespace>
+    <innernamespace refid="namespace_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i">SlateShipyard::ShipSpawner::SelectionUI</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">UnityEngine;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">UnityEngine.UI;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i" kindref="compound">SlateShipyard.ShipSpawner.SelectionUI</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7" refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_visualization_u_i" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_visualization_u_i" kindref="compound">ShipVisualizationUI</ref><sp/>:<sp/>MonoBehaviour</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Text<sp/><ref refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_visualization_u_i_1af7ad013f4f0b05988de3ceb9a3e5d58c" kindref="member">shipName</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_slate_shipyard_1_1_ship_spawner_1_1_selection_u_i_1_1_ship_visualization_u_i_1a7ae1004ef04da874a44ca865ead48bfa" kindref="member">ChangeShip</ref>(<ref refid="struct_slate_shipyard_1_1_ship_spawner_1_1_ship_data" kindref="compound">ShipData</ref><sp/>data)<sp/></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>shipName.text<sp/>=<sp/>data.<ref refid="struct_slate_shipyard_1_1_ship_spawner_1_1_ship_data_1ad7dddb872a0e6622ff8e024071efa436" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Pichau/Desktop/programas/OuterWildsCustomShips/CustomShipLib/CustomShipLib/ShipSpawner/SelectionUI/ShipVisualizationUI.cs"/>
+  </compounddef>
+</doxygen>
