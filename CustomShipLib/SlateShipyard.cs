@@ -13,9 +13,12 @@ using SlateShipyard.PlayerAttaching;
 
 namespace SlateShipyard
 {
+    //! Main class of Slate's Shipyard.
     public class SlateShipyard : ModBehaviour
     {
+        //! Returns the modHelper from OWML.
         public static IModHelper modHelper;
+        //! Returns prefab of the default shipyards.
         public static GameObject defaultShipSpawnerPrefab;
 
         private static bool spawnDefaultShipYard = true;
@@ -54,13 +57,14 @@ namespace SlateShipyard
                 astro = AstroObject.Name.CaveTwin
             },
         };
-
+        //! Returns the API to OWML.
         public override object GetApi() => new SlateShipyardAPI();
-
+        //! Dissables the spawn of the default shipyards.
         public static void DontSpawnDefaultShipyard() 
         {
             spawnDefaultShipYard = false;
         }
+        //! Spawns a default shipyard giving the local position, rotation and parent transform.
         public static GameObject SpawnShipyard(Transform t, Vector3 localPosition, Vector3 localRotation)
         {
             var go = ShipyardSpawner.SpawnShipyard(t.GetAttachedOWRigidbody().transform, Vector3.zero, Quaternion.identity);

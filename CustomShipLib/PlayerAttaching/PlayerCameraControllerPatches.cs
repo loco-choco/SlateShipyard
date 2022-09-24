@@ -8,6 +8,7 @@ using UnityEngine;
 
 namespace SlateShipyard.PlayerAttaching
 {
+    //! Transpiler patches to make the functionality of FreeLookablePlayerAttachPoint possible.
     public static class PlayerCameraControllerPatches
     {
         //We are trying to replace this._shipController != null && this._shipController.AllowFreeLook() with AllowFreeLook(this)

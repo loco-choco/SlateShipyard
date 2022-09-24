@@ -4,18 +4,20 @@ using UnityEngine.UI;
 
 namespace SlateShipyard.ShipSpawner.SelectionUI
 {
+    //! UI element to select and spawn ships from ShipSpawnerManager.
     public class ShipSelectionUI : MonoBehaviour
     {
         int currentSelectedShip = 0;
         bool spawnEvenIfNotPossible = true;
-        public LaunchPadSpawn spawner;
-        public ShipVisualizationUI shipVisualization;
+        public LaunchPadSpawn spawner; //!< The LaunchPadSpawn being used.
+        public ShipVisualizationUI shipVisualization;//!< The ShipVisualizationUI to display the selected ship data.
 
-        public Text middleDisplayText;
-        public InteractReceiver nextShipButton;
-        public InteractReceiver previousShipButton;
-        public InteractReceiver spawnShipButton;
+        public Text middleDisplayText; //!< Text UI element to display messages and warnings.
+        public InteractReceiver nextShipButton; //!< The button to select the next ship on the list.
+        public InteractReceiver previousShipButton; //!< The button to select the previous ship on the list.
+        public InteractReceiver spawnShipButton; //!< The button to spawn the current selected ship.
 
+        //! The Start method.
         public void Start() 
         {
             nextShipButton.OnReleaseInteract += OnNextPageInteract;
@@ -28,6 +30,7 @@ namespace SlateShipyard.ShipSpawner.SelectionUI
                 shipVisualization.ChangeShip(ShipSpawnerManager.GetShipData(currentSelectedShip));
             }
         }
+        //! The OnDestroy method.
         public void OnDestroy() 
         {
             nextShipButton.OnReleaseInteract -= OnNextPageInteract;
@@ -35,6 +38,7 @@ namespace SlateShipyard.ShipSpawner.SelectionUI
             spawnShipButton.OnReleaseInteract -= OnSelectInteract;
         }
 
+        //! The method called to select the next ship on the list.
         public void OnNextPageInteract() 
         {
             if (ShipSpawnerManager.ShipAmount() > 0)
@@ -48,6 +52,7 @@ namespace SlateShipyard.ShipSpawner.SelectionUI
 
             nextShipButton.ResetInteraction();
         }
+        //! The method called to select the previous ship on the list.
         public void OnPreviousPageInteract()
         {
             if (ShipSpawnerManager.ShipAmount() > 0)
@@ -65,6 +70,7 @@ namespace SlateShipyard.ShipSpawner.SelectionUI
             }
             previousShipButton.ResetInteraction();
         }
+        //! The method called to spawn the currently selected ship.
         public void OnSelectInteract()
         {
             spawnShipButton.ResetInteraction();
@@ -80,6 +86,7 @@ namespace SlateShipyard.ShipSpawner.SelectionUI
             }
             WriteTextOnDisplay($"Couldn't spawn {data.name}");
         }
+        //! Writes text on the middle text ui and removes it after 2 seconds.
         public void WriteTextOnDisplay(string text) 
         {
             middleDisplayText.text = text;

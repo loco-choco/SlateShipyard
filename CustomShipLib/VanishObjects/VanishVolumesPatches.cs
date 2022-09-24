@@ -4,17 +4,25 @@ using HarmonyLib;
 
 namespace SlateShipyard.VanishObjects
 {
+    //! Data used when passing information to the VanishVolumes in VanishVolumesPatches.
     public struct ControlledVanishObjectData
     {
         public ControlledVanishObject ControlledVanishObject;
         public RelativeLocationData RelativeLocationData;
     }
+    //! Aditional data held by the VanishVolumes for VanishVolumesPatches.
     public class VanishVolumesExtraData : MonoBehaviour
     {
         public List<ControlledVanishObjectData> VanishObjectData = new List<ControlledVanishObjectData>();
     }
+    //! Prefixes patches to make the functionality of ControlledVanishObject possible.
     public static class VanishVolumesPatches
     {
+        public delegate bool ConditionsForPlayerToWarp();
+        //! Event for when the player warps.
+        /*! Add to this event if you want to controll when the player can warp. For example, if the player is attached to your shp you probably don't want for the player to warp separately.*/
+        public static event ConditionsForPlayerToWarp OnConditionsForPlayerToWarp;
+
         [HarmonyPrefix]
         [HarmonyPatch(typeof(DestructionVolume), nameof(DestructionVolume.Vanish))]
         static bool DestructionVanishPrefix(OWRigidbody bodyToVanish, RelativeLocationData entryLocation, DestructionVolume __instance)
@@ -74,9 +82,7 @@ namespace SlateShipyard.VanishObjects
 
             return true;
         }
-        public delegate bool ConditionsForPlayerToWarp();
-        public static event ConditionsForPlayerToWarp OnConditionsForPlayerToWarp;
-
+        
         [HarmonyPrefix]
         [HarmonyPatch(typeof(BlackHoleVolume), nameof(BlackHoleVolume.VanishPlayer))]
         static bool VanishPlayerPrefix()

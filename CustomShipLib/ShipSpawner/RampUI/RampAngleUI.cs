@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 namespace SlateShipyard.ShipSpawner.RampUI
 {
+    //! UI element to display the current angle of the ramp and to handle its angle.
     public class RampAngleUI : MonoBehaviour
     {
         float maxAngle = 90f;
@@ -12,21 +13,25 @@ namespace SlateShipyard.ShipSpawner.RampUI
         float angleStep = 5f;
         float angleChangeSpeed = 180f;
 
-        public Text angleDisplayText;
-        public InteractReceiver increaseAngle;
-        public InteractReceiver decreaseAngle;
-
+        public Text angleDisplayText; //!< Text UI element to display the current angle in degrees.
+        public InteractReceiver increaseAngle; //!< The button to increase the angle value.
+        public InteractReceiver decreaseAngle; //!< The button to decrease the angle value.
+        
+        //! The Start method.
         public void Start()
         {
             increaseAngle.OnReleaseInteract += OnAngleIncrease;
             decreaseAngle.OnReleaseInteract += OnAngleDecrease;
         }
+
+        //! The OnDestroy method.
         public void OnDestroy()
         {
             increaseAngle.OnReleaseInteract -= OnAngleIncrease;
             decreaseAngle.OnReleaseInteract -= OnAngleDecrease;
         }
 
+        //! Method called to increase the angle of the ramp. 
         public void OnAngleIncrease()
         {
             targetAngle += angleStep;
@@ -34,6 +39,7 @@ namespace SlateShipyard.ShipSpawner.RampUI
             angleDisplayText.text = $" {(int)(targetAngle)}°";
             increaseAngle.ResetInteraction();
         }
+        //! Method called to decrease the angle of the ramp. 
         public void OnAngleDecrease()
         {
             targetAngle -= angleStep;
@@ -41,6 +47,7 @@ namespace SlateShipyard.ShipSpawner.RampUI
             angleDisplayText.text = $" {(int)(targetAngle)}°";
             decreaseAngle.ResetInteraction();
         }
+        //! The Update method.
         public void Update() 
         {
             Vector3 currentAngle = transform.localEulerAngles;

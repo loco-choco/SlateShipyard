@@ -7,8 +7,10 @@ using UnityEngine.UI;
 
 namespace SlateShipyard
 {
-    public static class ShipyardSpawner 
+    //! Class that holds SpawnShipyard.
+    public static class ShipyardSpawner
     {
+        //! Spawns a default shipyard.
         public static GameObject SpawnShipyard(Transform transform, Vector3 position, Quaternion rotation)
         {
             Transform t = GameObject.Instantiate(SlateShipyard.defaultShipSpawnerPrefab, position, rotation, transform).transform;
