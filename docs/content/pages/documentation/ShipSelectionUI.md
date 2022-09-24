@@ -1,0 +1,174 @@
+## ShipSelectionUI
+* **Type** : Public class
+* _Inherents from **MonoBehaviour**_ 
+* **Namespace** : SlateShipyard.ShipSpawner.SelectionUI
+
+
+
+
+### Public Properties
+<div class="accordion" id="properties">
+	<div class="accordion-item">
+		<h2 class="accordion-header">
+           <button id="spawner-heading" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#spawner" aria-expanded="false" aria-controls="spawner">
+            spawner
+			</button>
+		</h2>
+		<div id="spawner" class="accordion-collapse collapse" aria-labelledby="spawner-heading" data-bs-parent="#properties">
+			<div class="accordion-body">
+				<p class="my-0 ms-2"><b>Public</b> LaunchPadSpawn</p>
+				
+			</div>
+		</div>
+	</div>
+	<div class="accordion-item">
+		<h2 class="accordion-header">
+           <button id="shipVisualization-heading" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#shipVisualization" aria-expanded="false" aria-controls="shipVisualization">
+            shipVisualization
+			</button>
+		</h2>
+		<div id="shipVisualization" class="accordion-collapse collapse" aria-labelledby="shipVisualization-heading" data-bs-parent="#properties">
+			<div class="accordion-body">
+				<p class="my-0 ms-2"><b>Public</b> ShipVisualizationUI</p>
+				
+			</div>
+		</div>
+	</div>
+	<div class="accordion-item">
+		<h2 class="accordion-header">
+           <button id="middleDisplayText-heading" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#middleDisplayText" aria-expanded="false" aria-controls="middleDisplayText">
+            middleDisplayText
+			</button>
+		</h2>
+		<div id="middleDisplayText" class="accordion-collapse collapse" aria-labelledby="middleDisplayText-heading" data-bs-parent="#properties">
+			<div class="accordion-body">
+				<p class="my-0 ms-2"><b>Public</b> Text</p>
+				
+			</div>
+		</div>
+	</div>
+	<div class="accordion-item">
+		<h2 class="accordion-header">
+           <button id="nextShipButton-heading" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nextShipButton" aria-expanded="false" aria-controls="nextShipButton">
+            nextShipButton
+			</button>
+		</h2>
+		<div id="nextShipButton" class="accordion-collapse collapse" aria-labelledby="nextShipButton-heading" data-bs-parent="#properties">
+			<div class="accordion-body">
+				<p class="my-0 ms-2"><b>Public</b> InteractReceiver</p>
+				
+			</div>
+		</div>
+	</div>
+	<div class="accordion-item">
+		<h2 class="accordion-header">
+           <button id="previousShipButton-heading" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#previousShipButton" aria-expanded="false" aria-controls="previousShipButton">
+            previousShipButton
+			</button>
+		</h2>
+		<div id="previousShipButton" class="accordion-collapse collapse" aria-labelledby="previousShipButton-heading" data-bs-parent="#properties">
+			<div class="accordion-body">
+				<p class="my-0 ms-2"><b>Public</b> InteractReceiver</p>
+				
+			</div>
+		</div>
+	</div>
+	<div class="accordion-item">
+		<h2 class="accordion-header">
+           <button id="spawnShipButton-heading" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#spawnShipButton" aria-expanded="false" aria-controls="spawnShipButton">
+            spawnShipButton
+			</button>
+		</h2>
+		<div id="spawnShipButton" class="accordion-collapse collapse" aria-labelledby="spawnShipButton-heading" data-bs-parent="#properties">
+			<div class="accordion-body">
+				<p class="my-0 ms-2"><b>Public</b> InteractReceiver</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+### Public Methods
+<div class="accordion" id="methods">
+	<div class="accordion-item">
+		<h2 class="accordion-header">
+           <button id="Start-heading" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Start" aria-expanded="false" aria-controls="Start">
+            Start
+			</button>
+		</h2>
+		<div id="Start" class="accordion-collapse collapse" aria-labelledby="Start-heading" data-bs-parent="#methods">
+			<div class="accordion-body">
+				<p class="my-0 ms-2"><b>Public</b> void ()</p
+				
+			</div>
+		</div>
+	</div>
+	<div class="accordion-item">
+		<h2 class="accordion-header">
+           <button id="OnDestroy-heading" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#OnDestroy" aria-expanded="false" aria-controls="OnDestroy">
+            OnDestroy
+			</button>
+		</h2>
+		<div id="OnDestroy" class="accordion-collapse collapse" aria-labelledby="OnDestroy-heading" data-bs-parent="#methods">
+			<div class="accordion-body">
+				<p class="my-0 ms-2"><b>Public</b> void ()</p
+				
+			</div>
+		</div>
+	</div>
+	<div class="accordion-item">
+		<h2 class="accordion-header">
+           <button id="OnNextPageInteract-heading" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#OnNextPageInteract" aria-expanded="false" aria-controls="OnNextPageInteract">
+            OnNextPageInteract
+			</button>
+		</h2>
+		<div id="OnNextPageInteract" class="accordion-collapse collapse" aria-labelledby="OnNextPageInteract-heading" data-bs-parent="#methods">
+			<div class="accordion-body">
+				<p class="my-0 ms-2"><b>Public</b> void ()</p
+				
+			</div>
+		</div>
+	</div>
+	<div class="accordion-item">
+		<h2 class="accordion-header">
+           <button id="OnPreviousPageInteract-heading" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#OnPreviousPageInteract" aria-expanded="false" aria-controls="OnPreviousPageInteract">
+            OnPreviousPageInteract
+			</button>
+		</h2>
+		<div id="OnPreviousPageInteract" class="accordion-collapse collapse" aria-labelledby="OnPreviousPageInteract-heading" data-bs-parent="#methods">
+			<div class="accordion-body">
+				<p class="my-0 ms-2"><b>Public</b> void ()</p
+				
+			</div>
+		</div>
+	</div>
+	<div class="accordion-item">
+		<h2 class="accordion-header">
+           <button id="OnSelectInteract-heading" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#OnSelectInteract" aria-expanded="false" aria-controls="OnSelectInteract">
+            OnSelectInteract
+			</button>
+		</h2>
+		<div id="OnSelectInteract" class="accordion-collapse collapse" aria-labelledby="OnSelectInteract-heading" data-bs-parent="#methods">
+			<div class="accordion-body">
+				<p class="my-0 ms-2"><b>Public</b> void ()</p
+				
+			</div>
+		</div>
+	</div>
+	<div class="accordion-item">
+		<h2 class="accordion-header">
+           <button id="WriteTextOnDisplay-heading" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#WriteTextOnDisplay" aria-expanded="false" aria-controls="WriteTextOnDisplay">
+            WriteTextOnDisplay
+			</button>
+		</h2>
+		<div id="WriteTextOnDisplay" class="accordion-collapse collapse" aria-labelledby="WriteTextOnDisplay-heading" data-bs-parent="#methods">
+			<div class="accordion-body">
+				<p class="my-0 ms-2"><b>Public</b> void (string text)</p
+				
+			</div>
+		</div>
+	</div>
+</div>
+
