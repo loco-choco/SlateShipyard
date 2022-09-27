@@ -1,6 +1,6 @@
 ## OWSimpleRaycastWheel
-* **Type** : Public class
-* _Inherents from **MonoBehaviour**_ 
+* **Type** : Public `class`
+* _Inherents from `MonoBehaviour`_ 
 * **Namespace** : SlateShipyard.Modules.Wheels
 
 _This is a script which allows you to have simple wheel simulations with suspension, friction and other stuff._
@@ -24,7 +24,8 @@ This simulation uses a single raycast to represent the wheel and its suspension,
 		</h2>
 		<div id="wheelRadius" class="accordion-collapse collapse" aria-labelledby="wheelRadius-heading" data-bs-parent="#properties">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> float</p>
+				<p class="my-0 ms-2"><p class="my-0 ms-2"><code>float</code></p>
+</p>
 <p class="my-0 ms-2"><i>The radius of the wheel.</i></p>
 				
 				
@@ -39,7 +40,8 @@ This simulation uses a single raycast to represent the wheel and its suspension,
 		</h2>
 		<div id="restLenght" class="accordion-collapse collapse" aria-labelledby="restLenght-heading" data-bs-parent="#properties">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> float</p>
+				<p class="my-0 ms-2"><p class="my-0 ms-2"><code>float</code></p>
+</p>
 <p class="my-0 ms-2"><i>The lenght which the suspension considers to be at rest.</i></p>
 				
 				
@@ -54,7 +56,8 @@ This simulation uses a single raycast to represent the wheel and its suspension,
 		</h2>
 		<div id="springTravel" class="accordion-collapse collapse" aria-labelledby="springTravel-heading" data-bs-parent="#properties">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> float</p>
+				<p class="my-0 ms-2"><p class="my-0 ms-2"><code>float</code></p>
+</p>
 <p class="my-0 ms-2"><i>The distance which the suspension can travel.</i></p>
 				
 				<p class="my-0 ms-2">The max and min lenght it can have are calculated from this equation: minLenght = restLenght - springTravel; maxLenght = restLenght + springTravel.</p>
@@ -69,7 +72,8 @@ This simulation uses a single raycast to represent the wheel and its suspension,
 		</h2>
 		<div id="springStiffness" class="accordion-collapse collapse" aria-labelledby="springStiffness-heading" data-bs-parent="#properties">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> float</p>
+				<p class="my-0 ms-2"><p class="my-0 ms-2"><code>float</code></p>
+</p>
 <p class="my-0 ms-2"><i>The spring constant of the suspension.</i></p>
 				
 				
@@ -84,7 +88,8 @@ This simulation uses a single raycast to represent the wheel and its suspension,
 		</h2>
 		<div id="damperStiffness" class="accordion-collapse collapse" aria-labelledby="damperStiffness-heading" data-bs-parent="#properties">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> float</p>
+				<p class="my-0 ms-2"><p class="my-0 ms-2"><code>float</code></p>
+</p>
 <p class="my-0 ms-2"><i>The damping constant of the suspension.</i></p>
 				
 				<p class="my-0 ms-2">Usually make it smaller then the springStiffness to have better results.</p>
@@ -99,7 +104,8 @@ This simulation uses a single raycast to represent the wheel and its suspension,
 		</h2>
 		<div id="frictionCoeficient" class="accordion-collapse collapse" aria-labelledby="frictionCoeficient-heading" data-bs-parent="#properties">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> float</p>
+				<p class="my-0 ms-2"><p class="my-0 ms-2"><code>float</code></p>
+</p>
 <p class="my-0 ms-2"><i>The coeficient for the friction the wheel will experience for its foward direction velocity when touching a ground.</i></p>
 				
 				<p class="my-0 ms-2">Usually make it a value between 1.0 and 0.0, 0.0 being like driving in ice and 1.0 like in glue.</p>
@@ -114,7 +120,8 @@ This simulation uses a single raycast to represent the wheel and its suspension,
 		</h2>
 		<div id="steeringFrictionCoeficient" class="accordion-collapse collapse" aria-labelledby="steeringFrictionCoeficient-heading" data-bs-parent="#properties">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> float</p>
+				<p class="my-0 ms-2"><p class="my-0 ms-2"><code>float</code></p>
+</p>
 <p class="my-0 ms-2"><i>The coeficient for the friction the wheel will experience for velocities that aren't on the wheel direction.</i></p>
 				
 				<p class="my-0 ms-2">This means that if the wheel is sliding, this friction force will try to reduce this motion.</p>
@@ -129,7 +136,8 @@ This simulation uses a single raycast to represent the wheel and its suspension,
 		</h2>
 		<div id="steerAngle" class="accordion-collapse collapse" aria-labelledby="steerAngle-heading" data-bs-parent="#properties">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> float</p>
+				<p class="my-0 ms-2"><p class="my-0 ms-2"><code>float</code></p>
+</p>
 <p class="my-0 ms-2"><i>The target angle (in degrees) which you want the wheel to be at.</i></p>
 				
 				
@@ -144,7 +152,8 @@ This simulation uses a single raycast to represent the wheel and its suspension,
 		</h2>
 		<div id="steerTime" class="accordion-collapse collapse" aria-labelledby="steerTime-heading" data-bs-parent="#properties">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> float</p>
+				<p class="my-0 ms-2"><p class="my-0 ms-2"><code>float</code></p>
+</p>
 <p class="my-0 ms-2"><i>The 'time' that the wheel will take to reach the target angle in steerAngle.</i></p>
 				
 				<p class="my-0 ms-2">Bigger values make it reach the end value faster.</p>
@@ -159,7 +168,8 @@ This simulation uses a single raycast to represent the wheel and its suspension,
 		</h2>
 		<div id="rb" class="accordion-collapse collapse" aria-labelledby="rb-heading" data-bs-parent="#properties">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> Rigidbody</p>
+				<p class="my-0 ms-2"><p class="my-0 ms-2"><code>Rigidbody</code></p>
+</p>
 <p class="my-0 ms-2"><i>The Rigidbody the wheel will use to apply the forces it calculates.</i></p>
 				
 				
@@ -174,7 +184,8 @@ This simulation uses a single raycast to represent the wheel and its suspension,
 		</h2>
 		<div id="collisionMask" class="accordion-collapse collapse" aria-labelledby="collisionMask-heading" data-bs-parent="#properties">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> LayerMask</p>
+				<p class="my-0 ms-2"><p class="my-0 ms-2"><code>LayerMask</code></p>
+</p>
 <p class="my-0 ms-2"><i>The LayerMask it will use on the raycast to be considered as valid ground.</i></p>
 				
 				
@@ -200,7 +211,8 @@ This simulation uses a single raycast to represent the wheel and its suspension,
 		</h2>
 		<div id="IsOnGround" class="accordion-collapse collapse" aria-labelledby="IsOnGround-heading" data-bs-parent="#methods">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> bool IsOnGround()</p>
+				<p class="my-0 ms-2"><code>bool</code> <strong>IsOnGround</strong><code>()</code></p>
+
 <p class="my-0 ms-2"><i>Returns true if the wheel is hitting a valid ground. False if not.</i></p>
 				
 				

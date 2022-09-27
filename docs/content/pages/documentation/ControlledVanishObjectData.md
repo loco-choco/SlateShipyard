@@ -1,5 +1,5 @@
 ## ControlledVanishObjectData
-* **Type** : Public struct
+* **Type** : Public `struct`
 
 * **Namespace** : SlateShipyard.VanishObjects
 
@@ -24,7 +24,8 @@ _Data used when passing information to the VanishVolumes in VanishVolumesPatches
 		</h2>
 		<div id="ControlledVanishObject" class="accordion-collapse collapse" aria-labelledby="ControlledVanishObject-heading" data-bs-parent="#properties">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> ControlledVanishObject</p>
+				<p class="my-0 ms-2"><p class="my-0 ms-2"><code>ControlledVanishObject</code></p>
+</p>
 				
 			</div>
 		</div>
@@ -37,7 +38,8 @@ _Data used when passing information to the VanishVolumes in VanishVolumesPatches
 		</h2>
 		<div id="RelativeLocationData" class="accordion-collapse collapse" aria-labelledby="RelativeLocationData-heading" data-bs-parent="#properties">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> RelativeLocationData</p>
+				<p class="my-0 ms-2"><p class="my-0 ms-2"><code>RelativeLocationData</code></p>
+</p>
 				
 			</div>
 		</div>

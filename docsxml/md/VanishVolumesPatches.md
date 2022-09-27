@@ -1,5 +1,5 @@
 ## VanishVolumesPatches
-* **Type** : Public class
+* **Type** : Public `class`
 
 * **Namespace** : SlateShipyard.VanishObjects
 
@@ -26,7 +26,8 @@ _Prefixes patches to make the functionality of ControlledVanishObject possible._
 		</h2>
 		<div id="ConditionsForPlayerToWarp" class="accordion-collapse collapse" aria-labelledby="ConditionsForPlayerToWarp-heading" data-bs-parent="#methods">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> delegate bool ConditionsForPlayerToWarp()</p>
+				<p class="my-0 ms-2"><code>delegate bool</code> <strong>ConditionsForPlayerToWarp</strong><code>()</code></p>
+
 				<p class="my-0 ms-2">delegate for the OnConditionsForPlayerToWarp event.</p>
 			</div>
 		</div>
@@ -50,7 +51,8 @@ _Prefixes patches to make the functionality of ControlledVanishObject possible._
 		</h2>
 		<div id="OnConditionsForPlayerToWarp" class="accordion-collapse collapse" aria-labelledby="OnConditionsForPlayerToWarp-heading" data-bs-parent="#eventsStatic">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Static Public</b> ConditionsForPlayerToWarp OnConditionsForPlayerToWarp</p>
+				<p class="my-0 ms-2"><code>ConditionsForPlayerToWarp</code> <strong>OnConditionsForPlayerToWarp</strong>``</p>
+
 <p class="my-0 ms-2"><i>Event for when the player warps.</i></p>
 				
 				<p class="my-0 ms-2">Add to this event if you want to controll when the player can warp. For example, if the player is attached to your ship you probably don't want for the player to warp separately.</p>

@@ -1,5 +1,5 @@
 ## ShipSpawnerManager
-* **Type** : Public class
+* **Type** : Public `class`
 
 * **Namespace** : SlateShipyard.ShipSpawner
 
@@ -26,7 +26,8 @@ This is the class you want to call if you want to access a ship or the ships add
 		</h2>
 		<div id="AddShipFuncGameObjectprefabstringname" class="accordion-collapse collapse" aria-labelledby="AddShipFuncGameObjectprefabstringname-heading" data-bs-parent="#methodsStatic">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Static Public</b> bool AddShip(Func< GameObject > prefab, string name)</p>
+				<p class="my-0 ms-2"><code>bool</code> <strong>AddShip</strong><code>(Func&lt; GameObject &gt; prefab, string name)</code></p>
+
 <p class="my-0 ms-2"><i>Adds the addon ship to the table of accessable addon ships.</i></p>
 				
 				<p class="my-0 ms-2">Returns false if there is already a ship with the same name, and true if it succeeded</p>
@@ -41,7 +42,8 @@ This is the class you want to call if you want to access a ship or the ships add
 		</h2>
 		<div id="RemoveShipstringname" class="accordion-collapse collapse" aria-labelledby="RemoveShipstringname-heading" data-bs-parent="#methodsStatic">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Static Public</b> bool RemoveShip(string name)</p>
+				<p class="my-0 ms-2"><code>bool</code> <strong>RemoveShip</strong><code>(string name)</code></p>
+
 <p class="my-0 ms-2"><i>Removes the addon ship from the table of accessable addon ships.</i></p>
 				
 				
@@ -56,7 +58,8 @@ This is the class you want to call if you want to access a ship or the ships add
 		</h2>
 		<div id="ShipAmount" class="accordion-collapse collapse" aria-labelledby="ShipAmount-heading" data-bs-parent="#methodsStatic">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Static Public</b> int ShipAmount()</p>
+				<p class="my-0 ms-2"><code>int</code> <strong>ShipAmount</strong><code>()</code></p>
+
 <p class="my-0 ms-2"><i>The amount of ships in the table of accessable addon ships.</i></p>
 				
 				
@@ -71,7 +74,8 @@ This is the class you want to call if you want to access a ship or the ships add
 		</h2>
 		<div id="GetShipDataintindex" class="accordion-collapse collapse" aria-labelledby="GetShipDataintindex-heading" data-bs-parent="#methodsStatic">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Static Public</b> ShipData GetShipData(int index)</p>
+				<p class="my-0 ms-2"><code>ShipData</code> <strong>GetShipData</strong><code>(int index)</code></p>
+
 <p class="my-0 ms-2"><i>Returns the ship in the table of accessable addon ships by passing its index.</i></p>
 				
 				
@@ -86,7 +90,8 @@ This is the class you want to call if you want to access a ship or the ships add
 		</h2>
 		<div id="GetShipDatastringname" class="accordion-collapse collapse" aria-labelledby="GetShipDatastringname-heading" data-bs-parent="#methodsStatic">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Static Public</b> ShipData GetShipData(string name)</p>
+				<p class="my-0 ms-2"><code>ShipData</code> <strong>GetShipData</strong><code>(string name)</code></p>
+
 <p class="my-0 ms-2"><i>Returns the ship in the table of accessable addon ships by passing its name.</i></p>
 				
 				

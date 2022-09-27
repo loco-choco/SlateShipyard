@@ -1,5 +1,5 @@
 ## ShipyardSpawner
-* **Type** : Public class
+* **Type** : Public `class`
 
 * **Namespace** : SlateShipyard
 
@@ -26,7 +26,8 @@ _Class that holds SpawnShipyard._
 		</h2>
 		<div id="SpawnShipyardTransformtransformVector3positionQuaternionrotation" class="accordion-collapse collapse" aria-labelledby="SpawnShipyardTransformtransformVector3positionQuaternionrotation-heading" data-bs-parent="#methodsStatic">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Static Public</b> GameObject SpawnShipyard(Transform transform, Vector3 position, Quaternion rotation)</p>
+				<p class="my-0 ms-2"><code>GameObject</code> <strong>SpawnShipyard</strong><code>(Transform transform, Vector3 position, Quaternion rotation)</code></p>
+
 <p class="my-0 ms-2"><i>Spawns a default shipyard.</i></p>
 				
 				

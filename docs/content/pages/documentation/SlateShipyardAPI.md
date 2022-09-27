@@ -1,5 +1,5 @@
 ## SlateShipyardAPI
-* **Type** : Public class
+* **Type** : Public `class`
 
 * **Namespace** : SlateShipyard
 
@@ -26,7 +26,8 @@ _The mod API you can call with OWML._
 		</h2>
 		<div id="SpawnShipyardTransformtVector3localPositionVector3localRotation" class="accordion-collapse collapse" aria-labelledby="SpawnShipyardTransformtVector3localPositionVector3localRotation-heading" data-bs-parent="#methods">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> GameObject SpawnShipyard(Transform t, Vector3 localPosition, Vector3 localRotation)</p>
+				<p class="my-0 ms-2"><code>GameObject</code> <strong>SpawnShipyard</strong><code>(Transform t, Vector3 localPosition, Vector3 localRotation)</code></p>
+
 <p class="my-0 ms-2"><i>Spawns a default shipyard giving the local position, rotation and parent transform.</i></p>
 				
 				
@@ -41,7 +42,8 @@ _The mod API you can call with OWML._
 		</h2>
 		<div id="DontSpawnDefaultShipyard" class="accordion-collapse collapse" aria-labelledby="DontSpawnDefaultShipyard-heading" data-bs-parent="#methods">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> void DontSpawnDefaultShipyard()</p>
+				<p class="my-0 ms-2"><code>void</code> <strong>DontSpawnDefaultShipyard</strong><code>()</code></p>
+
 <p class="my-0 ms-2"><i>Dissables the spawn of the default shipyards.</i></p>
 				
 				

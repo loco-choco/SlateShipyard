@@ -1,6 +1,6 @@
 ## FreeLookablePlayerAttachPoint
-* **Type** : Public class
-* _Inherents from **PlayerAttachPoint**_ 
+* **Type** : Public `class`
+* _Inherents from `PlayerAttachPoint`_ 
 * **Namespace** : SlateShipyard.PlayerAttaching
 
 _A PlayerAttachPoint you can use to enable free look._
@@ -24,7 +24,8 @@ Because of how the free look code was made, it is only active when sitted on the
 		</h2>
 		<div id="AllowFreeLook" class="accordion-collapse collapse" aria-labelledby="AllowFreeLook-heading" data-bs-parent="#properties">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> Func< bool ></p>
+				<p class="my-0 ms-2"><p class="my-0 ms-2"><code>Func&lt; bool &gt;</code></p>
+</p>
 <p class="my-0 ms-2"><i>The function called to know if the player attached to it should be able to free look.</i></p>
 				
 				

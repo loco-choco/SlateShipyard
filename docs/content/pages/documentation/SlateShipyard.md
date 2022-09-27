@@ -1,6 +1,6 @@
 ## SlateShipyard
-* **Type** : Public class
-* _Inherents from **ModBehaviour**_ 
+* **Type** : Public `class`
+* _Inherents from `ModBehaviour`_ 
 * **Namespace** : SlateShipyard
 
 _Main class of Slate's Shipyard._
@@ -24,7 +24,8 @@ _Main class of Slate's Shipyard._
 		</h2>
 		<div id="modHelper" class="accordion-collapse collapse" aria-labelledby="modHelper-heading" data-bs-parent="#propertiesStatic">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Static Public</b> IModHelper</p>
+				<p class="my-0 ms-2"><code>IModHelper</code></p>
+
 <p class="my-0 ms-2"><i>Returns the modHelper from OWML.</i></p>
 				
 				
@@ -39,7 +40,8 @@ _Main class of Slate's Shipyard._
 		</h2>
 		<div id="defaultShipSpawnerPrefab" class="accordion-collapse collapse" aria-labelledby="defaultShipSpawnerPrefab-heading" data-bs-parent="#propertiesStatic">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Static Public</b> GameObject</p>
+				<p class="my-0 ms-2"><code>GameObject</code></p>
+
 <p class="my-0 ms-2"><i>Returns prefab of the default shipyards.</i></p>
 				
 				
@@ -65,7 +67,8 @@ _Main class of Slate's Shipyard._
 		</h2>
 		<div id="GetApi" class="accordion-collapse collapse" aria-labelledby="GetApi-heading" data-bs-parent="#methods">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> override object GetApi()</p>
+				<p class="my-0 ms-2"><code>override object</code> <strong>GetApi</strong><code>()</code></p>
+
 <p class="my-0 ms-2"><i>Returns the API to OWML.</i></p>
 				
 				
@@ -84,7 +87,8 @@ _Main class of Slate's Shipyard._
 		</h2>
 		<div id="DontSpawnDefaultShipyard" class="accordion-collapse collapse" aria-labelledby="DontSpawnDefaultShipyard-heading" data-bs-parent="#methodsStatic">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Static Public</b> void DontSpawnDefaultShipyard()</p>
+				<p class="my-0 ms-2"><code>void</code> <strong>DontSpawnDefaultShipyard</strong><code>()</code></p>
+
 <p class="my-0 ms-2"><i>Dissables the spawn of the default shipyards.</i></p>
 				
 				
@@ -99,7 +103,8 @@ _Main class of Slate's Shipyard._
 		</h2>
 		<div id="SpawnShipyardTransformtVector3localPositionVector3localRotation" class="accordion-collapse collapse" aria-labelledby="SpawnShipyardTransformtVector3localPositionVector3localRotation-heading" data-bs-parent="#methodsStatic">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Static Public</b> GameObject SpawnShipyard(Transform t, Vector3 localPosition, Vector3 localRotation)</p>
+				<p class="my-0 ms-2"><code>GameObject</code> <strong>SpawnShipyard</strong><code>(Transform t, Vector3 localPosition, Vector3 localRotation)</code></p>
+
 <p class="my-0 ms-2"><i>Spawns a default shipyard giving the local position, rotation and parent transform.</i></p>
 				
 				

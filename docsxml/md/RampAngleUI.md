@@ -1,6 +1,6 @@
 ## RampAngleUI
-* **Type** : Public class
-* _Inherents from **MonoBehaviour**_ 
+* **Type** : Public `class`
+* _Inherents from `MonoBehaviour`_ 
 * **Namespace** : SlateShipyard.ShipSpawner.RampUI
 
 _UI element to display the current angle of the ramp and to handle its angle._
@@ -24,7 +24,8 @@ _UI element to display the current angle of the ramp and to handle its angle._
 		</h2>
 		<div id="angleDisplayText" class="accordion-collapse collapse" aria-labelledby="angleDisplayText-heading" data-bs-parent="#properties">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> Text</p>
+				<p class="my-0 ms-2"><p class="my-0 ms-2"><code>Text</code></p>
+</p>
 <p class="my-0 ms-2"><i>Text UI element to display the current angle in degrees.</i></p>
 				
 				
@@ -39,7 +40,8 @@ _UI element to display the current angle of the ramp and to handle its angle._
 		</h2>
 		<div id="increaseAngle" class="accordion-collapse collapse" aria-labelledby="increaseAngle-heading" data-bs-parent="#properties">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> InteractReceiver</p>
+				<p class="my-0 ms-2"><p class="my-0 ms-2"><code>InteractReceiver</code></p>
+</p>
 <p class="my-0 ms-2"><i>The button to increase the angle value.</i></p>
 				
 				
@@ -54,7 +56,8 @@ _UI element to display the current angle of the ramp and to handle its angle._
 		</h2>
 		<div id="decreaseAngle" class="accordion-collapse collapse" aria-labelledby="decreaseAngle-heading" data-bs-parent="#properties">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> InteractReceiver</p>
+				<p class="my-0 ms-2"><p class="my-0 ms-2"><code>InteractReceiver</code></p>
+</p>
 <p class="my-0 ms-2"><i>The button to decrease the angle value.</i></p>
 				
 				
@@ -80,7 +83,8 @@ _UI element to display the current angle of the ramp and to handle its angle._
 		</h2>
 		<div id="Start" class="accordion-collapse collapse" aria-labelledby="Start-heading" data-bs-parent="#methods">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> void Start()</p>
+				<p class="my-0 ms-2"><code>void</code> <strong>Start</strong><code>()</code></p>
+
 <p class="my-0 ms-2"><i>The Start method.</i></p>
 				
 				
@@ -95,7 +99,8 @@ _UI element to display the current angle of the ramp and to handle its angle._
 		</h2>
 		<div id="OnDestroy" class="accordion-collapse collapse" aria-labelledby="OnDestroy-heading" data-bs-parent="#methods">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> void OnDestroy()</p>
+				<p class="my-0 ms-2"><code>void</code> <strong>OnDestroy</strong><code>()</code></p>
+
 <p class="my-0 ms-2"><i>The OnDestroy method.</i></p>
 				
 				
@@ -110,7 +115,8 @@ _UI element to display the current angle of the ramp and to handle its angle._
 		</h2>
 		<div id="OnAngleIncrease" class="accordion-collapse collapse" aria-labelledby="OnAngleIncrease-heading" data-bs-parent="#methods">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> void OnAngleIncrease()</p>
+				<p class="my-0 ms-2"><code>void</code> <strong>OnAngleIncrease</strong><code>()</code></p>
+
 <p class="my-0 ms-2"><i>Method called to increase the angle of the ramp.</i></p>
 				
 				
@@ -125,7 +131,8 @@ _UI element to display the current angle of the ramp and to handle its angle._
 		</h2>
 		<div id="OnAngleDecrease" class="accordion-collapse collapse" aria-labelledby="OnAngleDecrease-heading" data-bs-parent="#methods">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> void OnAngleDecrease()</p>
+				<p class="my-0 ms-2"><code>void</code> <strong>OnAngleDecrease</strong><code>()</code></p>
+
 <p class="my-0 ms-2"><i>Method called to decrease the angle of the ramp.</i></p>
 				
 				
@@ -140,7 +147,8 @@ _UI element to display the current angle of the ramp and to handle its angle._
 		</h2>
 		<div id="Update" class="accordion-collapse collapse" aria-labelledby="Update-heading" data-bs-parent="#methods">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> void Update()</p>
+				<p class="my-0 ms-2"><code>void</code> <strong>Update</strong><code>()</code></p>
+
 <p class="my-0 ms-2"><i>The Update method.</i></p>
 				
 				

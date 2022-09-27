@@ -1,6 +1,6 @@
 ## BasicWheelController
-* **Type** : Public class
-* _Inherents from **MonoBehaviour**_ 
+* **Type** : Public `class`
+* _Inherents from `MonoBehaviour`_ 
 * **Namespace** : SlateShipyard.Modules.Wheels
 
 _A basic controller to control vehicles with wheels._
@@ -24,7 +24,8 @@ This basic controller is to be used by vehicles with the two front wheels being 
 		</h2>
 		<div id="frontRWheel" class="accordion-collapse collapse" aria-labelledby="frontRWheel-heading" data-bs-parent="#properties">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> OWSimpleRaycastWheel</p>
+				<p class="my-0 ms-2"><p class="my-0 ms-2"><code>OWSimpleRaycastWheel</code></p>
+</p>
 <p class="my-0 ms-2"><i>The front right wheel.</i></p>
 				
 				
@@ -39,7 +40,8 @@ This basic controller is to be used by vehicles with the two front wheels being 
 		</h2>
 		<div id="frontLWheel" class="accordion-collapse collapse" aria-labelledby="frontLWheel-heading" data-bs-parent="#properties">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> OWSimpleRaycastWheel</p>
+				<p class="my-0 ms-2"><p class="my-0 ms-2"><code>OWSimpleRaycastWheel</code></p>
+</p>
 <p class="my-0 ms-2"><i>The front left wheel.</i></p>
 				
 				
@@ -54,7 +56,8 @@ This basic controller is to be used by vehicles with the two front wheels being 
 		</h2>
 		<div id="body" class="accordion-collapse collapse" aria-labelledby="body-heading" data-bs-parent="#properties">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> OWRigidbody</p>
+				<p class="my-0 ms-2"><p class="my-0 ms-2"><code>OWRigidbody</code></p>
+</p>
 <p class="my-0 ms-2"><i>The vehicle body.</i></p>
 				
 				
@@ -69,7 +72,8 @@ This basic controller is to be used by vehicles with the two front wheels being 
 		</h2>
 		<div id="maxSteerAngle" class="accordion-collapse collapse" aria-labelledby="maxSteerAngle-heading" data-bs-parent="#properties">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> float</p>
+				<p class="my-0 ms-2"><p class="my-0 ms-2"><code>float</code></p>
+</p>
 <p class="my-0 ms-2"><i>The max angle the wheels can go.</i></p>
 				
 				
@@ -84,7 +88,8 @@ This basic controller is to be used by vehicles with the two front wheels being 
 		</h2>
 		<div id="maxAccelerationForce" class="accordion-collapse collapse" aria-labelledby="maxAccelerationForce-heading" data-bs-parent="#properties">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> float</p>
+				<p class="my-0 ms-2"><p class="my-0 ms-2"><code>float</code></p>
+</p>
 <p class="my-0 ms-2"><i>The max force the "motor" can reach.</i></p>
 				
 				
@@ -110,7 +115,8 @@ This basic controller is to be used by vehicles with the two front wheels being 
 		</h2>
 		<div id="FixedUpdate" class="accordion-collapse collapse" aria-labelledby="FixedUpdate-heading" data-bs-parent="#methods">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> void FixedUpdate()</p>
+				<p class="my-0 ms-2"><code>void</code> <strong>FixedUpdate</strong><code>()</code></p>
+
 <p class="my-0 ms-2"><i>When the motor force it got from the inputs is added.</i></p>
 				
 				
@@ -125,7 +131,8 @@ This basic controller is to be used by vehicles with the two front wheels being 
 		</h2>
 		<div id="Update" class="accordion-collapse collapse" aria-labelledby="Update-heading" data-bs-parent="#methods">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> void Update()</p>
+				<p class="my-0 ms-2"><code>void</code> <strong>Update</strong><code>()</code></p>
+
 <p class="my-0 ms-2"><i>When the wheels steer angle it got from the inputs is changed.</i></p>
 				
 				

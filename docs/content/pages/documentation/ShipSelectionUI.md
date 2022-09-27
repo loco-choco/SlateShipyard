@@ -1,6 +1,6 @@
 ## ShipSelectionUI
-* **Type** : Public class
-* _Inherents from **MonoBehaviour**_ 
+* **Type** : Public `class`
+* _Inherents from `MonoBehaviour`_ 
 * **Namespace** : SlateShipyard.ShipSpawner.SelectionUI
 
 _UI element to select and spawn ships from ShipSpawnerManager._
@@ -24,7 +24,8 @@ _UI element to select and spawn ships from ShipSpawnerManager._
 		</h2>
 		<div id="spawner" class="accordion-collapse collapse" aria-labelledby="spawner-heading" data-bs-parent="#properties">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> LaunchPadSpawn</p>
+				<p class="my-0 ms-2"><p class="my-0 ms-2"><code>LaunchPadSpawn</code></p>
+</p>
 <p class="my-0 ms-2"><i>The LaunchPadSpawn being used.</i></p>
 				
 				
@@ -39,7 +40,8 @@ _UI element to select and spawn ships from ShipSpawnerManager._
 		</h2>
 		<div id="shipVisualization" class="accordion-collapse collapse" aria-labelledby="shipVisualization-heading" data-bs-parent="#properties">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> ShipVisualizationUI</p>
+				<p class="my-0 ms-2"><p class="my-0 ms-2"><code>ShipVisualizationUI</code></p>
+</p>
 <p class="my-0 ms-2"><i>The ShipVisualizationUI to display the selected ship data.</i></p>
 				
 				
@@ -54,7 +56,8 @@ _UI element to select and spawn ships from ShipSpawnerManager._
 		</h2>
 		<div id="middleDisplayText" class="accordion-collapse collapse" aria-labelledby="middleDisplayText-heading" data-bs-parent="#properties">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> Text</p>
+				<p class="my-0 ms-2"><p class="my-0 ms-2"><code>Text</code></p>
+</p>
 <p class="my-0 ms-2"><i>Text UI element to display messages and warnings.</i></p>
 				
 				
@@ -69,7 +72,8 @@ _UI element to select and spawn ships from ShipSpawnerManager._
 		</h2>
 		<div id="nextShipButton" class="accordion-collapse collapse" aria-labelledby="nextShipButton-heading" data-bs-parent="#properties">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> InteractReceiver</p>
+				<p class="my-0 ms-2"><p class="my-0 ms-2"><code>InteractReceiver</code></p>
+</p>
 <p class="my-0 ms-2"><i>The button to select the next ship on the list.</i></p>
 				
 				
@@ -84,7 +88,8 @@ _UI element to select and spawn ships from ShipSpawnerManager._
 		</h2>
 		<div id="previousShipButton" class="accordion-collapse collapse" aria-labelledby="previousShipButton-heading" data-bs-parent="#properties">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> InteractReceiver</p>
+				<p class="my-0 ms-2"><p class="my-0 ms-2"><code>InteractReceiver</code></p>
+</p>
 <p class="my-0 ms-2"><i>The button to select the previous ship on the list.</i></p>
 				
 				
@@ -99,7 +104,8 @@ _UI element to select and spawn ships from ShipSpawnerManager._
 		</h2>
 		<div id="spawnShipButton" class="accordion-collapse collapse" aria-labelledby="spawnShipButton-heading" data-bs-parent="#properties">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> InteractReceiver</p>
+				<p class="my-0 ms-2"><p class="my-0 ms-2"><code>InteractReceiver</code></p>
+</p>
 <p class="my-0 ms-2"><i>The button to spawn the current selected ship.</i></p>
 				
 				
@@ -125,7 +131,8 @@ _UI element to select and spawn ships from ShipSpawnerManager._
 		</h2>
 		<div id="Start" class="accordion-collapse collapse" aria-labelledby="Start-heading" data-bs-parent="#methods">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> void Start()</p>
+				<p class="my-0 ms-2"><code>void</code> <strong>Start</strong><code>()</code></p>
+
 <p class="my-0 ms-2"><i>The Start method.</i></p>
 				
 				
@@ -140,7 +147,8 @@ _UI element to select and spawn ships from ShipSpawnerManager._
 		</h2>
 		<div id="OnDestroy" class="accordion-collapse collapse" aria-labelledby="OnDestroy-heading" data-bs-parent="#methods">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> void OnDestroy()</p>
+				<p class="my-0 ms-2"><code>void</code> <strong>OnDestroy</strong><code>()</code></p>
+
 <p class="my-0 ms-2"><i>The OnDestroy method.</i></p>
 				
 				
@@ -155,7 +163,8 @@ _UI element to select and spawn ships from ShipSpawnerManager._
 		</h2>
 		<div id="OnNextPageInteract" class="accordion-collapse collapse" aria-labelledby="OnNextPageInteract-heading" data-bs-parent="#methods">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> void OnNextPageInteract()</p>
+				<p class="my-0 ms-2"><code>void</code> <strong>OnNextPageInteract</strong><code>()</code></p>
+
 <p class="my-0 ms-2"><i>The method called to select the next ship on the list.</i></p>
 				
 				
@@ -170,7 +179,8 @@ _UI element to select and spawn ships from ShipSpawnerManager._
 		</h2>
 		<div id="OnPreviousPageInteract" class="accordion-collapse collapse" aria-labelledby="OnPreviousPageInteract-heading" data-bs-parent="#methods">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> void OnPreviousPageInteract()</p>
+				<p class="my-0 ms-2"><code>void</code> <strong>OnPreviousPageInteract</strong><code>()</code></p>
+
 <p class="my-0 ms-2"><i>The method called to select the previous ship on the list.</i></p>
 				
 				
@@ -185,7 +195,8 @@ _UI element to select and spawn ships from ShipSpawnerManager._
 		</h2>
 		<div id="OnSelectInteract" class="accordion-collapse collapse" aria-labelledby="OnSelectInteract-heading" data-bs-parent="#methods">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> void OnSelectInteract()</p>
+				<p class="my-0 ms-2"><code>void</code> <strong>OnSelectInteract</strong><code>()</code></p>
+
 <p class="my-0 ms-2"><i>The method called to spawn the currently selected ship.</i></p>
 				
 				
@@ -200,7 +211,8 @@ _UI element to select and spawn ships from ShipSpawnerManager._
 		</h2>
 		<div id="WriteTextOnDisplaystringtext" class="accordion-collapse collapse" aria-labelledby="WriteTextOnDisplaystringtext-heading" data-bs-parent="#methods">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> void WriteTextOnDisplay(string text)</p>
+				<p class="my-0 ms-2"><code>void</code> <strong>WriteTextOnDisplay</strong><code>(string text)</code></p>
+
 <p class="my-0 ms-2"><i>Writes text on the middle text ui and removes it after 2 seconds.</i></p>
 				
 				

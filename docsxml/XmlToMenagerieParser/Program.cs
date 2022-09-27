@@ -1,4 +1,5 @@
-﻿using Scriban;
+﻿using Markdig;
+using Scriban;
 using Scriban.Parsing;
 using Scriban.Runtime;
 using System;
@@ -84,6 +85,8 @@ public class Sample
         var DocxfyCompounddefDataScriptObject = new ScriptObject();
         DocxfyCompounddefDataScriptObject.Import(data);
         DocxfyCompounddefDataScriptObject.Import("get_members", new Func<string,string,string, DocxfyMemberdefData[]>((kind,prot,is_static) => data.sectionData.GetMembers(kind, prot, is_static)));
+
+        DocxfyCompounddefDataScriptObject.Import("to_html", new Func<string, string>((md) => Markdown.ToHtml(md)));
 
         var context = new TemplateContext();
         context.PushGlobal(DocxfyCompounddefDataScriptObject);

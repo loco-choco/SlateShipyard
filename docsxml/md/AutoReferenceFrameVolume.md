@@ -1,6 +1,6 @@
 ## AutoReferenceFrameVolume
-* **Type** : Public class
-* _Inherents from **ReferenceFrameVolume**_ 
+* **Type** : Public `class`
+* _Inherents from `ReferenceFrameVolume`_ 
 * **Namespace** : SlateShipyard
 
 _ReferenceFrameVolume which sets the variables automatically (WIP)._
@@ -26,7 +26,8 @@ _ReferenceFrameVolume which sets the variables automatically (WIP)._
 		</h2>
 		<div id="Awake" class="accordion-collapse collapse" aria-labelledby="Awake-heading" data-bs-parent="#methods">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> override void Awake()</p>
+				<p class="my-0 ms-2"><code>override void</code> <strong>Awake</strong><code>()</code></p>
+
 				
 			</div>
 		</div>

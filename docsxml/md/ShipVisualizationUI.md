@@ -1,6 +1,6 @@
 ## ShipVisualizationUI
-* **Type** : Public class
-* _Inherents from **MonoBehaviour**_ 
+* **Type** : Public `class`
+* _Inherents from `MonoBehaviour`_ 
 * **Namespace** : SlateShipyard.ShipSpawner.SelectionUI
 
 _UI element to display the current selected ship._
@@ -24,7 +24,8 @@ _UI element to display the current selected ship._
 		</h2>
 		<div id="shipName" class="accordion-collapse collapse" aria-labelledby="shipName-heading" data-bs-parent="#properties">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> Text</p>
+				<p class="my-0 ms-2"><p class="my-0 ms-2"><code>Text</code></p>
+</p>
 <p class="my-0 ms-2"><i>The text UI element which displays the name of the selected ship.</i></p>
 				
 				
@@ -50,7 +51,8 @@ _UI element to display the current selected ship._
 		</h2>
 		<div id="ChangeShipShipDatadata" class="accordion-collapse collapse" aria-labelledby="ChangeShipShipDatadata-heading" data-bs-parent="#methods">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> void ChangeShip(ShipData data)</p>
+				<p class="my-0 ms-2"><code>void</code> <strong>ChangeShip</strong><code>(ShipData data)</code></p>
+
 <p class="my-0 ms-2"><i>Changes the selected ship data being displayed.</i></p>
 				
 				

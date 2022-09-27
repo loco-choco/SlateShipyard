@@ -1,6 +1,6 @@
 ## {{name}}
-* **Type** : {{protection | string.downcase | string.capitalize}} {{kind | string.downcase}}
-{{if base_ref != empty}}* _Inherents from **{{base_ref}}**_ {{end}}
+* **Type** : {{protection | string.downcase | string.capitalize}} `{{kind | string.downcase}}`
+{{if base_ref != empty}}* _Inherents from `{{base_ref}}`_ {{end}}
 * **Namespace** : {{namespace}}
 
 {{~if briefdescription != ""~}}_{{briefdescription | string.rstrip}}_
@@ -26,7 +26,7 @@
 		</h2>
 		<div id="{{$member.name}}" class="accordion-collapse collapse" aria-labelledby="{{$member.name}}-heading" data-bs-parent="#properties">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>{{$member.prot | string.downcase | string.capitalize}}</b> {{$member.type}}</p>
+				<p class="my-0 ms-2">{{ $member.type | string.append "`" | string.prepend "`" | to_html | string.replace '<p>' '<p class="my-0 ms-2">'}}</p>
 				{{~if $member.briefdescription != ""~}}<p class="my-0 ms-2"><i>{{$member.briefdescription | string.rstrip}}</i></p>
 				
 				{{~end~}}
@@ -49,7 +49,7 @@
 		</h2>
 		<div id="{{$member.name}}" class="accordion-collapse collapse" aria-labelledby="{{$member.name}}-heading" data-bs-parent="#propertiesStatic">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Static {{$member.prot | string.downcase | string.capitalize}}</b> {{$member.type}}</p>
+				{{$member.type | string.append "`" | string.prepend "`" | to_html | string.replace '<p>' '<p class="my-0 ms-2">'}}
 				{{~if $member.briefdescription != ""~}}<p class="my-0 ms-2"><i>{{$member.briefdescription | string.rstrip}}</i></p>
 				
 				{{~end~}}
@@ -81,7 +81,7 @@
 		</h2>
 		<div id="{{$memberId}}" class="accordion-collapse collapse" aria-labelledby="{{$memberId}}-heading" data-bs-parent="#methods">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>{{$member.prot | string.downcase | string.capitalize}}</b> {{$member.type}} {{$member.name}}{{$member.argsstring}}</p>
+				{{"`" + $member.type + "` **" + $member.name+ "**`" + $member.argsstring+ "`"  | to_html | string.replace '<p>' '<p class="my-0 ms-2">'}}
 				{{~if $member.briefdescription != ""~}}<p class="my-0 ms-2"><i>{{$member.briefdescription | string.rstrip}}</i></p>
 				
 				{{~end~}}
@@ -96,7 +96,7 @@
 #### Public Static Methods
 <div class="accordion" id="methodsStatic">
 {{~ for $member in methodsStatic~}}
-{{~ $memberId = $member.name+$member.argsstring| regex.replace "([<>() ,.])" "" | string.rstrip~}}
+{{~ $memberId = "static" + $member.name + $member.argsstring| regex.replace "([<>() ,.])" "" | string.rstrip~}}
 	<div class="accordion-item">
 		<h2 class="accordion-header">
            <button id="{{$memberId}}-heading" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{$memberId}}" aria-expanded="false" aria-controls="{{$memberId}}">
@@ -105,7 +105,7 @@
 		</h2>
 		<div id="{{$memberId}}" class="accordion-collapse collapse" aria-labelledby="{{$memberId}}-heading" data-bs-parent="#methodsStatic">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Static {{$member.prot | string.downcase | string.capitalize}}</b> {{$member.type}} {{$member.name}}{{$member.argsstring}}</p>
+				{{"`" + $member.type + "` **" + $member.name+ "**`" + $member.argsstring+ "`"  | to_html | string.replace '<p>' '<p class="my-0 ms-2">'}}
 				{{~if $member.briefdescription != ""~}}<p class="my-0 ms-2"><i>{{$member.briefdescription | string.rstrip}}</i></p>
 				
 				{{~end~}}
@@ -137,7 +137,7 @@
 		</h2>
 		<div id="{{$memberId}}" class="accordion-collapse collapse" aria-labelledby="{{$memberId}}heading" data-bs-parent="#events">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Static {{$member.prot | string.downcase | string.capitalize}}</b> {{$member.type}} {{$member.name}}</p>
+				{{"`" + $member.type + "` **"+$member.name+ "**`" + $member.argsstring + "`"  | to_html | string.replace '<p>' '<p class="my-0 ms-2">'}}
 				{{~if $member.briefdescription != ""~}}<p class="my-0 ms-2"><i>{{$member.briefdescription | string.rstrip}}</i></p>
 				
 				{{~end~}}
@@ -161,7 +161,7 @@
 		</h2>
 		<div id="{{$memberId}}" class="accordion-collapse collapse" aria-labelledby="{{$memberId}}-heading" data-bs-parent="#eventsStatic">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Static {{$member.prot | string.downcase | string.capitalize}}</b> {{$member.type}} {{$member.name}}{{$member.argsstring}}</p>
+				{{"`" + $member.type + "` **" +$member.name+ "**`" + $member.argsstring+ "`"  | to_html | string.replace '<p>' '<p class="my-0 ms-2">'}}
 				{{~if $member.briefdescription != ""~}}<p class="my-0 ms-2"><i>{{$member.briefdescription | string.rstrip}}</i></p>
 				
 				{{~end~}}

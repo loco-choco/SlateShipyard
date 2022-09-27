@@ -1,5 +1,5 @@
 ## PlayerCameraControllerPatches
-* **Type** : Public class
+* **Type** : Public `class`
 
 * **Namespace** : SlateShipyard.PlayerAttaching
 

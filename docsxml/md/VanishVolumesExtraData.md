@@ -1,6 +1,6 @@
 ## VanishVolumesExtraData
-* **Type** : Public class
-* _Inherents from **MonoBehaviour**_ 
+* **Type** : Public `class`
+* _Inherents from `MonoBehaviour`_ 
 * **Namespace** : SlateShipyard.VanishObjects
 
 _Aditional data held by the VanishVolumes for VanishVolumesPatches._
@@ -24,7 +24,8 @@ _Aditional data held by the VanishVolumes for VanishVolumesPatches._
 		</h2>
 		<div id="VanishObjectData" class="accordion-collapse collapse" aria-labelledby="VanishObjectData-heading" data-bs-parent="#properties">
 			<div class="accordion-body">
-				<p class="my-0 ms-2"><b>Public</b> List< ControlledVanishObjectData ></p>
+				<p class="my-0 ms-2"><p class="my-0 ms-2"><code>List&lt; ControlledVanishObjectData &gt;</code></p>
+</p>
 				
 			</div>
 		</div>
