@@ -14,7 +14,7 @@ on:
       - docs/**
 
 env:
-  URL_PREFIX: 'SlateShipyard/'
+  URL_PREFIX: '/'
   PIPENV_VENV_IN_PROJECT: 1
 
 permissions:
