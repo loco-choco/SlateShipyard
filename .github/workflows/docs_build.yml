@@ -41,11 +41,7 @@ jobs:
       - run: mkdir ./.venv
       
       - run: cp -r docs/** .
-      
-      - if: github.ref == 'refs/heads/main'
-        run: |
-          echo "URL_PREFIX=/SlateShipyard/" >> $GITHUB_ENV
-          
+                
       - name: Cache Dependencies
         uses: actions/cache@v2
         id: cache-dependencies
