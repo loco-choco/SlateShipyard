@@ -1,7 +1,7 @@
 # Slate's Shipyard
 
  ![Slate's Shipyard](pictures/slatesShipyard.png)
-
+ 
 This is a mod which allows the player to spawn custom ships on "shipyards" scattered on the solar system (by default). It **does not** come with default ships, but allows for the making of them and an easier set up.
 
 ## Documentation
