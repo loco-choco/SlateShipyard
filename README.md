@@ -31,8 +31,8 @@ public class ISlateShipyardAPI
   public void DontSpawnDefaultShipyard();
 }
 ```
-And do `ModHelper.Interaction.TryGetModApi<IGizmosAPI>("Locochoco.SlateShipyard");` to be able to access the api calls. 
+And do `ModHelper.Interaction.TryGetModApi<ISlateShipyardAPI>("Locochoco.SlateShipyard");` to be able to access the api calls. 
 
-With `SpawnShipyard` you can spawn the default shipyard anywhere you want (call this when the transform that is the parent is already loaded), this is specially usefull for New Horizons addons that delete Timber Hearth but want for players to spawn custom ships. 
+With `SpawnShipyard` you can spawn the default shipyard anywhere you want (call this when the transform that is the parent is already loaded), this is specially usefull for New Horizons addons that delete Timber Hearth, Ember Twin or Brittle Hollow but want for players to spawn custom ships. 
 
-And with `DontSpawnDefaultShipyard` you can make the mod not spawn the default spawner on Timber Hearth, you only need to call this once, and it will no longer attempt to spawn on the default location.
+And with `DontSpawnDefaultShipyard` you can make the mod not spawn the default spawners, you only need to call this once, and it will no longer attempt to spawn on the default location.
