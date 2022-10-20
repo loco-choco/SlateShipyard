@@ -1,7 +1,6 @@
 ---
 Title: The Transpilers Handbook
 Hide_In_Nav: True
-Render_TOC: False
 ---
 
 # The Transpilers Handbook
@@ -60,6 +59,7 @@ And that you don't want the player to explode at 10 `bananas` but at 11 `bananas
  Only issue, what if the developers of the code decide to add more stuff to that method, like add a method that must run otherwise the game breaks.
 
  ```CSharp
+ 
     void BananaCheck() //Code from Devs
     {
         if(bananas >= 10)
