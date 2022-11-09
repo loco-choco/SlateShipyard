@@ -121,5 +121,14 @@ namespace SlateShipyard
             AssetBundle bundle = ModHelper.Assets.LoadBundle("AssetBundles/shipspawner");
             defaultShipSpawnerPrefab = bundle.LoadAsset<GameObject>("DefaultShipSpawner.prefab");
         }
+
+
+        //! Access to the current NetworkingInterface.
+        public static NetworkingInterface.NetworkingInterface NetworkingInterface;
+        //! Adds networking interface from multiplayer addons.
+        public static void SetNetworkingInterface(NetworkingInterface.NetworkingInterface networkingInterface)
+        {
+            NetworkingInterface = networkingInterface;
+        }
     }
 }
