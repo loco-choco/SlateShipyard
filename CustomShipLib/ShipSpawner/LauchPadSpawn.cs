@@ -17,8 +17,9 @@ namespace SlateShipyard.ShipSpawner
         /*! If spawnEvenIfNotAllowed is set to false, it will first check to see if the ship will spawn inside something and
          * will not spawn it if that is the case (WIP). If it is set to true it will ignore that check. The check feature is still WIP so
          * set spawnEvenIfNotAllowed to true if you want to be able to use the function.*/
-        public bool SpawnShip(Func<GameObject> shipPrefab, bool spawnEvenIfNotAllowed) 
+        public bool SpawnShip(ShipData shipData, bool spawnEvenIfNotAllowed) 
         {
+            var shipPrefab = shipData.prefab;
             GameObject g = shipPrefab.Invoke();
 
             Bounds shipBounds = GetCombinedBoundingBoxOfChildren(g.transform);
@@ -33,6 +34,8 @@ namespace SlateShipyard.ShipSpawner
             r.WarpToPositionRotation(transform.position, transform.rotation);
             r.SetVelocity(rigidbody.GetPointVelocity(transform.position));
             r.SetAngularVelocity(rigidbody.GetAngularVelocity());
+
+            SlateShipyard.NetworkingInterface.SpawnRemoteShip(shipData, g);
             return true;
         }
 

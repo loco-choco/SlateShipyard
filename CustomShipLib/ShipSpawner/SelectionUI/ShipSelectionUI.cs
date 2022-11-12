@@ -80,7 +80,7 @@ namespace SlateShipyard.ShipSpawner.SelectionUI
                 WriteTextOnDisplay($"No Prefab for {data.name}");
                 return;
             }
-            else if(spawner.SpawnShip(data.prefab, spawnEvenIfNotPossible)){
+            else if(spawner.SpawnShip(data, spawnEvenIfNotPossible)){
                 WriteTextOnDisplay($"{data.name} Spawned!");
                 return;
             }

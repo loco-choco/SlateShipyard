@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
+using System.Linq;
 
 using UnityEngine;
+using SlateShipyard.ShipSpawner;
 
 namespace SlateShipyard.NetworkingInterface
 {
@@ -10,9 +12,12 @@ namespace SlateShipyard.NetworkingInterface
     public abstract class ObjectNetworkingInterface : MonoBehaviour
     {
         protected Dictionary<string, SyncableField> FieldsToSync = new();
+        protected Dictionary<string, SyncableProperty> PropertiesToSync = new();
         protected Dictionary<string, NetworkableMethod> NetworkableMethods = new();
 
         public abstract bool IsPuppet { get; set; }
+
+        public ShipData shipData;
 
         public virtual void Awake() 
         {
@@ -38,6 +43,28 @@ namespace SlateShipyard.NetworkingInterface
                 }
             }
 
+            var properties = GetType().GetProperties();
+
+            for (int i = 0; i < properties.Length; i++)
+            {
+                PropertyInfo property = properties[i];
+                var attrs = property.GetCustomAttributes(typeof(SyncableProperty), true);
+                if (attrs.Length > 0)
+                {
+                    SyncableProperty syncableProperty = (SyncableProperty)attrs[0];
+                    if (string.IsNullOrEmpty(syncableProperty.SyncName))
+                    {
+                        syncableProperty.SyncName = property.Name;
+                    }
+                    syncableProperty.Property = property;
+                    syncableProperty.Type = property.PropertyType;
+
+                    syncableProperty.Object = this;
+
+                    PropertiesToSync.Add(syncableProperty.SyncName, syncableProperty);
+                }
+            }
+
             var methods = GetType().GetMethods();
 
             for (int i = 0; i < methods.Length; i++)
@@ -59,25 +86,40 @@ namespace SlateShipyard.NetworkingInterface
             }
         }
 
-        public void SetValue(string fieldName, object value) 
+        public void SetValue(string memberName, object value) 
         {
-            if (!FieldsToSync.ContainsKey(fieldName))
-                throw new Exception($"This class doesn't have a syncable field called {fieldName}");
+            if (FieldsToSync.ContainsKey(memberName))
+            {
+                SyncableField field = FieldsToSync[memberName];
 
-            SyncableField field = FieldsToSync[fieldName];
+                if (field.Type != value.GetType())
+                    throw new Exception($"The field {memberName} is of type {field.Type}, not {value.GetType()}");
 
-            if (field.Type != value.GetType())
-                throw new Exception($"The field {fieldName} is of type {field.Type}, not {value.GetType()}");
+                field.SetValue(value);
+            }
+            else if (PropertiesToSync.ContainsKey(memberName)) 
+            {
+                SyncableProperty property = PropertiesToSync[memberName];
 
-            field.SetValue(fieldName);
+                if (property.Type != value.GetType())
+                    throw new Exception($"The property {memberName} is of type {property.Type}, not {value.GetType()}");
+
+                property.SetValue(value);
+            }
         }
 
-        public object GetValue(string fieldName)
+        public object GetValue(string memberName)
         {
-            if (!FieldsToSync.ContainsKey(fieldName))
-                throw new Exception($"This class doesn't have a syncable field called {fieldName}");
+            if (FieldsToSync.ContainsKey(memberName))
+            {
+                return FieldsToSync[memberName].GetValue();
+            }
+            else if (PropertiesToSync.ContainsKey(memberName)) 
+            {
+                return PropertiesToSync[memberName].GetValue();
+            }
 
-            return FieldsToSync[fieldName].GetValue();
+            throw new Exception($"This class doesn't have a syncable field called {memberName}");
         }
 
         public void InvokeMethod(string methodName, object[] parameters, out bool hasReturnValue, out object returnValue)
@@ -92,30 +134,71 @@ namespace SlateShipyard.NetworkingInterface
 
             method.InvokeMethod(parameters, out hasReturnValue, out returnValue);
         }
+
+        public SyncableMember[] GetValues()
+        {
+            //TODO make this better
+            return ((SyncableMember[])FieldsToSync.Values.ToArray()).Concat(PropertiesToSync.Values.ToArray()).ToArray();
+        }
+    }
+
+    //TODO add docs to SyncableField
+    public abstract class SyncableMember : Attribute
+    {
+        public string SyncName;
+        public Type Type;
+        public object Object;
+        public SyncableMember()
+        {
+        }
+        public SyncableMember(string syncName)
+        {
+            SyncName = syncName;
+        }
+        public abstract object GetValue();
+        public abstract void SetValue(object value);
     }
 
     //TODO add docs to SyncableField
     [AttributeUsage(AttributeTargets.Field, AllowMultiple = false)]
-    public class SyncableField : Attribute
+    public class SyncableField : SyncableMember
     {
-        public string SyncName;
-        public Type Type;
         public FieldInfo Field;
-        public object Object;
-        SyncableField() 
+        public SyncableField() 
         {
         }
-        SyncableField(string syncName)
+        public SyncableField(string syncName)
         {
             SyncName = syncName;
         }
-        public object GetValue()
+        public override object GetValue()
         {
             return Field.GetValue(Object);
         }
-        public void SetValue(object value)
+        public override void SetValue(object value)
         {
             Field.SetValue(Object, value);
+        }
+    }
+    //TODO add docs to SyncableProperty
+    [AttributeUsage(AttributeTargets.Property, AllowMultiple = false)]
+    public class SyncableProperty : SyncableMember
+    {
+        public PropertyInfo Property;
+        public SyncableProperty()
+        {
+        }
+        public SyncableProperty(string syncName)
+        {
+            SyncName = syncName;
+        }
+        public override object GetValue()
+        {
+            return Property.GetValue(Object);
+        }
+        public override void SetValue(object value)
+        {
+            Property.SetValue(Object, value);
         }
     }
     //TODO add docs to NetworkableMethod
@@ -127,10 +210,10 @@ namespace SlateShipyard.NetworkingInterface
         public ParameterInfo[] ParameterTypes;
         public MethodInfo Method;
         public object Object;
-        NetworkableMethod()
+        public NetworkableMethod()
         {
         }
-        NetworkableMethod(string networkName)
+        public NetworkableMethod(string networkName)
         {
             NetworkName = networkName;
         }

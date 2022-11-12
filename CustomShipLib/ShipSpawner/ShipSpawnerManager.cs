@@ -8,8 +8,8 @@ namespace SlateShipyard.ShipSpawner
     /*! This is the class you want to call if you want to access a ship or the ships added by addons.*/
     public static class ShipSpawnerManager
     {
-        private static Dictionary<string, ShipData> ShipDictionary = new Dictionary<string, ShipData>();
-        private static List<ShipData> ShipList = new List<ShipData>();
+        private static readonly Dictionary<string, ShipData> ShipDictionary = new ();
+        private static readonly List<ShipData> ShipList = new();
 
         //! Adds the addon ship to the table of accessable addon ships.
         /*! Returns false if there is already a ship with the same name, and true if it succeeded*/
@@ -18,7 +18,7 @@ namespace SlateShipyard.ShipSpawner
             if (ShipDictionary.ContainsKey(name)){
                 return false;
             }
-            ShipData data = new ShipData() { name = name, prefab = prefab };
+            ShipData data = new() { name = name, prefab = prefab };
             ShipDictionary.Add(name, data);
             ShipList.Add(data);
             return true;
@@ -55,6 +55,11 @@ namespace SlateShipyard.ShipSpawner
                 return data;
             }
             return default;
+        }
+        //! Tries to return the ship in the table of accessable addon ships by passing its name.
+        public static bool TryGetShipData(string name, out ShipData data)
+        {
+            return ShipDictionary.TryGetValue(name, out data);
         }
     }
     //! The data stored about the ship addons in ShipSpawnerManager.

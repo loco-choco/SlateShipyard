@@ -10,6 +10,7 @@ using HarmonyLib;
 
 using SlateShipyard.VanishObjects;
 using SlateShipyard.PlayerAttaching;
+using SlateShipyard.NetworkingInterface;
 
 namespace SlateShipyard
 {
@@ -124,7 +125,7 @@ namespace SlateShipyard
 
 
         //! Access to the current NetworkingInterface.
-        public static NetworkingInterface.NetworkingInterface NetworkingInterface;
+        public static NetworkingInterface.NetworkingInterface NetworkingInterface = new EmptyNetworkingInterface();
         //! Adds networking interface from multiplayer addons.
         public static void SetNetworkingInterface(NetworkingInterface.NetworkingInterface networkingInterface)
         {
