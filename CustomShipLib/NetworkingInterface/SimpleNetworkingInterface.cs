@@ -17,11 +17,11 @@ namespace SlateShipyard.NetworkingInterface
             {
                 for (int i = 0; i < scriptsToDisableWhenPuppet.Length; i++)
                 {
-                    scriptsToDisableWhenPuppet[i].enabled = isPuppet;
+                    scriptsToDisableWhenPuppet[i].enabled = !isPuppet;
                 }
                 for (int i = 0; i < gameObjectsToDisableWhenPuppet.Length; i++)
                 {
-                    gameObjectsToDisableWhenPuppet[i].SetActive(isPuppet);
+                    gameObjectsToDisableWhenPuppet[i].SetActive(!isPuppet);
                 }
                 Rigidbody r = GetComponent<Rigidbody>();
                 if (r != null && RigidbodyToKinematicWhenPuppet)
