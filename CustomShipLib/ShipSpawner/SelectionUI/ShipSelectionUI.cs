@@ -18,8 +18,12 @@ namespace SlateShipyard.ShipSpawner.SelectionUI
         public InteractReceiver spawnShipButton; //!< The button to spawn the current selected ship.
 
         //! The Start method.
-        public void Start() 
+        public void Start()
         {
+            nextShipButton.ChangePrompt("next");
+            previousShipButton.ChangePrompt("previous");
+            spawnShipButton.ChangePrompt("select");
+
             nextShipButton.OnReleaseInteract += OnNextPageInteract;
             previousShipButton.OnReleaseInteract += OnPreviousPageInteract;
             spawnShipButton.OnReleaseInteract += OnSelectInteract;

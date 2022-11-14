@@ -154,6 +154,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3939785518692235802}
+  - component: {fileID: 1350044800764693419}
   m_Layer: 0
   m_Name: SpawnPosition
   m_TagString: Untagged
@@ -175,6 +176,18 @@ Transform:
   m_Father: {fileID: 8644282654558724293}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1350044800764693419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669880568410987485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 432413374, guid: 5695844481fda224a8297a115d141540, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &711842269722619421
 GameObject:
   m_ObjectHideFlags: 0
@@ -184,6 +197,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1278936191894081391}
+  - component: {fileID: 2095364120024152470}
   m_Layer: 0
   m_Name: ramp
   m_TagString: Untagged
@@ -207,6 +221,21 @@ Transform:
   m_Father: {fileID: 8644282654558724293}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2095364120024152470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711842269722619421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 412721156, guid: 5695844481fda224a8297a115d141540, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angleDisplayText: {fileID: 9144239157000982929}
+  increaseAngle: {fileID: 9009201496892916717}
+  decreaseAngle: {fileID: 7965466937115545130}
 --- !u!1 &825986828889018165
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,6 +680,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7439763315329091361}
   - component: {fileID: 3590560501340692616}
+  - component: {fileID: 9009201496892916717}
   m_Layer: 21
   m_Name: increaseAngle
   m_TagString: Untagged
@@ -686,6 +716,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.27187148, z: 0.50000006}
   m_Center: {x: 0.000000011107423, y: -0.28593516, z: 0.5000001}
+--- !u!114 &9009201496892916717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3087649567545720613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e08224a0c172cf49b787f8bc8d72094, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textID: 0
+  _interactRange: 2
+  _checkViewAngle: 0
+  _maxViewAngle: 180
+  _usableInShip: 0
 --- !u!1 &4088576030487014010
 GameObject:
   m_ObjectHideFlags: 0
@@ -1075,6 +1122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5298036212987687791}
   - component: {fileID: 7204658853266559652}
+  - component: {fileID: 5839390177133782132}
   m_Layer: 21
   m_Name: SelectButton
   m_TagString: Untagged
@@ -1110,6 +1158,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.3, z: 0.5}
   m_Center: {x: 0, y: -0.3, z: 0.5}
+--- !u!114 &5839390177133782132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5298036212987687790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e08224a0c172cf49b787f8bc8d72094, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textID: 0
+  _interactRange: 2
+  _checkViewAngle: 0
+  _maxViewAngle: 180
+  _usableInShip: 0
 --- !u!1 &5830529690023113437
 GameObject:
   m_ObjectHideFlags: 0
@@ -1152,6 +1217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 718761802482755626}
   - component: {fileID: 386146467627003061}
+  - component: {fileID: 7965466937115545130}
   m_Layer: 21
   m_Name: decreaseAngle
   m_TagString: Untagged
@@ -1187,6 +1253,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.3, z: 0.5}
   m_Center: {x: 0, y: -0.3, z: 0.5}
+--- !u!114 &7965466937115545130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5893490942638470015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e08224a0c172cf49b787f8bc8d72094, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textID: 0
+  _interactRange: 2
+  _checkViewAngle: 0
+  _maxViewAngle: 180
+  _usableInShip: 0
 --- !u!1 &6064620533904118535
 GameObject:
   m_ObjectHideFlags: 0
@@ -1241,6 +1324,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6249199752300253655}
+  - component: {fileID: 4713891852068057016}
   m_Layer: 0
   m_Name: ShipDataUI
   m_TagString: Untagged
@@ -1263,6 +1347,19 @@ Transform:
   m_Father: {fileID: 8362543910407358167}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &4713891852068057016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6097189325095646781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -840784912, guid: 5695844481fda224a8297a115d141540, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shipName: {fileID: 5157608213225575990}
 --- !u!1 &6642817006372268364
 GameObject:
   m_ObjectHideFlags: 0
@@ -1405,6 +1502,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4360411282272939125}
   - component: {fileID: 2843943557403578807}
+  - component: {fileID: 3068411048109571112}
   m_Layer: 21
   m_Name: PreviousButton
   m_TagString: Untagged
@@ -1440,6 +1538,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.2, y: 0.5, z: 0.7}
   m_Center: {x: 0.4, y: 0, z: 0.7}
+--- !u!114 &3068411048109571112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7226792918214216833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e08224a0c172cf49b787f8bc8d72094, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textID: 0
+  _interactRange: 2
+  _checkViewAngle: 0
+  _maxViewAngle: 180
+  _usableInShip: 0
 --- !u!1 &8055950905720402279
 GameObject:
   m_ObjectHideFlags: 0
@@ -1482,6 +1597,7 @@ GameObject:
   m_Component:
   - component: {fileID: 50254339192462598}
   - component: {fileID: 5801188055779855507}
+  - component: {fileID: 5216452300906779362}
   m_Layer: 21
   m_Name: NextButton
   m_TagString: Untagged
@@ -1517,6 +1633,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.2, y: 0.5, z: 0.7}
   m_Center: {x: -0.4, y: 0, z: 0.7}
+--- !u!114 &5216452300906779362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8084833220366116921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e08224a0c172cf49b787f8bc8d72094, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textID: 0
+  _interactRange: 2
+  _checkViewAngle: 0
+  _maxViewAngle: 180
+  _usableInShip: 0
 --- !u!1 &8552685490733557565
 GameObject:
   m_ObjectHideFlags: 0
@@ -1592,6 +1725,7 @@ GameObject:
   - component: {fileID: 2897652405914135412}
   - component: {fileID: 4393152256968001856}
   - component: {fileID: 5793768191918421774}
+  - component: {fileID: 5399858941545945367}
   m_Layer: 0
   m_Name: Screen
   m_TagString: Untagged
@@ -1678,6 +1812,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5399858941545945367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8949149856782241860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1329524759, guid: 5695844481fda224a8297a115d141540, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawner: {fileID: 1350044800764693419}
+  shipVisualization: {fileID: 4713891852068057016}
+  middleDisplayText: {fileID: 7896449901170061653}
+  nextShipButton: {fileID: 5216452300906779362}
+  previousShipButton: {fileID: 3068411048109571112}
+  spawnShipButton: {fileID: 5839390177133782132}
 --- !u!1001 &2277437446569501268
 PrefabInstance:
   m_ObjectHideFlags: 0

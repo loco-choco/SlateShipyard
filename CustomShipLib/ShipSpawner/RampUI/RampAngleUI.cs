@@ -20,6 +20,9 @@ namespace SlateShipyard.ShipSpawner.RampUI
         //! The Start method.
         public void Start()
         {
+            increaseAngle.ChangePrompt("increase");
+            decreaseAngle.ChangePrompt("decrease");
+
             increaseAngle.OnReleaseInteract += OnAngleIncrease;
             decreaseAngle.OnReleaseInteract += OnAngleDecrease;
         }
