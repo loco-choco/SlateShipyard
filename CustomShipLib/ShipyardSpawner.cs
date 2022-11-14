@@ -16,6 +16,5 @@ namespace SlateShipyard
             Transform t = GameObject.Instantiate(SlateShipyard.defaultShipSpawnerPrefab, position, rotation, transform).transform;
             return t.gameObject;
         }
-
     }
 }

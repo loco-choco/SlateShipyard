@@ -20,7 +20,7 @@ namespace SlateShipyard.ShipSpawner
         public bool SpawnShip(ShipData shipData, bool spawnEvenIfNotAllowed) 
         {
             var shipPrefab = shipData.prefab;
-            GameObject g = shipPrefab.Invoke();
+            GameObject g = Instantiate(shipPrefab);
 
             Bounds shipBounds = GetCombinedBoundingBoxOfChildren(g.transform);
             //TODO Melhorar esse algoritimo aqui de verificar se é seguro spawnar

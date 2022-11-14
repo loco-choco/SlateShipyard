@@ -13,7 +13,7 @@ namespace SlateShipyard.ShipSpawner
 
         //! Adds the addon ship to the table of accessable addon ships.
         /*! Returns false if there is already a ship with the same name, and true if it succeeded*/
-        public static bool AddShip(Func<GameObject> prefab, string name) 
+        public static bool AddShip(GameObject prefab, string name) 
         {
             if (ShipDictionary.ContainsKey(name)){
                 return false;
@@ -65,7 +65,7 @@ namespace SlateShipyard.ShipSpawner
     //! The data stored about the ship addons in ShipSpawnerManager.
     public struct ShipData 
     {
-        public Func<GameObject> prefab;//!< A function returning the ship addon.
+        public GameObject prefab;//!< A function returning the ship addon.
         public string name;//!< The name shown on the ship selector UI (must be unique!).
     }
 }
