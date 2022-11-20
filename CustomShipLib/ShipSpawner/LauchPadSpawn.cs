@@ -30,6 +30,8 @@ namespace SlateShipyard.ShipSpawner
                 Destroy(g);
                 return false;
             }
+            g.SetActive(true);
+
             OWRigidbody r = g.GetAttachedOWRigidbody();
             r.WarpToPositionRotation(transform.position, transform.rotation);
             r.SetVelocity(rigidbody.GetPointVelocity(transform.position));
