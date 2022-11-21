@@ -16,6 +16,7 @@ namespace SlateShipyard.NetworkingInterface
         protected Dictionary<string, NetworkableMethod> NetworkableMethods = new();
 
         public abstract bool IsPuppet { get; set; }
+        public abstract string UniqueScriptID { get; }
 
         public ShipData shipData;
 

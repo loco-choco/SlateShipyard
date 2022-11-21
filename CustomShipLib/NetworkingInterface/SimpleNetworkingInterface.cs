@@ -10,6 +10,10 @@ namespace SlateShipyard.NetworkingInterface
             get => isPuppet;
             set => OnIsPuppetChange(value);
         }
+        public override string UniqueScriptID 
+        { 
+            get => transform.name; 
+        }
 
         public virtual void OnIsPuppetChange(bool isPuppet) 
         {
