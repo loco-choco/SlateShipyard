@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace SlateShipyard.ShipSpawner
@@ -8,6 +9,8 @@ namespace SlateShipyard.ShipSpawner
     public class LaunchPadSpawn : MonoBehaviour
     {
         OWRigidbody rigidbody;
+        private Stack<GameObject> spawnedShips = new();
+        private ShipData lastShipTypeSpawned;
         //! The Start function of a MonoBehaviour.
         public void Start() 
         {
@@ -38,7 +41,52 @@ namespace SlateShipyard.ShipSpawner
             r.SetAngularVelocity(rigidbody.GetAngularVelocity());
 
             SlateShipyard.NetworkingInterface.SpawnRemoteShip(shipData, g);
+
+            spawnedShips.Push(g);
+            lastShipTypeSpawned = shipData;
             return true;
+        }
+
+        //! Resets last spawned ship by this launch pad.
+        public void ResetLatestSpawnedShip() 
+        {
+            if (spawnedShips.Count <= 0)
+                return;
+
+            GameObject latestSpawnedShip = spawnedShips.Pop();
+            if(latestSpawnedShip != null) 
+            {
+                Destroy(latestSpawnedShip);
+            }
+
+            SpawnShip(lastShipTypeSpawned, true);
+        }
+        //! Destroys last spawned ship by this launch pad.
+        public void DestroyLatestSpawnedShip()
+        {
+            if (spawnedShips.Count <= 0)
+                return;
+
+            GameObject latestSpawnedShip = spawnedShips.Pop();
+            if (latestSpawnedShip != null)
+            {
+                Destroy(latestSpawnedShip);
+            }
+        }
+        //! Destroys all ships spawned by this launch pad.
+        public void DestroyAllSpawnedShip()
+        {
+            int i = 0;
+            foreach(var ship in spawnedShips) 
+            {
+                if (ship != null)
+                {
+                    Destroy(ship);
+                    i++;
+                }
+            }
+            SlateShipyard.modHelper.Console.WriteLine($"Destroyed {i} ships");
+            spawnedShips.Clear();
         }
 
         //! Gets the Bounds of a object combined collider.
