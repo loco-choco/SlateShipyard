@@ -41,6 +41,7 @@ namespace SlateShipyard.Modules.Wheels
 		public Rigidbody rb; //!< The Rigidbody the wheel will use to apply the forces it calculates.
 		public LayerMask collisionMask; //!< The LayerMask it will use on the raycast to be considered as valid ground.
 
+		public bool enablePhysics = true;
 		void Start()
 		{
 			minLenght = restLenght - springTravel;
@@ -49,6 +50,9 @@ namespace SlateShipyard.Modules.Wheels
 
 		void FixedUpdate()
 		{
+			if (!enablePhysics)
+				return;
+
 			GetGround();
 		}
 

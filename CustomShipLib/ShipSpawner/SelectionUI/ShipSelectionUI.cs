@@ -18,8 +18,12 @@ namespace SlateShipyard.ShipSpawner.SelectionUI
         public InteractReceiver spawnShipButton; //!< The button to spawn the current selected ship.
 
         //! The Start method.
-        public void Start() 
+        public void Start()
         {
+            nextShipButton.ChangePrompt("next");
+            previousShipButton.ChangePrompt("previous");
+            spawnShipButton.ChangePrompt("select");
+
             nextShipButton.OnReleaseInteract += OnNextPageInteract;
             previousShipButton.OnReleaseInteract += OnPreviousPageInteract;
             spawnShipButton.OnReleaseInteract += OnSelectInteract;
@@ -80,7 +84,7 @@ namespace SlateShipyard.ShipSpawner.SelectionUI
                 WriteTextOnDisplay($"No Prefab for {data.name}");
                 return;
             }
-            else if(spawner.SpawnShip(data.prefab, spawnEvenIfNotPossible)){
+            else if(spawner.SpawnShip(data, spawnEvenIfNotPossible)){
                 WriteTextOnDisplay($"{data.name} Spawned!");
                 return;
             }

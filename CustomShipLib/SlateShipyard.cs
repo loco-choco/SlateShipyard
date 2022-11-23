@@ -10,6 +10,7 @@ using HarmonyLib;
 
 using SlateShipyard.VanishObjects;
 using SlateShipyard.PlayerAttaching;
+using SlateShipyard.NetworkingInterface;
 
 namespace SlateShipyard
 {
@@ -34,26 +35,26 @@ namespace SlateShipyard
         {
             new DefaultShipyardSpawnPositions()
             {
-                localPosition = new Vector3(-16.9654f, -71.9921f, 219.14f),
-                localRotation = new Vector3(3.2138f, 88.3628f, 105.9461f),
+                localPosition = new Vector3(-19.2676f, -72.6158f, 218.9678f),
+                localRotation = new Vector3(3.2138f, 87.9346f, 105.9461f),
                 astro = AstroObject.Name.TimberHearth
             },
             new DefaultShipyardSpawnPositions()
             {
-                localPosition = new Vector3(0.9f, -121.4f, 224.5f),
-                localRotation = new Vector3(59.5181f, 202.7799f,197.9099f),
+                localPosition = new Vector3(-9.1549f, -119.2572f, 224.7264f),
+                localRotation = new Vector3(58.8809f, 147.8917f, 151.7245f),
                 astro = AstroObject.Name.TimberHearth
             },
             new DefaultShipyardSpawnPositions()
             {
-                localPosition = new Vector3(-47.1f, -309.7f, 30.7f),
-                localRotation = new Vector3(8.5875f, 163.4293f, 188.3791f),
+                localPosition = new Vector3(-47.0739f, -309.5077f, 30.6901f),
+                localRotation = new Vector3(7.843f, 130.0688f, 182.5558f),
                 astro = AstroObject.Name.BrittleHollow
             },
             new DefaultShipyardSpawnPositions()
             {
-                localPosition = new Vector3(-5.0f, -151.0f, 68.6f),
-                localRotation = new Vector3(20.6541f, 206.9409f, 193.8155f),
+                localPosition = new Vector3(-4.9911f, -150.7467f, 68.4886f),
+                localRotation = new Vector3(19.7716f, 206.9409f, 190.7944f),
                 astro = AstroObject.Name.CaveTwin
             },
         };
@@ -120,6 +121,15 @@ namespace SlateShipyard
             modHelper = ModHelper;
             AssetBundle bundle = ModHelper.Assets.LoadBundle("AssetBundles/shipspawner");
             defaultShipSpawnerPrefab = bundle.LoadAsset<GameObject>("DefaultShipSpawner.prefab");
+        }
+
+
+        //! Access to the current NetworkingInterface.
+        public static NetworkingInterface.NetworkingInterface NetworkingInterface = new EmptyNetworkingInterface();
+        //! Adds networking interface from multiplayer addons.
+        public static void SetNetworkingInterface(NetworkingInterface.NetworkingInterface networkingInterface)
+        {
+            NetworkingInterface = networkingInterface;
         }
     }
 }
