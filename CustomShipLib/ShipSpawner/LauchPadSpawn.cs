@@ -102,15 +102,18 @@ namespace SlateShipyard.ShipSpawner
             {
                 throw new ArgumentException("The supplied transform was null");
             }
+            List<Collider> colliders = new();
+            t.GetComponentsInChildren<Collider>(colliders);
 
-            var colliders = t.GetComponentsInChildren<Collider>();
-            if (colliders.Length > 0)
+            colliders.RemoveAll(x => (OWLayerMask.physicalMask & (1 << x.gameObject.layer)) == 0 || x.isTrigger);
+
+            if (colliders.Count > 0)
             {
                 Bounds totalBBox = colliders[0].bounds;
-                for (int i = 1; i < colliders.Length; i++)
+                for (int i = 1; i < colliders.Count; i++)
                 {
-                    if (OWLayerMask.physicalMask == (OWLayerMask.physicalMask | (1 << t.gameObject.layer)) && !colliders[i].isTrigger)
-                        totalBBox.Encapsulate(colliders[i].bounds);
+                    if (colliders[i] != null)
+                        totalBBox.Encapsulate(colliders[i].bounds);;
                 }
                 return totalBBox;
             }

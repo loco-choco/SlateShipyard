@@ -30,12 +30,14 @@ namespace SlateShipyard.ShipSpawner.RampUI
         public void OnDestroyAllShips()
         {
             launchPadSpawn.DestroyAllSpawnedShip();
+            destroyAllShips.ResetInteraction();
         }
 
         //! Method called reset last spawned ship. 
         public void OnResetLastShip()
         {
             launchPadSpawn.ResetLatestSpawnedShip();
+            resetLastShip.ResetInteraction();
         }
     }
 }
