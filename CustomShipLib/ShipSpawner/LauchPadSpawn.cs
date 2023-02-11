@@ -52,6 +52,26 @@ namespace SlateShipyard.ShipSpawner
             return true;
         }
 
+        //! Destroys the ship, detaching/retrieving probe and/or killing the player if attached.
+        public void DestroyShip(GameObject ship)
+        {
+            //Return probes
+            SurveyorProbe[] attachedProbes = ship.GetComponentsInChildren<SurveyorProbe>();
+            for (int i = 0; i < attachedProbes.Length; i++)
+            {
+                attachedProbes[i].Unanchor();
+                attachedProbes[i].ExternalRetrieve();
+            }
+            //Detach and kill players
+            PlayerAttachPoint attachPoint = ship.GetComponentInChildren<PlayerAttachPoint>();
+            if (attachPoint.enabled)//Only if the player is attached the attach point is enabled
+            {
+                attachPoint.DetachPlayer();
+                Locator.GetDeathManager().KillPlayer(DeathType.BlackHole);
+            }
+            Destroy(ship);
+        }
+
         //! Resets last spawned ship by this launch pad.
         public void ResetLatestSpawnedShip() 
         {
@@ -59,10 +79,8 @@ namespace SlateShipyard.ShipSpawner
                 return;
 
             GameObject latestSpawnedShip = spawnedShips.Pop();
-            if(latestSpawnedShip != null) 
-            {
-                Destroy(latestSpawnedShip);
-            }
+            if (latestSpawnedShip != null)
+                DestroyShip(latestSpawnedShip);
 
             SpawnShip(lastShipTypeSpawned, true);
         }
@@ -74,9 +92,7 @@ namespace SlateShipyard.ShipSpawner
 
             GameObject latestSpawnedShip = spawnedShips.Pop();
             if (latestSpawnedShip != null)
-            {
-                Destroy(latestSpawnedShip);
-            }
+                DestroyShip(latestSpawnedShip);
         }
         //! Destroys all ships spawned by this launch pad.
         public void DestroyAllSpawnedShip()
@@ -86,7 +102,7 @@ namespace SlateShipyard.ShipSpawner
             {
                 if (ship != null)
                 {
-                    Destroy(ship);
+                    DestroyShip(ship);
                     i++;
                 }
             }

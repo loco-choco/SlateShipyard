@@ -19,6 +19,8 @@ namespace SlateShipyard.Modules.Wheels
         private float normalRFrictionCoeficient;
         private float normalLFrictionCoeficient;
 
+        public InputMode inputMode = InputMode.ShipCockpit; //!< The input mode that this controller uses.
+
         private void Start()
         {
             normalRFrictionCoeficient = frontRWheel.frictionCoeficient;
@@ -29,7 +31,7 @@ namespace SlateShipyard.Modules.Wheels
             if (!obj.IsOnGround())
                 return;
 
-            float input = OWInput.GetValue(InputLibrary.thrustZ, InputMode.All);
+            float input = OWInput.GetValue(InputLibrary.thrustZ, inputMode);
 
             float force = maxAccelerationForce * input;
 
@@ -46,7 +48,7 @@ namespace SlateShipyard.Modules.Wheels
         //!When the wheels steer angle it got from the inputs is changed.
         public virtual void Update()
         {
-            float steerInput = OWInput.GetValue(InputLibrary.thrustX, InputMode.All);
+            float steerInput = OWInput.GetValue(InputLibrary.thrustX, inputMode);
             float targetAngle = maxSteerAngle * steerInput;
 
             frontRWheel.steerAngle = targetAngle;
