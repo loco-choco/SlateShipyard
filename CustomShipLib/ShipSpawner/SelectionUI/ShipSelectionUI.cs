@@ -7,7 +7,7 @@ namespace SlateShipyard.ShipSpawner.SelectionUI
     //! UI element to select and spawn ships from ShipSpawnerManager.
     public class ShipSelectionUI : MonoBehaviour
     {
-        int currentSelectedShip = 0;
+        public int currentSelectedShip = 0;
         bool spawnEvenIfNotPossible = true;
         public LaunchPadSpawn spawner; //!< The LaunchPadSpawn being used.
         public ShipVisualizationUI shipVisualization;//!< The ShipVisualizationUI to display the selected ship data.
@@ -29,10 +29,7 @@ namespace SlateShipyard.ShipSpawner.SelectionUI
             spawnShipButton.OnReleaseInteract += OnSelectInteract;
 
             WriteTextOnDisplay("Welcome :)");
-            if (currentSelectedShip < ShipSpawnerManager.ShipAmount())
-            {
-                shipVisualization.ChangeShip(ShipSpawnerManager.GetShipData(currentSelectedShip));
-            }
+            UpdateSelection();
         }
         //! The OnDestroy method.
         public void OnDestroy() 
@@ -41,6 +38,14 @@ namespace SlateShipyard.ShipSpawner.SelectionUI
             previousShipButton.OnReleaseInteract -= OnPreviousPageInteract;
             spawnShipButton.OnReleaseInteract -= OnSelectInteract;
         }
+        //! Updates the UI for the selected ship
+        public void UpdateSelection()
+        {
+            if (currentSelectedShip < ShipSpawnerManager.ShipAmount() && currentSelectedShip >= 0)
+            {
+                shipVisualization.ChangeShip(ShipSpawnerManager.GetShipData(currentSelectedShip));
+            }
+        }
 
         //! The method called to select the next ship on the list.
         public void OnNextPageInteract() 
@@ -48,10 +53,7 @@ namespace SlateShipyard.ShipSpawner.SelectionUI
             if (ShipSpawnerManager.ShipAmount() > 0)
             {
                 currentSelectedShip = (currentSelectedShip + 1) % ShipSpawnerManager.ShipAmount();
-                if (currentSelectedShip < ShipSpawnerManager.ShipAmount())
-                {
-                    shipVisualization.ChangeShip(ShipSpawnerManager.GetShipData(currentSelectedShip));
-                }
+                UpdateSelection();
             }
 
             nextShipButton.ResetInteraction();
@@ -67,10 +69,7 @@ namespace SlateShipyard.ShipSpawner.SelectionUI
                     currentSelectedShip = ShipSpawnerManager.ShipAmount() - 1;
                 }
 
-                if (currentSelectedShip < ShipSpawnerManager.ShipAmount())
-                {
-                    shipVisualization.ChangeShip(ShipSpawnerManager.GetShipData(currentSelectedShip));
-                }
+                UpdateSelection();
             }
             previousShipButton.ResetInteraction();
         }

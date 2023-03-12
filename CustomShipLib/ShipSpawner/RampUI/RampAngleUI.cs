@@ -9,7 +9,7 @@ namespace SlateShipyard.ShipSpawner.RampUI
         float maxAngle = 90f;
         float minAngle = 0f;
 
-        float targetAngle = 0f;
+        public float targetAngle = 0f;
         float angleStep = 5f;
         float angleChangeSpeed = 180f;
 
@@ -39,7 +39,7 @@ namespace SlateShipyard.ShipSpawner.RampUI
         {
             targetAngle += angleStep;
             targetAngle = Mathf.Clamp(targetAngle, minAngle, maxAngle);
-            angleDisplayText.text = $" {(int)(targetAngle)}°";
+            angleDisplayText.text = $" {(int)targetAngle}°";
             increaseAngle.ResetInteraction();
         }
         //! Method called to decrease the angle of the ramp. 
@@ -47,7 +47,7 @@ namespace SlateShipyard.ShipSpawner.RampUI
         {
             targetAngle -= angleStep;
             targetAngle = Mathf.Clamp(targetAngle, minAngle, maxAngle);
-            angleDisplayText.text = $" {(int)(targetAngle)}°";
+            angleDisplayText.text = $" {(int)targetAngle}°";
             decreaseAngle.ResetInteraction();
         }
         //! The Update method.
