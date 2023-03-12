@@ -18,8 +18,6 @@ namespace SlateShipyard.NetworkingInterface
         public abstract bool IsPuppet { get; set; }
         public abstract string UniqueScriptID { get; }
 
-        public ShipData shipData;
-
         public virtual void Awake() 
         {
             var fields = GetType().GetFields();
