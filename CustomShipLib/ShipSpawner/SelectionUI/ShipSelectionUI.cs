@@ -17,6 +17,8 @@ namespace SlateShipyard.ShipSpawner.SelectionUI
         public InteractReceiver previousShipButton; //!< The button to select the previous ship on the list.
         public InteractReceiver spawnShipButton; //!< The button to spawn the current selected ship.
 
+        public LaunchPadNetworkingInterface launchPadNetworkingInterface;
+
         //! The Start method.
         public void Start()
         {
@@ -41,6 +43,7 @@ namespace SlateShipyard.ShipSpawner.SelectionUI
         //! Updates the UI for the selected ship
         public void UpdateSelection()
         {
+            launchPadNetworkingInterface.SelectedShip = currentSelectedShip;
             if (currentSelectedShip < ShipSpawnerManager.ShipAmount() && currentSelectedShip >= 0)
             {
                 shipVisualization.ChangeShip(ShipSpawnerManager.GetShipData(currentSelectedShip));
@@ -50,6 +53,14 @@ namespace SlateShipyard.ShipSpawner.SelectionUI
         //! The method called to select the next ship on the list.
         public void OnNextPageInteract() 
         {
+            if (launchPadNetworkingInterface.IsPuppet)
+            {
+                SlateShipyard.NetworkingInterface.InvokeMethod(
+                    launchPadNetworkingInterface,
+                    nameof(LaunchPadNetworkingInterface.SelectNextShip),false);
+                return;
+            }
+            
             if (ShipSpawnerManager.ShipAmount() > 0)
             {
                 currentSelectedShip = (currentSelectedShip + 1) % ShipSpawnerManager.ShipAmount();
@@ -61,6 +72,14 @@ namespace SlateShipyard.ShipSpawner.SelectionUI
         //! The method called to select the previous ship on the list.
         public void OnPreviousPageInteract()
         {
+            if (launchPadNetworkingInterface.IsPuppet)
+            {
+                SlateShipyard.NetworkingInterface.InvokeMethod(
+                    launchPadNetworkingInterface,
+                    nameof(LaunchPadNetworkingInterface.SelectNextShip),true);
+                return;
+            }
+            
             if (ShipSpawnerManager.ShipAmount() > 0)
             {
                 currentSelectedShip--;
@@ -76,6 +95,14 @@ namespace SlateShipyard.ShipSpawner.SelectionUI
         //! The method called to spawn the currently selected ship.
         public void OnSelectInteract()
         {
+            if (launchPadNetworkingInterface.IsPuppet)
+            {
+                SlateShipyard.NetworkingInterface.InvokeMethod(
+                    launchPadNetworkingInterface,
+                    nameof(LaunchPadNetworkingInterface.SpawnShip));
+                return;
+            }
+            
             spawnShipButton.ResetInteraction();
 
             ShipData data = ShipSpawnerManager.GetShipData(currentSelectedShip);

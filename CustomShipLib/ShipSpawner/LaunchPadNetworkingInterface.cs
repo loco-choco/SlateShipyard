@@ -22,7 +22,7 @@ public class LaunchPadNetworkingInterface : SimpleNetworkingInterface
     }
 
     [NetworkableMethod]
-    public void SelectNextShip(bool previous = false)
+    public void SelectNextShip(bool previous)
     {
         if (previous)
             ShipSelectionUI.OnPreviousPageInteract();
@@ -38,6 +38,15 @@ public class LaunchPadNetworkingInterface : SimpleNetworkingInterface
     {
         get => RampAngleUI.targetAngle;
         set => RampAngleUI.targetAngle = value;
+    }
+
+    [NetworkableMethod]
+    public void ChangeRampAngle(bool decrease)
+    {
+        if (decrease)
+            RampAngleUI.OnAngleDecrease();
+        else
+            RampAngleUI.OnAngleIncrease();
     }
 
     [NetworkableMethod]

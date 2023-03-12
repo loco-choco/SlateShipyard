@@ -22,8 +22,7 @@ namespace SlateShipyard.ShipSpawner
          * set spawnEvenIfNotAllowed to true if you want to be able to use the function.*/
         public bool SpawnShip(ShipData shipData, bool spawnEvenIfNotAllowed) 
         {
-            var shipPrefab = shipData.prefab;
-            GameObject g = Instantiate(shipPrefab);
+            GameObject g = SlateShipyard.NetworkingInterface.SpawnShip(shipData);
 
             //TODO Melhorar esse algoritimo aqui de verificar se é seguro spawnar
             //if (Physics.CheckBox(shipBounds.center, shipBounds.size / 2f, Quaternion.identity, OWLayerMask.physicalMask) 
@@ -32,7 +31,8 @@ namespace SlateShipyard.ShipSpawner
             //    Destroy(g);
             //    return false;
             //}
-            g.SetActive(true);
+            if(g == null)
+                return false;
 
             OWRigidbody r = g.GetAttachedOWRigidbody();
 
@@ -44,8 +44,6 @@ namespace SlateShipyard.ShipSpawner
 
             r.SetVelocity(rigidbody.GetPointVelocity(spawnPosition));
             r.SetAngularVelocity(rigidbody.GetAngularVelocity());
-
-            SlateShipyard.NetworkingInterface.SpawnRemoteShip(shipData, g);
 
             spawnedShips.Push(g);
             lastShipTypeSpawned = shipData;

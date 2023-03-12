@@ -17,6 +17,8 @@ namespace SlateShipyard.ShipSpawner.RampUI
         public InteractReceiver increaseAngle; //!< The button to increase the angle value.
         public InteractReceiver decreaseAngle; //!< The button to decrease the angle value.
         
+        public LaunchPadNetworkingInterface launchPadNetworkingInterface;
+        
         //! The Start method.
         public void Start()
         {
@@ -37,18 +39,38 @@ namespace SlateShipyard.ShipSpawner.RampUI
         //! Method called to increase the angle of the ramp. 
         public void OnAngleIncrease()
         {
+            if (launchPadNetworkingInterface.IsPuppet)
+            {
+                SlateShipyard.NetworkingInterface.InvokeMethod(
+                    launchPadNetworkingInterface,
+                    nameof(LaunchPadNetworkingInterface.ChangeRampAngle),false);
+                return;
+            }
+            
             targetAngle += angleStep;
             targetAngle = Mathf.Clamp(targetAngle, minAngle, maxAngle);
             angleDisplayText.text = $" {(int)targetAngle}°";
             increaseAngle.ResetInteraction();
+            
+            launchPadNetworkingInterface.RampAngle = targetAngle;
         }
         //! Method called to decrease the angle of the ramp. 
         public void OnAngleDecrease()
         {
+            if (launchPadNetworkingInterface.IsPuppet)
+            {
+                SlateShipyard.NetworkingInterface.InvokeMethod(
+                    launchPadNetworkingInterface,
+                    nameof(LaunchPadNetworkingInterface.ChangeRampAngle), true);
+                return;
+            }
+            
             targetAngle -= angleStep;
             targetAngle = Mathf.Clamp(targetAngle, minAngle, maxAngle);
             angleDisplayText.text = $" {(int)targetAngle}°";
             decreaseAngle.ResetInteraction();
+
+            launchPadNetworkingInterface.RampAngle = targetAngle;
         }
         //! The Update method.
         public void Update() 
