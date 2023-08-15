@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 
-namespace SlateShipyard.ShipSpawner.RampUI
+namespace SlateShipyard.ShipSpawner.DestroyShipsUI
 {
     //! UI element to destroy all spawned ships by the shipyard.
     public class DestroyAndResetShipsUI : MonoBehaviour
@@ -15,6 +14,8 @@ namespace SlateShipyard.ShipSpawner.RampUI
         //! The Start method.
         public void Start()
         {
+            launchPadNetworkingInterface.DestroyAndResetShipsUI = this;
+            
             destroyAllShips.ChangePrompt("destroy all ships");
             resetLastShip.ChangePrompt("reset last ship");
 
@@ -32,12 +33,12 @@ namespace SlateShipyard.ShipSpawner.RampUI
         //! Method called the destroy spawned ships by the shipyard. 
         public void OnDestroyAllShips()
         {
-            if (launchPadNetworkingInterface.IsPuppet)
-            {
-                SlateShipyard.NetworkingInterface.InvokeMethod(
-                    launchPadNetworkingInterface,
-                    nameof(LaunchPadNetworkingInterface.DestroyAllShips));
-                return;
+            if (launchPadNetworkingInterface.IsPuppet) 
+            { 
+               SlateShipyard.NetworkingInterface.InvokeMethod(
+                  launchPadNetworkingInterface,
+                  nameof(LaunchPadNetworkingInterface.DestroyAllShips));
+              return;
             }
             
             launchPadSpawn.DestroyAllSpawnedShip();

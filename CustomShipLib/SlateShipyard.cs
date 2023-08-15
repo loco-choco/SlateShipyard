@@ -82,7 +82,7 @@ namespace SlateShipyard
         }
         private void SceneLoading_OnSceneLoad(Scene scene, LoadSceneMode mode)
         {
-            StartCoroutine("SpawnShipyardDelay");            
+            StartCoroutine(nameof(SpawnShipyardDelay));            
         }
 
         private IEnumerator SpawnShipyardDelay() 
@@ -125,7 +125,7 @@ namespace SlateShipyard
 
 
         //! Access to the current NetworkingInterface.
-        public static NetworkingInterface.NetworkingInterface NetworkingInterface = new EmptyNetworkingInterface();
+        public static NetworkingInterface.NetworkingInterface NetworkingInterface = new NonNetworkingInterface();
         //! Adds networking interface from multiplayer addons.
         public static void SetNetworkingInterface(NetworkingInterface.NetworkingInterface networkingInterface)
         {

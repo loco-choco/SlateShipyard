@@ -9,7 +9,7 @@ namespace SlateShipyard.ShipSpawner
     public class LaunchPadSpawn : MonoBehaviour
     {
         OWRigidbody rigidbody;
-        private Stack<GameObject> spawnedShips = new();
+        private Stack<GameObject> spawnedShips = new Stack<GameObject>();
         private ShipData lastShipTypeSpawned;
         //! The Start function of a MonoBehaviour.
         public void Start() 
@@ -116,7 +116,7 @@ namespace SlateShipyard.ShipSpawner
             {
                 throw new ArgumentException("The supplied transform was null");
             }
-            List<Collider> colliders = new();
+            List<Collider> colliders = new List<Collider>();
             t.GetComponentsInChildren<Collider>(colliders);
 
             colliders.RemoveAll(x => (OWLayerMask.physicalMask & (1 << x.gameObject.layer)) == 0 || x.isTrigger);
@@ -131,7 +131,7 @@ namespace SlateShipyard.ShipSpawner
                 }
                 return totalBBox;
             }
-            return new();
+            return new Bounds();
         }
     }
 }

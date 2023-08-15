@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace SlateShipyard.NetworkingInterface
 {
@@ -28,7 +29,7 @@ namespace SlateShipyard.NetworkingInterface
                     gameObjectsToDisableWhenPuppet[i].SetActive(!isPuppet);
                 }
                 Rigidbody r = GetComponent<Rigidbody>();
-                if (r != null && RigidbodyToKinematicWhenPuppet)
+                if (r != null && rigidbodyToKinematicWhenPuppet)
                 {
                     r.isKinematic = isPuppet;
                 }
@@ -39,6 +40,6 @@ namespace SlateShipyard.NetworkingInterface
 
         public GameObject[] gameObjectsToDisableWhenPuppet;
         public MonoBehaviour[] scriptsToDisableWhenPuppet;
-        public bool RigidbodyToKinematicWhenPuppet = true;
+        [FormerlySerializedAs("RigidbodyToKinematicWhenPuppet")] public bool rigidbodyToKinematicWhenPuppet = true;
     }
 }

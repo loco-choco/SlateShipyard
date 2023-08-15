@@ -227,7 +227,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 760496792070930770}
-  - component: {fileID: 760496792070930771}
+  - component: {fileID: 2538117995115318238}
   m_Layer: 0
   m_Name: removeShipsControls
   m_TagString: Untagged
@@ -251,7 +251,7 @@ Transform:
   m_Father: {fileID: 6761975020368176226}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &760496792070930771
+--- !u!114 &2538117995115318238
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -260,12 +260,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 760496792070930769}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 2083899121, guid: 5695844481fda224a8297a115d141540, type: 3}
+  m_Script: {fileID: 1524499103, guid: 5695844481fda224a8297a115d141540, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   destroyAllShips: {fileID: 760496792784269616}
   resetLastShip: {fileID: 760496792899719102}
   launchPadSpawn: {fileID: 4079601168108900108}
+  launchPadNetworkingInterface: {fileID: 8100131940953015}
 --- !u!1 &760496792384422106
 GameObject:
   m_ObjectHideFlags: 0
@@ -734,6 +735,7 @@ Transform:
   - {fileID: 3871653638403278623}
   - {fileID: 4295946423958752200}
   - {fileID: 883718202027297796}
+  - {fileID: 3843678087009331460}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1092,9 +1094,11 @@ MonoBehaviour:
   m_Script: {fileID: 412721156, guid: 5695844481fda224a8297a115d141540, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetAngle: 0
   angleDisplayText: {fileID: 6108895548601128246}
   increaseAngle: {fileID: 6279962046527129418}
   decreaseAngle: {fileID: 4948031898626755213}
+  launchPadNetworkingInterface: {fileID: 8100131940953015}
 --- !u!1 &3155082724344528995
 GameObject:
   m_ObjectHideFlags: 0
@@ -1778,6 +1782,55 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &6015234664737269514
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3843678087009331460}
+  - component: {fileID: 8100131940953015}
+  m_Layer: 0
+  m_Name: Networking
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3843678087009331460
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6015234664737269514}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6761975020368176226}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8100131940953015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6015234664737269514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1769120702, guid: 5695844481fda224a8297a115d141540, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObjectsToDisableWhenPuppet: []
+  scriptsToDisableWhenPuppet: []
+  rigidbodyToKinematicWhenPuppet: 0
+  ShipSelectionUI: {fileID: 0}
+  RampAngleUI: {fileID: 0}
+  DestroyAndResetShipsUI: {fileID: 0}
 --- !u!1 &6195853638745908238
 GameObject:
   m_ObjectHideFlags: 0
@@ -2748,12 +2801,14 @@ MonoBehaviour:
   m_Script: {fileID: 1329524759, guid: 5695844481fda224a8297a115d141540, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentSelectedShip: 0
   spawner: {fileID: 4079601168108900108}
   shipVisualization: {fileID: 7731254047843871519}
   middleDisplayText: {fileID: 5166796914309461490}
   nextShipButton: {fileID: 7081200717692032581}
   previousShipButton: {fileID: 50905899847612559}
   spawnShipButton: {fileID: 8874443530435682515}
+  launchPadNetworkingInterface: {fileID: 8100131940953015}
 --- !u!1 &8910642198651061924
 GameObject:
   m_ObjectHideFlags: 0

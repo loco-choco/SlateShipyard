@@ -4,19 +4,22 @@ using UnityEngine;
 namespace SlateShipyard.NetworkingInterface
 {
     //TODO add docs to NetworkingInterface
-    public abstract class NetworkingInterface
+    public interface NetworkingInterface
     {
-        public abstract void InvokeMethod(ObjectNetworkingInterface sender, string methodName, params object[] parameters);
-        public abstract void SpawnRemoteShip(ShipData shipData, GameObject shipObject);
+        void InvokeMethod(ObjectNetworkingInterface sender, string methodName, params object[] parameters);
+        GameObject SpawnShip(ShipData shipData);
     }
 
-    public class EmptyNetworkingInterface : NetworkingInterface
+    public class NonNetworkingInterface : NetworkingInterface
     {
-        public override void InvokeMethod(ObjectNetworkingInterface sender, string methodName, params object[] parameters) 
+        public void InvokeMethod(ObjectNetworkingInterface sender, string methodName, params object[] parameters) 
         {
         }
-        public override void SpawnRemoteShip(ShipData shipData, GameObject shipObject) 
+        public GameObject SpawnShip(ShipData shipData)
         {
+            GameObject g = GameObject.Instantiate(shipData.prefab);
+            g.SetActive(true);
+            return g;
         }
     }
 }

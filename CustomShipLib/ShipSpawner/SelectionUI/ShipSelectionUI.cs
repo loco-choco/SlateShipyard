@@ -22,6 +22,7 @@ namespace SlateShipyard.ShipSpawner.SelectionUI
         //! The Start method.
         public void Start()
         {
+            launchPadNetworkingInterface.ShipSelectionUI = this;
             nextShipButton.ChangePrompt("next");
             previousShipButton.ChangePrompt("previous");
             spawnShipButton.ChangePrompt("select");

@@ -11,9 +11,9 @@ namespace SlateShipyard.NetworkingInterface
     //TODO add docs to ObjectNetworkingInterface
     public abstract class ObjectNetworkingInterface : MonoBehaviour
     {
-        protected Dictionary<string, SyncableField> FieldsToSync = new();
-        protected Dictionary<string, SyncableProperty> PropertiesToSync = new();
-        protected Dictionary<string, NetworkableMethod> NetworkableMethods = new();
+        protected Dictionary<string, SyncableField> FieldsToSync = new Dictionary<string, SyncableField>();
+        protected Dictionary<string, SyncableProperty> PropertiesToSync = new Dictionary<string, SyncableProperty>();
+        protected Dictionary<string, NetworkableMethod> NetworkableMethods = new Dictionary<string, NetworkableMethod>();
 
         public abstract bool IsPuppet { get; set; }
         public abstract string UniqueScriptID { get; }
@@ -118,7 +118,7 @@ namespace SlateShipyard.NetworkingInterface
                 return PropertiesToSync[memberName].GetValue();
             }
 
-            throw new Exception($"This class doesn't have a syncable field called {memberName}");
+            throw new Exception($"This class doesn't have a syncable member called {memberName}");
         }
 
         public void InvokeMethod(string methodName, object[] parameters, out bool hasReturnValue, out object returnValue)

@@ -22,6 +22,8 @@ namespace SlateShipyard.ShipSpawner.RampUI
         //! The Start method.
         public void Start()
         {
+            launchPadNetworkingInterface.RampAngleUI = this;
+            
             increaseAngle.ChangePrompt("increase");
             decreaseAngle.ChangePrompt("decrease");
 
